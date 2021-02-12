@@ -1,0 +1,328 @@
+<html>
+<head><link rel="stylesheet" href="style.css">
+</style></head><body>
+    <header>
+        <center>
+            <h1>
+                Team Rocket
+            </h1>
+            Requirements
+            <br>Version 0.1 - 2/11/2021
+        </center>
+	</header>
+	<h2>Table of contents</h2>
+    <ul>
+        <li><a href="#1.0">Introduction</a>
+        <ul>
+            <li><a href="#1.1">Purpose</a></li>
+            <li><a href="#1.2">Scope</a></li>
+			<li><a href="#1.3">Definitions, Acronyms, and abbreviations</a>
+            <li><a href="#1.4">References</a>
+            <li><a href="#1.5">Overview</a>
+            
+		</ul></li>
+
+        <li><a href="#2.0">Overall Description</a>
+        <ul>
+            <li><a href="#2.1">Product perspective</a></li>
+            <li><a href="#2.2">Product functions</a></li>
+			<li><a href="#2.3">User characteristics</a>
+            <li><a href="#2.4">Constraints</a>
+            <li><a href="#2.5">Assumptions and dependencies</a>
+            
+		</ul></li>
+        
+        <li><a href="#3.0">Specific requirements</a>
+            <ul>
+                <li><a href="#3.1">External interface requirements</a></li>
+                <ul>
+                    <li><a href="#3.1.1">User interfaces</a></li>
+                    <li><a href="#3.1.2">Hardware interfaces</a></li>
+                    <li><a href="#3.1.3">Software interfaces</a></li>
+                    <li><a href="#3.1.4">Communications interfaces</a></li>
+                </ul>
+                <li><a href="#3.2">Functional requirements</a></li>
+                <li><a href="#3.3">Performance requirements</a></li>
+                <li><a href="#3.4">Software system attributes</a></li>
+                <ul>
+                    <li><a href="#3.4.1">Reliability</a></li>
+                    <li><a href="#3.4.2">Security</a></li>
+                    <li><a href="#3.4.3">Maintainability</a></li>
+                    <li><a href="#3.4.4">Portability</a></li>
+                </ul>
+                
+                
+            </ul></li>
+            
+		<li><a href="#4.0">Version</a></li>
+        
+	</ul>
+    <br>
+    
+    <h2><span id="1.0">(1.0) Introduction</span></h2>
+    <h3><span id="1.1">(1.1) Purpose</span></h3>
+    <p>
+        The purpose of this project is to provide Pokémon players with a comprehensive database of relevant information which will allow them to make educated decisions on how they would like to play the game. Specifically, how they can optimize their Pokémon teams based on information our application provides. 
+    </p>
+
+    <h3><span id="1.2">(1.2) Scope</span></h3>
+    <p>
+        We aim to have all 151 Generation I Pokémon in our database, along with the following information which has already been provided by the ingame Pokédex: name, description, type(s), height, weight, brief biography description, and location. As well as additional information that is relevant but not provided in-game: abilities, catch rate, type match ups, leveling-rate, and EV yield. We would also like to have a user account system using a password hashing algorithm to store passwords. Users will be able to save information to their account.
+    </p>
+
+    <h3><span id="1.3">(1.3) Definitions, acronyms, and abbreviations</span></h3>
+	<u><b>Move</b></u>: A move, also known as an attack is the skill Pokémon primarily use in battle.
+	<br>
+	<br>
+	<u><b>Type</b></u>: Pokémon and the different moves they can use are all classified by properties called Types. A Pokémon can be associated with one or two types whereas a move can only be associated with one type. Moves that deal damage to other Pokémon can have more of an effect, a neutral level of effectiveness, less of an effect, or no effect at all, based on their type and the type of the Pokémon they are being used against. An example of an effective move would be a Pokémon using a Fire type move against a Grass type Pokémon. An example of a less effective move would be a Pokémon using a Fire type move against a Water type Pokémon. Finally, an example of a move which would have no effect at all would be a Ghost type move being used against a Normal type Pokémon.
+	<br>
+	<br>
+	<u><b>Abilities</b></u>: An Ability is a game mechanic that provides a passive effect in battle or in the overworld. Individual Pokémon may have only one Ability at a time. Not every Ability is entirely beneficial; some of them are hindering.
+	<br>
+	<br>
+	<u><b>Catch rate</b></u>: Each species of Pokémon has a catch rate that applies to all its members. When a Poké Ball is thrown at a wild Pokémon, the game uses that Pokémon's catch rate in a formula to determine the chances of catching that Pokémon. Higher catch rates mean that the Pokémon is easier to catch, up to a maximum of 255.
+	<br>
+	<br>
+	<u><b>Type matchup chart</b></u>: A type chart, also known as type matchup chart, shows which modifiers are applied to move types when attacking Pokémon of each type. 
+	<br>
+	<br>
+    <u><b>EV yield</b></u>: When a Pokémon is defeated in battle, it will give effort values to the Pokémon that participated in the battle against it. 
+    
+
+    <h3><span id="1.4">(1.4) References</span></h3>
+    <ul>
+		<li>IEEE. IEEE Std 830-1998 IEEE Recommended Practice for Software Requirements Specifications. IEEE Computer Society, 1998<br><a href="http://partyall-docs.herokuapp.com/docs/partyall-software-requirements.html">http://partyall-docs.herokuapp.com/docs/partyall-software-requirements.html</a> </li>
+		<br>
+    </ul>
+    
+    <h3><span id="1.5">(1.5) Overview</span></h3>
+    <p>
+        The Pokédex Encyclopedia(“the project”, “the software”) is a third party database created for the access of information on Generation I Pokémon. The purpose of this application is to give Pokémon players access to a greater depth of information on Pokémon that is not provided by the in-game Pokédex. This encyclopedia will be a guide for players who aims for completion rather than the be all and end all. Vital information like base stats, in-game locations, type effectiveness, natures, and learnset is not provided by other online encyclopedias. The Pokédex Encyclopedia strives to provide this information to allow the players to make educated decisions on how they would like to play the game.
+    </p>
+
+    <h2><span id="2.0">(2.0) Overall description</span></h2>
+    <h3><span id="2.1">(2.1) Product perspective</span></h3>
+    <p>
+        The Pokédex Encyclopedia is a desktop program that provides an easily accessible database for information on all Pokémon in generation I. This will allow users to make educated and informed decisions on how they would like to play the game.
+    </p>
+
+    <h3><span id="2.2">(2.2) Product Functions</span></h3>
+    <ul>
+        <li>Look up specific Pokémon and return their stats, moves, type, etc.</li>
+        <li>Side by side compare Pokémon stats with other Pokémon</li>
+        <li>Calculate damage against other Pokémon</li>
+        <li>List where specific Pokémon can be found in-game</li>
+        <li>Have a user system where users can save information</li>
+    </ul>
+    <h3><span id="2.3">(2.3) User Characteristics</span></h3>
+    <p>
+        The intended users of our product will be all users of all ages and of all technical experience that are interested in Pokémon
+    </p>
+
+    <h3><span id="2.4">(2.4) Constraints</span></h3>
+    <p>
+        There will be no cost constraints. The only constraints that we predict to encounter will be development constraints.These include time and possible reliability constraints depending on which apis or frameworks we utilize. Furthermore, team members will be expected to learn how to use the software or any additional knowledge that they may need to complete the tasks they are responsible for. 
+    </p>
+
+
+    <h2><span id="3.0"></span>(3.0) Requirements</h2>
+    <h3><span id="3.1">(3.1) External interface requirements</span></h3>
+    <h4><span id="3.1.1">(3.1.1) User interfaces</span></h4>
+    <p>
+
+        The user will have, at a minimum, the following six interfaces to navigate the project:
+        <table>
+            <tr>
+                <th>Log-in Interface</th>
+                <th> To access the project, the user must log-in. This will be the initial web page that they will interact with. It will have a menu, centred in the screen, in which they can type in their username first and then their password, just below, to log into their account. If the log-in is successful, proceed to Interface #2 (Homepage interface). Otherwise, provide an error message and prompt the user to either provide different log-in credentials.</th>
+            </tr>
+
+            <tr>
+                <th>Homepage Interface</th>
+                <th>The homepage interface will follow a successful log-in. From here, the user will have four options (buttons) to choose: the search function, their saved Pokemon list, their Teams list, and a side-by-side comparison tool.Furthermore, at the top left of each page/interface, there will be a button that can return the user to the homepage.</th>
+            </tr>
+
+            <tr>
+                <th>Search Interface</th>
+                <th>The search function will have one search bar on the page that will prompt the user to type in the name of the Pokemon that they want to search.Before any search has been completed, the full list of Pokemon will be displayed. It can be filtered by any statistic using a filter menu contained on the screen.After being searched for, the interface will return the Pokemon that had been typed in. The user can select and confirm that Pokemon, which will move the user to Interface #4, or search again.</th>
+            </tr>
+
+            <tr>
+                <th>Pokemon Profile Interface</th>
+                <th>The profile will show all information in the database related to the chosen Pokemon in a table.The table will consist of: Name, HP, Attack, Defense, Special Attack, Special Defense, Speed, Evolve Level, Location(s), Type.There will be a button for the user to save the Pokemon to their ‘Saved Pokemon’.</th>
+            </tr>
+
+            <tr>
+                <th>Saved Pokemon Interface</th>
+                <th>The interface will show a list of Pokemon, ordered alphabetically, that the user has chosen to save.If a Pokemon is selected, it will show the user Interface #4 (Pokemon Profile) for that respective Pokemon.</th>
+            </tr>
+
+            <tr>
+                <th>Comparison interface</th>
+                <th>The user will select a Pokemon, if one is not selected already, from a list. The picture and table, a smaller version of Interface #4, will appear on the left half of the screen. From there, they can search for another Pokemon and add them to the interface. Once this is completed, the picture and table for the second Pokemon will appear on the right hand side.T here will be an option to switch out one of the Pokemon and search for another using a search bar below both statistics tables.</th>
+            </tr>
+
+            <tr>
+                <th>Team List Interface</th>
+                <th>A list with 3 spots.Each spot will have the name of a team that has been created by the user or ‘Empty’ where there are available spots. If the user selects a team, they can view the team and modify it in Interface #8.</th>
+            </tr>
+
+            <tr>
+                <th>Team Selection Interface</th>
+                <th>There will be 6 slots available in which a Pokemon can be selected. There will be two rows of three slots. The user can select a Pokemon from the list to place in each spot. There will be a save button in the top right hand corner of the page which will allow the user to name and save the team so that it can be accessed in the future from Interface #7. Next to the save button will be an option to clear the data for the team (Pokemon chosen and team name) so that the user can start a new team.</th>
+            </tr>
+
+            <tr>
+                <th>The aspects of optimizing the interface are:</th>
+                <th>The error messages should be under 75 words. All labels in buttons should be under 10 words. Individual tables should have two columns, the first will identify which statistic/attribute the row is for and the second holds the value(s), and 10 rows, one for each of the ten values (Name, HP, Attack, Defense, Special Attack, Special Defense, Speed, Evolve Level, Location(s), Type). Tables used in comparison should have three columns--one to identify which attribute or statistic is in the row, one for the value for Pokemon 1, and the last for the value for Pokemon 2. Each cell should have less than 10 words. The button to return to the homepage should be in the left-side of the header for all other web pages.</th>
+            </tr>
+        </table>
+
+
+    </p>
+    <h4><span id="3.1.2">(3.1.2) Hardware interfaces</span></h4>
+        <p>
+            This software is meant to be a web-based application. So the hardware requirements for it would include a working phone or computer (with mouse and keyboard). This means that mac or windows, iPhone or android, the website should work for all of them. That being said the optimization for mobile devices will not be ideal.
+        </p>
+
+    <h4><span id="3.1.3">(3.1.3) Software interfaces</span></h4>
+        <p>
+            The web-application requires a web browser to be run. In addition to this the web-application will need to access a database we have created.
+        </p>
+    <h4><span id="3.1.4">(3.1.4) Communications interfaces</span></h4>
+        <p>
+            The web-application as well as the database will be hosted on laurier servers.
+        </p>
+
+
+    <h3><span id="3.2" class="functions">(3.2) Functional requirements</span></h3>
+
+    <h3>Searching Pokemon</h3>
+    <table>
+        <tr>
+            <th><b>Introduction/Purpose of feature</b></th>
+            <th>This is the core functionality of the application. This website gives the user the ability to search through generation 1 pokemon and easily find all of their statistics and other important information.</th>
+        </tr>
+
+        <tr>
+            <th><b>Stimulus/Response sequence</b></th>
+            <th>There will be a website fixing on a monthly basis, and a moderator will have authority and the access to check if there is any need to update, delete or edit the website.</th>
+        </tr>
+
+        <tr>
+            <th><b>Associated functional requirements </b></th>
+            <th>The user should be able to easily find the search bar and type in the name of a pokemon they are looking for and have it come up. Additionally, we will make it so that there is partial autofill for searches, so "char" would give "charmander" and "charmeleon" and "charizard".</th>
+        </tr>
+    </table>
+
+
+    <br><h3>Creating Pokemon team</h3>
+    <table>
+        <tr>
+            <th><b>Introduction/Purpose of feature</b></th>
+            <th>This is a quality-of-life feature for the user. If an account is made they can save pokemon to a team so that when they come back in future and are looking for the same group of pokemon that information is easily available to them.</th>
+        </tr>
+
+        <tr>
+            <th><b>Stimulus/Response sequence</b></th>
+            <th>There will be a website fixing on a monthly basis, and a moderator will have authority and the access to check if there is any need to update, delete or edit the website. </th>
+        </tr>
+
+        <tr>
+            <th><b>Associated functional requirements </b></th>
+            <th>The user should be able to create a team of pokemon by going to a specific part of the web application and searching through the list of generation 1 pokemon and adding up to 6 pokemon per team. With a maximum of 3 teams per account.</th>
+        </tr>
+    </table>
+
+
+    <br><h3>Comparing Strengths and Weaknesses of Pokemon</h3>
+    <table>
+        <tr>
+            <th><b>Introduction/Purpose of feature</b></th>
+            <th>This feature allows the user to compare strengths and weaknesses of pokemon. This is very useful because when fighting in teams it is very helpful to know which are stronger and weaker against each other. This feature helps the user get an advantage when fighting against another team of pokemon.</th>
+        </tr>
+
+        <tr>
+            <th><b>Stimulus/Response sequence</b></th>
+            <th>There will be a website fixing on a monthly basis, and a moderator will have authority and the access to check if there is any need to update, delete or edit the website. </th>
+        </tr>
+
+        <tr>
+            <th><b>Associated functional requirements </b></th>
+            <th>When looking through the different pokemon available you should be able to click on two different pokemon and click compare to see their strengths and weaknesses.
+
+            <br><br>The feature would display if the chosen pokemon counters the enemy or not. If not, it can recommend the types of pokemon in the team who counters the ene
+            </th>
+            
+        </tr>
+    </table>
+
+    <br><h3>Grouping by Variable</h3>
+    <table>
+        <tr>
+            <th><b>Introduction/Purpose of feature</b></th>
+            <th>This helps the user look through pokemon grouped by type, specific stat, or location. This can be very helpful when trying to create a well rounded pokemon team.</th>
+        </tr>
+
+        <tr>
+            <th><b>Stimulus/Response sequence</b></th>
+            <th>There will be a website fixing on a monthly basis, and a moderator will have authority and the access to check if there is any need to update, delete or edit the website.</th>
+        </tr>
+
+        <tr>
+            <th><b>Associated functional requirements </b></th>
+            <th>A group option should be available at the top of the list of pokemon allowing the user to group by type, weakness, strength, location.
+            </th>
+            
+        </tr>
+    </table>
+
+    <br>
+    <h3><span id="3.3">(3.3) Performance requirements</span></h3>
+    <ul>
+        <li>The web-application should support as many users as the Laurier servers will allow.</li>
+        <li>It should not take more than 2 seconds for a pokemon search to give results.</li>
+        <li>It should not take more than 2 seconds to load a pokemon team that the user created.</li>
+        <li>It should not take more than 2 seconds to load strength vs weakness statistics between pokemon</li>
+        <li>The database should be able to store 10,000 users with each user being able to create 3 teams</li>
+    </ul>
+
+    
+    <h3><span id="3.4">(3.4) Software system attributes </span></h3>
+
+    <h4><span id="3.4.1">(3.4.1) Reliability</span></h4>
+    <p>
+        *insert Text* 
+    </p>
+
+    <h4><span id="3.4.2">(3.4.2) Security</span></h4>
+    <p>
+        When storing user passwords we will implement a hashing algorithm to keep their passwords as secure as possible. We will keep a log of the when and where users logged in from to try and better identify any possible attacks on the website. We will use encapsulation whenever possible to try and keep the various methods and data stored as safe as possible. Some of the techniques wer plan on use are the following: 
+
+        <ol type="a">
+            <li>Utilize certain cryptographical techniques</li>
+            <li>Keep specific log or history data sets</li>
+            <li>Assign certain functions to different modules</li>
+            <li>Restrict communications between some areas of the program;</li>
+            <li>Check data integrity for critical variables.</li>
+        </ol>
+        
+    </p>
+
+
+    <h4><span id="3.4.3">(3.4.3) Maintainability</span></h4>
+        <p>
+            This web-application should be easily updatable because all that you would need to update is the web-application files where the server is hosted and it will be seamlessly updated for all users once they refresh their web pages. In addition, code needing to be updated should be easy to update through good coding practices like documentation and modularity of the various methods and functions.
+        </p>
+    <h4><span id="3.4.4">(3.4.4) Portability</span></h4></h4>
+    <p>
+        From a portability perspective this web-application should be available on any device with no setup required. By nature it should be able to be viewed and used on any system with internet and access to a web browser.
+    </p>
+
+
+    <h2><span id="4.0">(4.0) Versions</span></h2>
+	<h5>Version 0.1 - 1/21/2021</h5>
+    <i>Document created</i>
+    
+</body>
+
