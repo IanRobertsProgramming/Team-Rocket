@@ -13,37 +13,37 @@
         </center>
         <h2><b><u>Entity Objects</u></b></h2>
         <p>
-            There are two primary entity objects identified using noun-extraction. The project will store information about ‘first generation’ Pokemon and any teams created by the user
+            There are two primary entity objects identified using noun-extraction. The project will store information about ‘first generation’ Pokémon and any teams created by the user
         </p>
         <ol type="1">
             <li>
-                Pokemon: the entity object that stores information about each Pokemon. It will allow Pokemon to be added to teams, to enable the user to easily see information about the Pokemon in one place, and to allow comparison between two Pokemon species. All attributes are set when entered into the database and immutable (unless changed at an administrative level inside the database).
+                Pokémon: the entity object that stores information about each Pokémon. It will allow Pokémon to be added to teams, to enable the user to easily see information about the Pokémon in one place, and to allow comparison between two Pokémon species. All attributes are set when entered into the database and immutable (unless changed at an administrative level inside the database).
                 <p>Attributes:</p>
                 <ul>
-                    <li>Name (string): the name of the Pokemon</li><br>
+                    <li>Name (string): the name of the Pokémon</li><br>
                     <li>HP (integer): the base health statistic*</li><br>
                     <li>Attack (integer): the base attack statistic*</li><br>
                     <li>Defense (integer): the base defense statistic*</li><br>
-                    <li>Special Attack (integer): the base strength of the Pokemon’s special attack*</li><br>
-                    <li>Special Defense (integer): the base strength of the Pokemon’s special defense move*</li><br>
+                    <li>Special Attack (integer): the base strength of the Pokémon’s special attack*</li><br>
+                    <li>Special Defense (integer): the base strength of the Pokémon’s special defense move*</li><br>
                     <li>Speed (integer): the base speed statistic*</li><br>
-                    <li>Evolve Level (integer): the level at which the Pokemon evolves into a different Pokemon (the value is NULL if it does not have an evolve level)</li><br>
-                    <li>Location(s) (string): the location or locations where the Pokemon can be found in the game</li><br>
-                    <li>Type (string): the Pokemon type statistic (water, fire, grass, rock, etc.)</li><br>
-                    <li>Effectiveness (array): an array of all the strengths and weaknesses of a particular pokemon when fetched from the database.</li><br>
+                    <li>Evolve Level (integer): the level at which the Pokémon evolves into a different Pokémon (the value is NULL if it does not have an evolve level)</li><br>
+                    <li>Location(s) (string): the location or locations where the Pokémon can be found in the game</li><br>
+                    <li>Type (string): the Pokémon type statistic (water, fire, grass, rock, etc.)</li><br>
+                    <li>Effectiveness (array): an array of all the strengths and weaknesses of a particular Pokémon when fetched from the database.</li><br>
                 </ul>
                 <p>
-                    *Each Pokemon species has a base level of HP, Attack, Defense, Sp. Attack, Sp. Defense, and Speed regardless of the moves they have and level that they are.
+                    *Each Pokémon species has a base level of HP, Attack, Defense, Sp. Attack, Sp. Defense, and Speed regardless of the moves they have and level that they are.
                 </p>
             </li>
             <br>
             <li>
-                Team: the entity object that stores information about a Pokemon team (of max 6 Pokemon to match the in-game team size) that has been created. It enables the user to retrieve teams that they have created and saved earlier and then to make changes to them. All attributes in the team entity project are set when the user saves the team that has been created.
+                Team: the entity object that stores information about a Pokémon team (of max 6 Pokémon to match the in-game team size) that has been created. It enables the user to retrieve teams that they have created and saved earlier and then to make changes to them. All attributes in the team entity project are set when the user saves the team that has been created.
                 <p>Attributes:</p>
                 <ul>
                     <li>Team Name (string): the name of the team, created by the user</li><br>
                     <li>Owner (User): the user who created the team</li><br>
-                    <li>Members (list of Pokemon objects): the Pokemon on the team</li><br>
+                    <li>Members (list of Pokémon objects): the Pokémon on the team</li><br>
                     <li>Number (integer): the number of members out of 6</li><br>
                 </ul>
             </li>
@@ -76,9 +76,9 @@
                         </ul>
                     </li>
                     <br>
-                    <li>SavedPokemon (a list of Pokemon entity objects): Pokemon that the user has chosen to save
+                    <li>SavedPokémon (a list of Pokémon entity objects): Pokémon that the user has chosen to save
                         <ul>
-                            <li>Set by the user after choosing to save or remove a Pokemon from their SavedPokemon list, subject to change.</li>
+                            <li>Set by the user after choosing to save or remove a Pokémon from their SavedPokémon list, subject to change.</li>
                         </ul>
                     </li>
                 </ul>
@@ -105,35 +105,35 @@
                     </p>
                     <li>Home:</li>
                     <p class="Tab-over">
-                        <i>What:</i> It will present the user with four options that they can be directed to: the search option, saved Pokemon, saved teams, and comparisons.
+                        <i>What:</i> It will present the user with four options that they can be directed to: the search option, saved Pokémon, saved teams, and comparisons.
                         <br><br>
                         <i>How:</i> The object should have four buttons, corresponding to each of the above options, that the user can click.
                     </p>
 
                     <li>Search:</li>
                     <p class="Tab-over">
-                        <i>What:</i> The user must input the name of a Pokemon that they want to search. The Pokemon that matches the search will be presented to the user and the user will be prompted to view this Pokemon or search again. However, if the Pokemon is not found, the search will return none and prompt an error message - “There is no matching result”.
+                        <i>What:</i> The user must input the name of a Pokémon that they want to search. The Pokémon that matches the search will be presented to the user and the user will be prompted to view this Pokémon or search again. However, if the Pokémon is not found, the search will return none and prompt an error message - “There is no matching result”.
                         <br><br>
                         <i>How:</i> The user will type in the information.
                     </p>
 
                     <li>Profile:</li>
                     <p class="Tab-over">
-                        <i>What:</i> The profile boundary object presents the user with all of the statistics in the Pokemon entity object (Name, HP, Attack, Defense, Special Attack, Special Defense, Speed, Evolve Level, Location(s), Type) and a photo of the Pokemon.
+                        <i>What:</i> The profile boundary object presents the user with all of the statistics in the Pokémon entity object (Name, HP, Attack, Defense, Special Attack, Special Defense, Speed, Evolve Level, Location(s), Type) and a photo of the Pokémon.
                         <br><br>
                         <i>How:</i> A table of the statistics and a photo above it.
                     </p>
 
-                    <li>Saved Pokemon:</li>
+                    <li>Saved Pokémon:</li>
                     <p class="Tab-over">
-                        <i>What:</i> A list of the Pokemon that the user has chosen to save or favorite for future quick lookup.
+                        <i>What:</i> A list of the Pokémon that the user has chosen to save or favorite for future quick lookup.
                         <br><br>
-                        <i>How:</i> A list of the names of the Pokemon, sorted alphabetically.
+                        <i>How:</i> A list of the names of the Pokémon, sorted alphabetically.
                     </p>
 
                     <li>Comparison:</li>
                     <p class="Tab-over">
-                        <i>What:</i> The user must input which two Pokemon will be compared and then the user is presented with statistics (Name, HP, Attack, Defense, Special Attack, Special Defense, Speed, Evolve Level, Location(s), Type) from two Pokemon and their photos respectively. Should the user input two of the same Pokemon, they will receive a warning/error message stating that “The two Pokemon are the same,” and the program will only display one copy of the data.
+                        <i>What:</i> The user must input which two Pokémon will be compared and then the user is presented with statistics (Name, HP, Attack, Defense, Special Attack, Special Defense, Speed, Evolve Level, Location(s), Type) from two Pokémon and their photos respectively. Should the user input two of the same Pokémon, they will receive a warning/error message stating that “The two Pokémon are the same,” and the program will only display one copy of the data.
                         <br><br>
                         <i>How:</i> In a table, similar to the Profile object.
                     </p>
@@ -147,7 +147,7 @@
 
                     <li>Team:</li>
                     <p class="Tab-over">
-                        <i>What:</i> Presents the user with the information on a team, including a team name and Pokemon in the team. The user can input Pokemon that they would like to place on the team in an empty slot or to replace a team member. However, each team is only allowed to input up to six Pokemon, any member who attempts to input more than 6 pokemon will be prompted with an error message- “You’ve reached the maximum limit of Pokemon in a team, this Pokemon cannot be added.”
+                        <i>What:</i> Presents the user with the information on a team, including a team name and Pokémon in the team. The user can input Pokémon that they would like to place on the team in an empty slot or to replace a team member. However, each team is only allowed to input up to six Pokémon, any member who attempts to input more than 6 Pokémon will be prompted with an error message- “You’ve reached the maximum limit of Pokémon in a team, this Pokémon cannot be added.”
                         <br><br>
                         <i>How:</i> The user will be able to click on slots and choose from a list. The slots will be presented to the user with six slots organized into two rows.
                     </p>
@@ -167,18 +167,17 @@
         </p>
         <ol type="1">
             <li>Login Account: determine if the credentials entered by the user are correct (i.e. that they match to a saved user). If it is correct, it will allow the user entry to the website.</li><br>
-            <li>Search: use the name entered by the user to find the Pokemon that matches it.</li><br>
-            <li>Create Team: creates a team for the user by saving the name and Pokemon selected (as determined by the user).</li><br>
+            <li>Search: use the name entered by the user to find the Pokémon that matches it.</li><br>
+            <li>Create Team: creates a team for the user by saving the name and Pokémon selected (as determined by the user).</li><br>
             <li>Retrieve Team: retrieves the saved team(s) from the database for viewing and modification by the user.</li><br>
             <li>Display Team: displays a team</li><br>
-            <li>Save Pokemon: saves the selected Pokemon into the ‘Saved Pokemon’ list</li><br>
-            <li>Retrieve Pokemon: retrieves a Pokemon from the database</li><br>
-            <li>Display Pokemon: displays a Pokemon</li><br>
-            <li>Compare: display two Pokemon for comparison</li><br>
+            <li>Save Pokémon: saves the selected Pokémon into the ‘Saved Pokémon’ list</li><br>
+            <li>Retrieve Pokémon: retrieves a Pokémon from the database</li><br>
+            <li>Display Pokémon: displays a Pokémon</li><br>
+            <li>Compare: display two Pokémon for comparison</li><br>
 
         </ol>
 
-        
         <h2><b><u>User Associated Diagram</u></b></h2>
         <p>
             <!-- INSERT DESCRIPTION IF NEEDED UNDERNEATH THIS LINE-->
@@ -186,11 +185,11 @@
         <img src="img/User.png" alt="User">
 
         <br><br>
-        <h2><b><u>Pokemon Associated Diagram</u></b></h2>
+        <h2><b><u>Pokémon Associated Diagram</u></b></h2>
         <p>
             <!-- INSERT DESCRIPTION IF NEEDED UNDERNEATH THIS LINE-->
         </p>
-        <img src="img/Pokemon.png" alt="User">
+        <img src="img/Pokémon.png" alt="User">
 
         <br><br>
         <h2><b><u>Database Diagram</u></b></h2>
