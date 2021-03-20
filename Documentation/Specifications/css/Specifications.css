@@ -19,3 +19,10 @@ th{
 ol{
     text-align: left;
 }
+
+body{
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    background-color: #e4e4e4;
+}
