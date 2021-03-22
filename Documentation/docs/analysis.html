@@ -2,80 +2,57 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
-  <title>Analysis | Team Rocket Project</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
+  <title>Analysis | Team Rocket</title> <!-- Bootstrap core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Custom styles for this template -->
   <link href="/css/scrolling-nav.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="/">Team Rocket Project</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="container"> <a class="navbar-brand js-scroll-trigger" href="/">Team Rocket</a> <button
+        class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span
+          class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/docs/specifications.html">Specifications</a>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger"
+              href="/docs/specifications.html">Specifications</a> </li>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="/docs/spmp.html">SPMP</a> </li>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="/docs/requirements.html">Requirements</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/docs/spmp.html">SPMP</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/docs/requirements.html">Requirements</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/docs/analysis.html">Analysis</a>
-          </li>
-
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="/docs/analysis.html">Analysis</a> </li>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="/docs/design.html">Design</a> </li>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="/docs/sqa.html">SQA</a> </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger"
               href="https://github.com/IanR9532/Team-Rocket">GitHub</a> </li>
         </ul>
       </div>
     </div>
   </nav>
-
   <header class="bg-primary text-white">
     <div class="container text-center">
-      <h1>Welcome to Scrolling Nav</h1>
-      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+      <h1>Analysis</h1>
+      <p class="lead"><a href="#Version_0.3" style="color: rgb(255, 255, 255)">#Version 0.3 - 2021-03-21</a></p>
     </div>
   </header>
-
   <section id="main">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <div id="1_entity_objects">
-            <a id="1" class="anchor"></a>
+          <div> <a id="Entity_Objects" class="anchor"></a>
             <h2>Entity Objects</h2>
-            <p>
-              There are two primary entity objects identified using noun-extraction. The project will store information
-              about ‘first generation’ Pokémon and any teams created by the user
-            </p>
+            <p> There are two primary entity objects identified using noun-extraction. The project will store
+              information about ‘first generation’ Pokémon and any teams created by the user </p>
             <ol type="1">
-              <li>
-                <b>Pokémon: </b>the entity object that stores information about each Pokémon. It will allow Pokémon to
-                be added
-                to teams, to enable the user to easily see information about the Pokémon in one place, and to allow
-                comparison between two Pokémon species. All attributes are set when entered into the database and
-                immutable (unless changed at an administrative level inside the database).
-              </li><br />
+              <li> <b>Pokémon: </b>the entity object that stores information about each Pokémon. It will allow Pokémon
+                to be added to teams, to enable the user to easily see information about the Pokémon in one place, and
+                to allow comparison between two Pokémon species. All attributes are set when entered into the database
+                and immutable (unless changed at an administrative level inside the database). </li><br />
               <table class="table table-hover">
                 <thead>
                   <tr>
@@ -123,15 +100,13 @@
                   <tr>
                     <td>Evolve Level</td>
                     <td>integer</td>
-                    <td>the level at which the Pokémon evolves into a different Pokémon
-                      (the
-                      value is NULL if it does not have an evolve level)</td>
+                    <td>the level at which the Pokémon evolves into a different Pokémon (the value is NULL if it does
+                      not have an evolve level)</td>
                   </tr>
                   <tr>
                     <td>Location(s)</td>
                     <td>string</td>
-                    <td>the location or locations where the Pokémon can be found in the
-                      game</td>
+                    <td>the location or locations where the Pokémon can be found in the game</td>
                   </tr>
                   <tr>
                     <td>Type</td>
@@ -141,24 +116,17 @@
                   <tr>
                     <td>Effectiveness</td>
                     <td>array</td>
-                    <td>an array of all the strengths and weaknesses of a particular
-                      Pokémon when
-                      fetched from the database.</td>
+                    <td>an array of all the strengths and weaknesses of a particular Pokémon when fetched from the
+                      database.</td>
                   </tr>
                 </tbody>
               </table>
-              <p>
-                <em>*Each Pokémon species has a base level of HP, Attack, Defense, Sp. Attack, Sp. Defense, and Speed
-                  regardless of the moves they have and level that they are.</em>
-              </p>
-              <br>
-              <li>
-                <b>Team: </b>the entity object that stores information about a Pokémon team (of max 6 Pokémon to match
-                the
-                in-game team size) that has been created. It enables the user to retrieve teams that they have created
-                and saved earlier and then to make changes to them. All attributes in the team entity project are set
-                when the user saves the team that has been created.
-              </li><br />
+              <p> <em>*Each Pokémon species has a base level of HP, Attack, Defense, Sp. Attack, Sp. Defense, and Speed
+                  regardless of the moves they have and level that they are.</em> </p> <br>
+              <li> <b>Team: </b>the entity object that stores information about a Pokémon team (of max 6 Pokémon to
+                match the in-game team size) that has been created. It enables the user to retrieve teams that they have
+                created and saved earlier and then to make changes to them. All attributes in the team entity project
+                are set when the user saves the team that has been created. </li><br />
               <table class="table table-hover">
                 <thead>
                   <tr>
@@ -188,16 +156,11 @@
                     <td>integer</td>
                     <td>the number of members out of 6</td>
                   </tr>
-
                 </tbody>
-              </table>
-              <br>
-              <li>
-                <b>User: </b>the profile for the user that tracks their information. Is created by the user when they
-                sign up
-                to use the web application. Information is updated by them at their convenience (except their user ID
-                which will not change).
-              </li><br />
+              </table> <br>
+              <li> <b>User: </b>the profile for the user that tracks their information. Is created by the user when they
+                sign up to use the web application. Information is updated by them at their convenience (except their
+                user ID which will not change). </li><br />
               <table class="table table-hover">
                 <thead>
                   <tr>
@@ -229,140 +192,97 @@
                   <tr>
                     <td>SavedTeams</td>
                     <td>list of Team entity objects</td>
-                    <td>he teams that the user has created and saved
-                      (up to
-                      three)</td>
+                    <td>he teams that the user has created and saved (up to three)</td>
                     <td>Set by the user during team creation or deletion, subject to change</td>
                   </tr>
                   <tr>
                     <td>SavedPokémon</td>
                     <td>list of Pokémon entity objects</td>
                     <td>Pokémon that the user has chosen to save</td>
-                    <td>Set by the user after choosing to save or remove a Pokémon from their SavedPokémon list,
-                      subject to change</td>
+                    <td>Set by the user after choosing to save or remove a Pokémon from their SavedPokémon list, subject
+                      to change</td>
                   </tr>
                 </tbody>
               </table>
             </ol>
           </div>
-
           <div id="divide_1">
             <hr>
           </div>
-
-          <div id="2_boundary_objects">
-            <a id="2" class="anchor"></a>
+          <div> <a id="Boundary_Objects" class="anchor"></a>
             <h2>Boundary Objects</h2>
-            <p>
-              Each boundary option has two sections to it. What details the information that the object must be input by
-              the user and/or the information that will be presented to the user. How is a broad explanation on how the
-              information will be presented and/or the action required from the user to obtain the information
-              necessary.
-            </p>
+            <p> Each boundary option has two sections to it. What details the information that the object must be input
+              by the user and/or the information that will be presented to the user. How is a broad explanation on how
+              the information will be presented and/or the action required from the user to obtain the information
+              necessary. </p>
             <ol type="1">
               <li>Log-in:</li>
-              <p class="Tab-over">
-                <i>What:</i> The log-in menu will be used to record the user credentials and to identify the particular
-                user. It will require two pieces of information from the user: the user ID and the password. If the
-                credentials provided are not associated with a recorded user, an error message should pop up and ask for
-                different credentials. Additionally, if the user forgets log-in password, the web page will direct the
-                user to the help centre, where the user can reset the password through texts or emails.
-                <br><br>
-                <i>How:</i> The user will type in the information. The error message and help centre will be a separate
-                window.
-              </p>
+              <p class="Tab-over"> <i>What:</i> The log-in menu will be used to record the user credentials and to
+                identify the particular user. It will require two pieces of information from the user: the user ID and
+                the password. If the credentials provided are not associated with a recorded user, an error message
+                should pop up and ask for different credentials. Additionally, if the user forgets log-in password, the
+                web page will direct the user to the help centre, where the user can reset the password through texts or
+                emails. <br><br> <i>How:</i> The user will type in the information. The error message and help centre
+                will be a separate window. </p>
               <li>Registration:</li>
-              <p class="Tab-over">
-                <i>What:</i> Presents the user with an option to register a new account. When a user attempts to create
-                an account that already exists (based on the email being used), an error message will be displayed to
-                indicate the registration failure. Another error message will be displayed if the information provided
-                does not satisfy the requirements (e.g. username minimum/maximum lengths, etc.).
-                <br><br>
-                <i>How:</i> The user will type in information. The error message(s) will pop up in a separate window.
-              </p>
+              <p class="Tab-over"> <i>What:</i> Presents the user with an option to register a new account. When a user
+                attempts to create an account that already exists (based on the email being used), an error message will
+                be displayed to indicate the registration failure. Another error message will be displayed if the
+                information provided does not satisfy the requirements (e.g. username minimum/maximum lengths, etc.).
+                <br><br> <i>How:</i> The user will type in information. The error message(s) will pop up in a separate
+                window. </p>
               <li>Home:</li>
-              <p class="Tab-over">
-                <i>What:</i> It will present the user with four options that they can be directed to: the search option,
-                saved Pokémon, saved teams, and comparisons.
-                <br><br>
-                <i>How:</i> The object should have four buttons, corresponding to each of the above options, that the
-                user can click.
-              </p>
-
+              <p class="Tab-over"> <i>What:</i> It will present the user with four options that they can be directed to:
+                the search option, saved Pokémon, saved teams, and comparisons. <br><br> <i>How:</i> The object should
+                have four buttons, corresponding to each of the above options, that the user can click. </p>
               <li>Search:</li>
-              <p class="Tab-over">
-                <i>What:</i> The user must input the name of a Pokémon that they want to search. The Pokémon that
-                matches the search will be presented to the user and the user will be prompted to view this Pokémon or
-                search again. However, if the Pokémon is not found, the search will return none and prompt an error
-                message - “There is no matching result”.
-                <br><br>
-                <i>How:</i> The user will type in the information.
-              </p>
-
+              <p class="Tab-over"> <i>What:</i> The user must input the name of a Pokémon that they want to search. The
+                Pokémon that matches the search will be presented to the user and the user will be prompted to view this
+                Pokémon or search again. However, if the Pokémon is not found, the search will return none and prompt an
+                error message - “There is no matching result”. <br><br> <i>How:</i> The user will type in the
+                information. </p>
               <li>Profile:</li>
-              <p class="Tab-over">
-                <i>What:</i> The profile boundary object presents the user with all of the statistics in the Pokémon
-                entity object (Name, HP, Attack, Defense, Special Attack, Special Defense, Speed, Evolve Level,
-                Location(s), Type) and a photo of the Pokémon.
-                <br><br>
-                <i>How:</i> A table of the statistics and a photo above it.
-              </p>
-
+              <p class="Tab-over"> <i>What:</i> The profile boundary object presents the user with all of the statistics
+                in the Pokémon entity object (Name, HP, Attack, Defense, Special Attack, Special Defense, Speed, Evolve
+                Level, Location(s), Type) and a photo of the Pokémon. <br><br> <i>How:</i> A table of the statistics and
+                a photo above it. </p>
               <li>Saved Pokémon:</li>
-              <p class="Tab-over">
-                <i>What:</i> A list of the Pokémon that the user has chosen to save or favorite for future quick lookup.
-                <br><br>
-                <i>How:</i> A list of the names of the Pokémon, sorted alphabetically.
+              <p class="Tab-over"> <i>What:</i> A list of the Pokémon that the user has chosen to save or favorite for
+                future quick lookup. <br><br> <i>How:</i> A list of the names of the Pokémon, sorted alphabetically.
               </p>
-
               <li>Comparison:</li>
-              <p class="Tab-over">
-                <i>What:</i> The user must input which two Pokémon will be compared and then the user is presented with
-                statistics (Name, HP, Attack, Defense, Special Attack, Special Defense, Speed, Evolve Level,
-                Location(s), Type) from two Pokémon and their photos respectively. Should the user input two of the same
-                Pokémon, they will receive a warning/error message stating that “The two Pokémon are the same,” and the
-                program will only display one copy of the data.
-                <br><br>
-                <i>How:</i> In a table, similar to the Profile object.
-              </p>
-
+              <p class="Tab-over"> <i>What:</i> The user must input which two Pokémon will be compared and then the user
+                is presented with statistics (Name, HP, Attack, Defense, Special Attack, Special Defense, Speed, Evolve
+                Level, Location(s), Type) from two Pokémon and their photos respectively. Should the user input two of
+                the same Pokémon, they will receive a warning/error message stating that “The two Pokémon are the same,”
+                and the program will only display one copy of the data. <br><br> <i>How:</i> In a table, similar to the
+                Profile object. </p>
               <li>Teams:</li>
-              <p class="Tab-over">
-                <i>What:</i> Allows users to create teams and presents the user with a list of teams, up to three, that
-                they have created. Users are not able to create more than three teams and if they try to, an error
-                message will pop up to inform them that three teams at maximum is the rule.
-                <br><br>
-                <i>How:</i> A list of the names of the teams, sorted alphabetically.
-              </p>
-
+              <p class="Tab-over"> <i>What:</i> Allows users to create teams and presents the user with a list of teams,
+                up to three, that they have created. Users are not able to create more than three teams and if they try
+                to, an error message will pop up to inform them that three teams at maximum is the rule. <br><br>
+                <i>How:</i> A list of the names of the teams, sorted alphabetically. </p>
               <li>Team:</li>
-              <p class="Tab-over">
-                <i>What:</i> Presents the user with the information on a team, including a team name and Pokémon in the
-                team. The user can input Pokémon that they would like to place on the team in an empty slot or to
-                replace a team member. However, each team is only allowed to input up to six Pokémon, any member who
-                attempts to input more than 6 Pokémon will be prompted with an error message- “You’ve reached the
-                maximum limit of Pokémon in a team, this Pokémon cannot be added.”
-                <br><br>
-                <i>How:</i> The user will be able to click on slots and choose from a list. The slots will be presented
-                to the user with six slots organized into two rows.
-              </p>
-
+              <p class="Tab-over"> <i>What:</i> Presents the user with the information on a team, including a team name
+                and Pokémon in the team. The user can input Pokémon that they would like to place on the team in an
+                empty slot or to replace a team member. However, each team is only allowed to input up to six Pokémon,
+                any member who attempts to input more than 6 Pokémon will be prompted with an error message- “You’ve
+                reached the maximum limit of Pokémon in a team, this Pokémon cannot be added.” <br><br> <i>How:</i> The
+                user will be able to click on slots and choose from a list. The slots will be presented to the user with
+                six slots organized into two rows. </p>
               <li>Header:</li>
-              <p class="Tab-over">
-                <i>What:</i> Presents the user with the title of the project (“Pokedex”) and the name of the current
-                webpage. It enables the user to return to the Homepage.
-                <br><br>
-                <i>How:</i> The user can press a button to return to the homepage.
-              </p>
-
+              <p class="Tab-over"> <i>What:</i> Presents the user with the title of the project (“Pokedex”) and the name
+                of the current webpage. It enables the user to return to the Homepage. <br><br> <i>How:</i> The user can
+                press a button to return to the homepage. </p>
             </ol>
           </div>
-          <div>
+          <div id="divide_1">
+            <hr>
+          </div>
+          <div> <a id="Control_Objects" class="anchor"></a>
             <h2>Control Objects</h2>
-            <p>
-              The following control objects were determined based on verb extraction. The following descriptions detail
-              what actions the control objects will take.
-            </p>
+            <p> The following control objects were determined based on verb extraction. The following descriptions
+              detail what actions the control objects will take. </p>
             <ol type="1">
               <li>Login Account: determine if the credentials entered by the user are correct (i.e. that they match to a
                 saved user). If it is correct, it will allow the user entry to the website.</li><br>
@@ -376,106 +296,81 @@
               <li>Retrieve Pokémon: retrieves a Pokémon from the database</li><br>
               <li>Display Pokémon: displays a Pokémon</li><br>
               <li>Compare: display two Pokémon for comparison</li><br>
-
             </ol>
-
+          </div>
+          <div> <a id="User_Associated_Diagram" class="anchor"></a>
             <h2>User Associated Diagram</h2>
             <p>
               <!-- INSERT DESCRIPTION IF NEEDED UNDERNEATH THIS LINE-->
             </p>
-            <center>
-              <img src="/img/analysis/user.png" class="img-responsive" alt="User Process Diagram">
-            </center>
-
-            <br><br>
+            <center> <img src="/img/analysis/user.png" class="img-responsive" alt="User Process Diagram"> </center>
+          </div>
+          <div> <a id="Pokémon_Associated_Diagram" class="anchor"></a>
             <h2>Pokémon Associated Diagram</h2>
             <p>
               <!-- INSERT DESCRIPTION IF NEEDED UNDERNEATH THIS LINE-->
             </p>
-            <center>
-              <img src="/img/analysis/pokemon.png" class="img-responsive" alt="Pokémon Structure Diagram">
+            <center> <img src="/img/analysis/pokemon.png" class="img-responsive" alt="Pokémon Associated Diagram">
             </center>
-
-            <br><br>
+          </div>
+          <div> <a id="Database_Diagram" class="anchor"></a>
             <h2>Database Diagram</h2>
             <p>
               <!-- INSERT DESCRIPTION IF NEEDED UNDERNEATH THIS LINE-->
             </p>
-            <center>
-              <img src="/img/analysis/database.png" class="img-responsive" alt="Database Structure Diagram">
-            </center>
-
+            <center> <img src="/img/analysis/database.png" class="img-responsive" alt="Database Diagram"> </center>
           </div>
-          <div>
-            <h2><span>Versions</span></h2><br />
-            <h5><span>
-                Version 0.1 - 2021-03-04</span></h5>
-            <ul>
-              <li>Document created and presented information</li>
-              <ul>
-                <li><em>Sunil Brijlall, Lingjie Chen, Graeme Kempf, Andrei Pana, Alina Penskaya, Ian Roberts</em></li>
-              </ul>
-            </ul>
-            <h5><span>
-                Version 0.2 - 2021-03-20</span></h5>
-            <ul>
-              <li>Changed how dates are displayed for easy understanding from MM/DD/YYYY to the ISO 8601 date standard
-                YYYY-MM-DD</li>
-              <li>Now called Pokémon Encyclopedia because it did not make sense to be an encyclopedia of a Pokédex, when
-                it's
-                suppose to be about Pokémon</li>
-              <li>Proof-read grammatical errors</li>
-              <ul>
-                <li><em>Kevin He</em></li>
-              </ul>
-            </ul>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           <div id="divide_1">
             <hr>
           </div>
-
+          <div> <a id="Version" class="anchor"></a>
+            <h2><span>Versions</span></h2><br />
+            <div> <a id="Version_0.3" class="anchor"></a>
+              <h5><span> Version 0.3 - 2021-03-21</span></h5>
+              <ul>
+                <li>HTML and CSS upgrade for modernization and greater visibility</li>
+                <ul>
+                  <li><em>Kevin He</em></li>
+                </ul>
+              </ul>
+            </div>
+            <div> <a id="Version_0.2" class="anchor"></a>
+              <h5><span> Version 0.2 - 2021-03-20</span></h5>
+              <ul>
+                <li>Changed how dates are displayed for easy understanding from MM/DD/YYYY to the ISO 8601 date standard
+                  YYYY-MM-DD</li>
+                <li>Now called Pokémon Encyclopedia because it did not make sense to be an encyclopedia of a Pokédex,
+                  when it's suppose to be about Pokémon</li>
+                <li>Proof-read grammatical errors</li>
+                <ul>
+                  <li><em>Kevin He</em></li>
+                </ul>
+              </ul>
+            </div>
+            <div> <a id="Version_0.1" class="anchor"></a>
+              <h5><span> Version 0.1 - 2021-03-04</span></h5>
+              <ul>
+                <li>Document created and presented information</li>
+                <ul>
+                  <li><em>Sunil Brijlall, Jessica Chen, Graeme Kempf, Andrei Pana, Alina Penskaya, Ian Roberts</em></li>
+                </ul>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-
-  <!-- Footer -->
+    </div>
+  </section> <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-
-  <!-- Bootstrap core JavaScript -->
+      <p class="m-0 text-center text-white">Team Rocket Project</p>
+    </div> <!-- /.container -->
+  </footer> <!-- Bootstrap core JavaScript -->
   <script src="/vendor/jquery/jquery.min.js"></script>
-  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom JavaScript for this theme -->
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Plugin JavaScript -->
+  <script src="/vendor/jquery-easing/jquery.easing.min.js"></script> <!-- Custom JavaScript for this theme -->
   <script src="/js/scrolling-nav.js"></script>
-
-
-
 </body>
 
 </html>
