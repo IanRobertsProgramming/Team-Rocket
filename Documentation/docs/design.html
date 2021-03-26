@@ -45,21 +45,399 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Design</h1>
-      <p class="lead"><a href="#Version_0.1" style="color: rgb(255, 255, 255)">#Version 0.1 - Pending</a></p>
+      <p class="lead"><a href="#Version_0.1" style="color: rgb(255, 255, 255)">#Version 0.1 - 2021-03-25</a></p>
     </div>
   </header>
   <section id="main">
     <div class="container">
       <div class="row">
+
+        <div class="col-sm-2">
+          <nav id="toc" data-toggle="toc" class="sticky-top">
+            <h5>Table of contents</h5>
+            <ul class="nav-toc">
+              <li><a href="#1-introduction">1 Introduction</a></li>
+              <li><a href="#2-references">2 References</a></li>
+              <li><a href="#3-definitions">3 Definitions</a></li>
+              <li><a href="#4-project-organization">4 Project Organization</a></li>
+              <li><a href="#5-managerial-process-plans">5 Managerial Process Plans</a></li> 
+              <li><a href="#6-technical-process-plans">6 Technical Process Plans</a></li> 
+              <li><a href="#7-supporting-process-plans">7 Supporting Process Plans</a></li> 
+              <li><a href="#8-additional-plans">8 Additional Plans</a></li> 
+              <li><a href="#9-versions">9 Versions</a></li> 
+            </ul>
+          </nav>
+        </div>
+
         <div class="col-lg-8 mx-auto">
           <center>
             <h2>Page Pending</h2>
 
-            <div id="content">
-              <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FyYwx8SzIexdHHCrj0468OP%2FCP317-Pokedex-prototype" allowfullscreen></iframe>
-            </div>
+
             
           </center>
+
+          
+          <div id="1"> <a id="1-introduction" class="anchor"></a>
+            <h2><span>1 Introduction</span></h2>
+            <p>The Pokémon Encyclopedia will provide fans of Pokémon and Pokémon players all around the world with a comprehensive
+              database of relevant information on Pokémon which will allow them to make educated decisions on how they would like
+              to play the game.</p>
+            <div><a id="1.1-purpose" class="anchor"></a>
+              <h4><span>1.1 Purpose</span></h4>
+              <p>This design document will describe the architecture, functions, design, software interfaces and features of the
+                Pokédex Encyclopedia. </p>
+            </div>
+            <div><a id="1.2-scope" class="anchor"></a>
+              <h4><span>1.2 Scope</span></h4>
+              <p>The intended audience of this document will be the developers of the Pokémon Encyclopedia website. This document
+                will
+                be easy to use and learn to help reduce the amount of time which is required to edit the website.</p>
+            </div>
+            <div><a id="1.3-definitions" class="anchor"></a>
+              <h4><span>1.3 Definitions</span></h4>
+              <p></p>
+            </div>
+            <div><a id="1.4-references" class="anchor"></a>
+              <h4><span>1.4 References</span></h4>
+              <ul>
+                <li>SPMP, Requirements, Specification, Analysis document for Pokémon Encyclopedia<br>
+                  <a href="https://hopper.wlu.ca/rocket/docs/spmp.html">https://hopper.wlu.ca/rocket/docs/spmp.html</a><br/>
+                  <a href="https://hopper.wlu.ca/rocket/docs/requirements.html">https://hopper.wlu.ca/rocket/docs/requirements.html</a><br/>
+                  <a href="https://hopper.wlu.ca/rocket/docs/specifications.html">https://hopper.wlu.ca/rocket/docs/specifications.html</a><br/>
+                  <a href="https://hopper.wlu.ca/rocket/docs/analysis.html">https://hopper.wlu.ca/rocket/docs/analysis.html</a>
+                </li> <br>
+                <li>IEEE. IEEE Std 1016-1998 IEEE Recommended Practice for Software Design Descriptions. IEEE Computer Society, 1998<br> <a
+                    href="https://bohr.wlu.ca/cp317/shout/design-master/">https://bohr.wlu.ca/cp317/shout/design-master/</a>
+                </li>
+              </ul>
+            </div>
+            <div><a id="1.5-overview" class="anchor"></a>
+              <h4><span>1.5 Overview</span></h4>
+              <p>This document is written following the guidelines of the IEEE Recommended Practice for Software Design Descriptions.
+                This document includes/outlines the module, process, and data dependencies, as well as their detailed design and
+                decomposition. </p>
+              </div>
+
+
+
+
+          </div>
+          <div id="divide_1">
+            <hr>
+          </div>
+          <div id="2"> <a id="2-planned-implementation" class="anchor"></a>
+            <h2><span>2 Planned Implementation</span></h2><br/>
+            <div>
+              <h4>2.1 Previously Planned Language</h4>
+              <ul>
+                <p><b>Front-end:</b> HTML, CSS</p>
+                <p><b>Back-end:</b> Python, SQL</p>
+              </ul><br/>
+              <ul>
+                <h5>2.1.1 Updated Choice of Language</h5>
+                <ul>
+                  <p><b>Front-end:</b> HTML, CSS, Bootstrap</p>
+                  <p><b>Back-end:</b> Python, SQL, Javascript, PHP</p>
+                </ul>
+                <p><b>Bootstrap:</b> Pokémon encyclopedia is a web-based application and in addition to HTML and CSS, Bootstrap is also
+                  used for the
+                  front-end development to offer an interactive application. The design team decided to add Bootstrap as one of the
+                  front-end languages, since it provides a great grid system and it cooperates well with HTML and CSS. Bootstrap is used
+                  to extend functionality of the Pokémon encyclopedia website, as it is a highly customizable language. If there is a
+                  demand for certain features, website developers can write code in Bootstrap and implement it on the web page with a
+                  third party add-on. </p>
+                <p><b>JavaScript:</b> In terms of the implementation of the Pokémon encyclopedia app, using JavaScript would be helpful
+                  for real-time applications, as JavaScript is an event-based language with asynchronous nature. Hence, it is a good
+                  choice for the Pokémon encyclopedia app, which requires constantly updated data.</p>
+
+                <p><b>PHP:</b>
+                  PHP is the top choice of language for the back-end implementation, since it is widely used to fetch data out of the
+                  database. This feature would provide users an ease of use experience, when they select their ideal Pokémon out of the
+                  comprehensive Pokémon encyclopedia database. Another advantage of using PHP is it allows direct output to HTML,
+                  therefore whenever there is a modification or deletion to the database, the webpage is updated correspondingly and
+                  spontaneously. PHP is free to download and supports a wide range of databases, overall, it is the best tool for the
+                  Pokémon encyclopedia application.
+                </p>
+                </ul>
+
+            </div>
+            <div>
+              <h4><span>2.2 Resources Referenced</span></h4>
+            </div>
+            <div>
+              <h4><span>2.3 Development Team</span></h4>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Task</th>
+                    <th>Members</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Core</th>
+                    <td>Jessica Chen | Kevin He | Prit Patel | Alina Penskaya | Ian Roberts</td>
+                  </tr>
+                  <tr>
+                    <th>Document</th>
+                    <td>Jessica Chen | Kevin He | Andrei Pana | Prit Patel | Alina Penskaya | Ian Roberts</td>
+                  </tr>
+                  <tr>
+                    <th>GUI</th>
+                    <td>Sunil Brijlall | Jessica Chen | Prit Patel | Alina Penskaya | Priya Shukla</td>
+                  </tr>
+                  <tr>
+                    <th>Class Diagrams</th>
+                    <td>Sunil Brijlall | Graeme Kempf</td>
+                  </tr>
+                  <tr>
+                    <th>Web-app Implementation</th>
+                    <td>Sunil Brijlall | Kevin He | Andrei Pana</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h4><span>2.4 Integration</span></h4>
+            </div>
+          </div>
+
+          <div id="divide_1">
+            <hr>
+          </div>
+          
+          <div id="3"> <a id="3-decomposition-description" class="anchor"></a>
+            <h2><span>3 Decomposition Description</span></h2><br/>
+            <div>
+              <h4><span>3.1 Module Decomposition</span></h4>
+              <ul>
+                <h5><span>3.1.1 Framework Package Interactions</span></h5>
+                <h5><span>3.1.2 Model Class Diagram</span></h5>
+              </ul>
+            </div>
+          </div>
+
+          <div id="divide_1">
+            <hr>
+          </div>
+
+          <div id="4"> <a id="4-interface-descriptions" class="anchor"></a>
+            <h2><span>4 Interface Descriptions</span></h2><br/>
+            <div>
+              <h4><span>4.1 Colour Guidelines</span></h4>
+              <p>
+                To maintain the Pokémon theme, we have created a standard color palette that will be used across the entire website.
+                This was done to facilitate a sense of unity and harmony across the entire website while upholding the Pokémon theme.
+                We first did some research on the official Pokémon color scheme. The main color scheme had very bold and intense
+                colors, so we had to tweak them a little bit for them to be more appealing and less harsh on the eye when viewing on a
+                screen.
+              </p>
+
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Colour</th>
+                    <th>Usage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="background-color: #245FF8;">#245FF8</td>
+                    <td><ul><li>Titles and various text</li></ul></td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: #76AFF1;">#76AFF1</td>
+                    <td>
+                      <ul>
+                        <li>Backgrounds</li>
+                        <li>Buttons</li>
+                        <li>Highlighting of selected items</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: #FCEE6F;">#FCEE6F</td>
+                    <td>
+                      <ul>
+                        <li>Backgrounds</li>
+                        <li>Buttons (mostly on sign-in and reset password panels)</li>
+                        <li>Highlighting of selected sections</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: #F6B178;">#F6B178</td>
+                    <td>
+                      <ul>
+                        <li>Backgrounds in Notification Settings</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: #FF0000;">#FF0000</td>
+                    <td>
+                      <ul>
+                        <li>Text on Main Login page</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: #FFFFFF;">#FFFFFF</td>
+                    <td>
+                      <ul>
+                        <li>Backgrounds </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: #C4C4C4;">#C4C4C4</td>
+                    <td>
+                      <ul>
+                        <li>Backgrounds</li>
+                        <li>Buttons</li>
+                        <li>User Input Fields</li>
+                        <li>Text</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: #000000; color: #FFFFFF;">#000000</td>
+                    <td>
+                      <ul>
+                        <li>Text and text outlines</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul>
+                <div>
+                  <h4><span>4.2 Font Guidelines</span></h4>
+                  <p>All of the panels will use the font Roboto to keep the design simple and easy to read. Using a common font also
+                    ensures that it will be supported on all browsers.</p>
+                </div>
+                <div>
+                  <h4><span>4.3 App Icons</span></h4>
+                  <p>We created two main icons, one for the main page as a logo and a simplified design for the page favicon. </p>
+                  <div style="clear: both; display: table;">
+                    <center><img style="float: left; width: 50%; padding: 5px;" src="../img/design/logo0.png" class="img-responsive" alt="Pokémon Encyclopedia Logo Variant 1">
+                      <img style="float: left; width: 50%; padding: 5px;"  src="../img/design/logo1.png" class="img-responsive" alt="Pokémon Encyclopedia Logo Variant 2">
+                    </center>
+                  </div>
+                </div>
+                <div>
+                  <!-- Requires work this whole div section-->
+                  <!--TODO-->
+                  <h4><span>4.4 Module Interface</span></h4>
+                  <div id="content">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FyYwx8SzIexdHHCrj0468OP%2FCP317-Pokedex-prototype" allowfullscreen></iframe>
+                  </div>
+                  <ul>
+                    <h5><span>4.4.1 Main Login-in View</span></h5>
+                    <img src="../img/design/placeholder.jpg" class="img-responsive" alt="Enter Email Address Interface">
+                    <h5><span>4.4.2 Registration View</span></h5>
+                    <img src="../img/design/placeholder.jpg" class="img-responsive" alt="Enter Email Address Interface">
+                    <div>
+                      <ul>
+                        <h6><span>4.4.3.1 Enter Email Address</span></h6>
+                        <img src="../img/design/placeholder.jpg" class="img-responsive" alt="Enter Email Address Interface">
+                        <h6><span>4.4.3.2 Verification Code</span></h6>
+                        <img src="../img/design/placeholder.jpg" class="img-responsive" alt="Pokémon Encyclopedia Logo Variant 1">
+                        <h6><span>4.4.3.3 New Password</span></h6>
+                        <img src="../img/design/placeholder.jpg" class="img-responsive" alt="Pokémon Encyclopedia Logo Variant 1">
+                        <h6><span>4.4.3.4 Update Successful</span></h6>
+                        <img src="../img/design/placeholder.jpg" class="img-responsive" alt="Pokémon Encyclopedia Logo Variant 1">
+                      </ul>
+                    </div>
+                    <h5><span>4.4.4 User Home View</span></h5>
+                    <img src="../img/design/placeholder.jpg" class="img-responsive" alt="Enter Email Address Interface">
+                    <h5><span>4.4.5 Search Pokemon View</span></h5>
+                    <img src="../img/design/placeholder.jpg" class="img-responsive" alt="Enter Email Address Interface">
+                    <h5><span>4.4.6 Settings Page</span></h5>
+                    <img src="../img/design/placeholder.jpg" class="img-responsive" alt="Enter Email Address Interface">
+                  </ul>
+                </div>
+              </ul>
+            </div>
+          </div>
+
+          <div id="divide_1">
+            <hr>
+          </div>
+
+          <div id="5"> <a id="5-detailed-design" class="anchor"></a>
+            <h2><span>5 Detailed Design</span></h2>
+            <p>This section will describe the module design detail. Each interface and internal function which is implemented by a
+              module or process will be described along with the steps followed to get from input to output, with the use of high
+              level pseudocode. This pseudocode will be helpful in order to translate it into actual code during the implementation
+              stage.</p>
+              <div>
+                <h4><span>5.1 Module Detailed Design</span></h4>
+                <p>
+                  In the Pokemon class, mostly all of the attributes are what describes the Pokemon. It includes: name, hp, attack,
+                  defense, special attack & defence, speed, evolve level, location, type and effectiveness. The methods will return the
+                  attributes of the Pokemon.
+                </p>
+              </div>
+          </div>
+
+          <div id="divide_1">
+            <hr>
+          </div>
+
+          <div id="6"> <a id="6-maintenance" class="anchor"></a>
+            <h2><span>6 Maintenance</span></h2><br/>
+            <div>
+              <h4><span>6.1 Corrective</span></h4>
+              <p>Pokémon encyclopedia has a “get help” feature which allows users to report any issues or bugs with respect to the
+                functionality of the app. Once the Pokémon encyclopedia’s 24/7 chat line or email receives the requests from the
+                users
+                who see a problem and corrective maintenance is done by the implementation team. After corrective actions are
+                taken,
+                the implementation team will update the website by including the solutions and fixes.</p>
+            </div>
+            <div>
+              <h4><span>6.2 Perfective</span></h4>
+              <p>Due to the time constraint, the development of the app was simplified to the basic features needed in order to
+                ensure
+                the application is executable. Throughout the perfective maintenance, the implementation team will work closely on
+                the reliability of the app and ensure that it is fully finished. Then, new functionalities and features are to be
+                consistently updated once the application is reliable and complete.</p>
+              <p>In order to perfect the app, customer surveys will be done to collect feedback on users’ experience. Any suggested
+                new capabilities or ideas will be considered by the implementation team, however the recommendations are ordered
+                based on the popularity and the top suggestions are implemented first.</p>
+              <p>
+                Some examples of features that is on the shortlist to be implemented in the application is listed below:
+                <ul>
+                  <li>Add the ability to filter the Pokémon based on evaluation </li>
+                  <li>Add different colour schemes for the theme of the app</li>
+                  <li>Add chat functions to the app for users to talk to each other</li>
+                  <li>Add a sharing viewing the Pokémon teammates have (of users who are in the same team)</li>
+                  <li>Add a combat history record of Pokémon owned</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+          <div id="divide_1">
+            <hr>
+          </div>
+
+
+          <div> <a id="version" class="anchor"></a>
+            <h2><span>Versions</span></h2><br />
+            <div> <a id="Version_0.1" class="anchor"></a>
+              <h5><span>Version 0.1 - 2021-03-25</span></h5>
+              <ul>
+                <li>Document created and presented information</li>
+                <ul>
+                  <li><em>Sunil Brijlall, Jessica Chen, Kevin He, Graeme Kempf, Andrei Pana, Prit Patel, Alina Penskaya, Ian Roberts, Priya Shukla</em></li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
