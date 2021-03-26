@@ -52,6 +52,21 @@
     <div class="container">
       <div class="row">
 
+        <div class="col-sm-2">
+          <nav id="toc" data-toggle="toc" class="sticky-top">
+            <h5>Table of contents</h5>
+            <ul class="nav-toc">
+              <li><a href="#1-introduction">1 Introduction</a></li>
+              <li><a href="#2-planned-implementation">2 Planned Implementation</a></li>
+              <li><a href="#3-decomposition-description">3 Decomposition Description</a></li>
+              <li><a href="#4-interface-descriptions">4 Interface Descriptions</a></li>
+              <li><a href="#5-detailed-design">5 Detailed Design</a></li> 
+              <li><a href="#6-maintenance">6 Maintenance</a></li> 
+              <li><a href="#7-versions">7 Versions</a></li> 
+            </ul>
+          </nav>
+        </div>
+
         <div class="col-lg-8 mx-auto">
         
           <div id="1"> <a id="1-introduction" class="anchor"></a>
@@ -219,11 +234,9 @@
               </table>
             </div>
           </div>
-        
           <div id="divide_1">
             <hr>
           </div>
-        
           <div id="3"> <a id="3-decomposition-description" class="anchor"></a>
             <h2><span>3 Decomposition Description</span></h2><br />
             <div>
@@ -242,11 +255,9 @@
               </ul>
             </div>
           </div>
-        
           <div id="divide_1">
             <hr>
           </div>
-        
           <div id="4"> <a id="4-interface-descriptions" class="anchor"></a>
             <h2><span>4 Interface Descriptions</span></h2><br />
             <div>
@@ -404,11 +415,9 @@
               </ul>
             </div>
           </div>
-        
           <div id="divide_1">
             <hr>
           </div>
-        
           <div id="5"> <a id="5-detailed-design" class="anchor"></a>
             <h2><span>5 Detailed Design</span></h2>
             <p>This section will describe the module design detail. Each interface and internal function
@@ -483,15 +492,25 @@
                   <p>On the "Search Pokemon" page, if they enter two Pokemon names and click the compare button, it will search
                     for the two Pokemon's in the database and then display both of the Pokemon's attributes/information for the
                     user to compare.</p>
+
+        
+                    <h5><span>5.1.5 Classes And The Database</span></h5>
+                    <p>The Pokemon class has many attributes. The HP, Attack, Defence, Special Attack & Defence and Speed will be stored in
+                      the base_stats of the Pokemon in the database. The ID, Name and Evolve Level will be in the section "pokemon" of the
+                      database. The type of the Pokemon will be in a lookup section called "poke_type" of the database and there will also
+                      be a section called "types" which will list the Pokemon type with the corresponding type name. The location of where
+                      the Pokemon can be found will be in another lookup section called "poke_location" and it will also have another
+                      section called "location" which would list all the possible locations with the corresponding names.</p>
+
+
+
                 </ul>
               </div>
             </div>
           </div>
-        
           <div id="divide_1">
             <hr>
           </div>
-        
           <div id="6"> <a id="6-maintenance" class="anchor"></a>
             <h2><span>6 Maintenance</span></h2><br />
             <div>
@@ -522,13 +541,10 @@
               </p>
             </div>
           </div>
-        
           <div id="divide_1">
             <hr>
           </div>
-        
-        
-          <div> <a id="version" class="anchor"></a>
+          <div> <a id="7-versions" class="anchor"></a>
             <h2><span>Versions</span></h2><br />
             <div> <a id="Version_0.1" class="anchor"></a>
               <h5><span>Version 0.1 - 2021-03-25</span></h5>
