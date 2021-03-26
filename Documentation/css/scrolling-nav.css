@@ -3,6 +3,7 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
+
 header {
   padding: 156px 0 100px;
 }
@@ -21,7 +22,7 @@ a.anchor {
 .img-responsive {
   max-width: 100%;
   height: auto;
-  display:block;
+  display: block;
 }
 
 @media (min-width: 1200px) {
@@ -30,9 +31,9 @@ a.anchor {
   }
 }
 
-
 /* Back to Top
 */
+
 #toTopBtn {
   position: fixed;
   bottom: 26px;
@@ -72,4 +73,45 @@ a.anchor {
   background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
   background-color: #54a0e8cc;
   background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+}
+
+nav[data-toggle="toc"] {
+  top: 60px;
+}
+
+/* small screens */
+
+@media (max-width: 768px) {
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle="toc"] {
+    margin-bottom: 42px;
+    position: static;
+  }
+  /* PICK ONE */
+  /* don't expand nested items, which pushes down the rest of the page when navigating */
+  nav[data-toggle="toc"] .nav .active .nav {
+    display: none;
+  }
+  /* alternatively, if you *do* want the second-level navigation to be shown (as seen on this page on mobile), use this */
+  /*
+  nav[data-toggle='toc'] .nav .nav {
+    display: block;
+  }
+  */
+}
+
+@media screen and (min-width: 768px) {
+
+  .nav-toc {
+    display: block;
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 0;
+    list-style-type: none;
+  }
 }

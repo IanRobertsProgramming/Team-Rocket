@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Software Project Management Plan | Team Rocket</title> <!-- Bootstrap core CSS -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Custom styles for this template -->
+
+  <title>Software Project Management Plan | Team Rocket</title> 
+  
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+  
+  <!-- Custom styles for this template -->
   <link href="../css/scrolling-nav.css" rel="stylesheet">
 </head>
 
-<a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
-<body id="page-top">
+<body id="page-top" data-spy="scroll" data-target="#toc">
+  <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container"> <a class="navbar-brand js-scroll-trigger" href="../index.html">Team Rocket</a> <button
@@ -38,14 +44,32 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Software Project Management Plan</h1>
-      <p class="lead"><a href="#Version_0.5" style="color: rgb(255, 255, 255)">#Version 0.5 - 2021-03-21</a></p>
+      <p class="lead"><a href="#Version_0.5" style="color: rgb(255, 255, 255)">#Version 0.5 - 2021-03-25</a></p>
     </div>
   </header>
   <section id="main">
     <div class="container">
       <div class="row">
+
+        <div class="col-sm-2">
+          <nav id="toc" data-toggle="toc" class="sticky-top">
+            <h5>Table of contents</h5>
+            <ul class="nav-toc">
+              <li><a href="#1-introduction">1 Introduction</a></li>
+              <li><a href="#2-references">2 References</a></li>
+              <li><a href="#3-definitions">3 Definitions</a></li>
+              <li><a href="#4-project-organization">4 Project Organization</a></li>
+              <li><a href="#5-managerial-process-plans">5 Managerial Process Plans</a></li> 
+              <li><a href="#6-technical-process-plans">6 Technical Process Plans</a></li> 
+              <li><a href="#7-supporting-process-plans">7 Supporting Process Plans</a></li> 
+              <li><a href="#8-additional-plans">8 Additional Plans</a></li> 
+              <li><a href="#9-versions">9 Versions</a></li> 
+            </ul>
+          </nav>
+        </div>
+
         <div class="col-lg-8 mx-auto">
-          <div id="1_introductions"> <a id="1" class="anchor"></a>
+          <div id="1"> <a id="1-introduction" class="anchor"></a>
             <h2><span>1 Introduction</span></h2>
             <p>The Pokémon Encyclopedia (“the project”, “the software”) is a third party database created for the access
               of information on generation I Pokémon. The purpose of this application is to give Pokémon players access
@@ -92,7 +116,7 @@
           <div id="divide_1">
             <hr>
           </div>
-          <div id="2_references"> <a id="2" class="anchor"></a>
+          <div id="2"> <a id="2-references" class="anchor"></a>
             <h2><span>2 References</span></h2><br />
             <ul>
               <li>IEEE. IEEE Std 830-1998 IEEE Recommended Practice for Software Requirements Specifications. IEEE
@@ -107,7 +131,7 @@
           <div id="divide_1">
             <hr> <br />
           </div>
-          <div id="3_definitions"> <a id="3" class="anchor"></a>
+          <div id="3"> <a id="3-definitions" class="anchor"></a>
             <h2><span>3 Definitions</span></h2><br />
             <div id="3_definitionss">
               <p><u><b>Move</b></u>: A move, also known as an attack is the skill Pokémon primarily use in battle.</p>
@@ -135,7 +159,7 @@
           <div id="divide_1">
             <hr> <br />
           </div>
-          <div id="4_project_org"> <a id="4" class="anchor"></a>
+          <div id="4"> <a id="4-project-organization" class="anchor"></a>
             <h2><span>4 Project Organization</span></h2><br />
             <div id="4.1_product_perspective"> <a id="4.1" class="anchor"></a>
               <h4><span>4.1 Product Perspective</span></h4>
@@ -216,8 +240,8 @@
           <div id="divide_1">
             <hr> <br />
           </div>
-          <div id="5_managerial_process_plan"> <a id="5" class="anchor"></a>
-            <h2><span>5 Managerial process plans</span></h2><br />
+          <div id="5"> <a id="5-managerial-process-plans" class="anchor"></a>
+            <h2><span>5 Managerial Process Plans</span></h2><br />
             <div id="5.1_project_start-up"> <a id="5.1" class="anchor"></a>
               <h4><span>5.1 Project start-up plan</span></h4><br />
               <ul> <a id="5.1.2" class="anchor"></a>
@@ -472,8 +496,8 @@
           <div id="divide_1">
             <hr> <br />
           </div>
-          <div id="6_technical"> <a id="6" class="anchor"></a>
-            <h2><span id="6">6 Technical process plans</span></h2><br />
+          <div id="6"> <a id="6-technical-process-plans" class="anchor"></a>
+            <h2><span id="6">6 Technical Process Plans</span></h2><br />
             <div id="6.1_process_model"> <a id="6.1" class="anchor"></a>
               <h4><span>6.1 Process model</span></h4>
               <p> The flow of information will be controlled via Discord. Each work group, assigned to a specific
@@ -562,10 +586,10 @@
           <div id="divide_1">
             <hr> <br />
           </div>
-          <div id="7_supporting_process_plan"> <a id="7" class="anchor"></a>
-            <h2><span>7 Supporting process plans</span></h2><br />
+          <div id="7"> <a id="7-supporting-process-plans" class="anchor"></a>
+            <h2><span>7 Supporting Process Plans</span></h2><br />
             <div id="7.1_verification"> <a id="7.1" class="anchor"></a>
-              <h4><span>7.1 Verification and validation plan</span></h4>
+              <h4><span>7.1 Verification and Validation Plan</span></h4>
               <p> Verification and validation is an important step for any project to go to a stable state. A stable
                 state is when a program has been tested and validated as bug free. This state is where it has
                 successfully completed specific requirements for the project.</p>
@@ -624,8 +648,8 @@
           <div id="divide_1">
             <hr> <br />
           </div>
-          <div id="8_additional_plans"> <a id="8" class="anchor"></a>
-            <h2><span>8 Additional plans</span></h2><br />
+          <div id="8"> <a id="8-additional-plans" class="anchor"></a>
+            <h2><span>8 Additional Plans</span></h2><br />
             <div id="8.1_plan_index"> <a id="8.1" class="anchor"></a>
               <h4><span>8.1 Plan index</span></h4>
               <p> <b>Generation I Pokémon</b> - the first generation of Pokémon featuring the original 151 species of
@@ -641,12 +665,13 @@
           <div id="divide_1">
             <hr> <br />
           </div>
-          <div id="9_versions"> <a id="9" class="anchor"></a>
+          <div id="9"> <a id="9-versions" class="anchor"></a>
             <h2><span>9 Versions</span></h2><br />
             <div id="9_version_0.5"> <a id="Version_0.5" class="anchor"></a>
-              <h5><span> Version 0.5 - 2021-03-21</span></h5>
+              <h5><span> Version 0.5 - 2021-03-25</span></h5>
               <ul>
-                <li>HTML and CSS upgrade for modernization and greater visibility</li>
+                <li>Upgrade to Bootstrap Framework for site</li>
+                <li>Added Table of Contents</li>
                 <ul>
                   <li><em>Kevin He</em></li>
                 </ul>
