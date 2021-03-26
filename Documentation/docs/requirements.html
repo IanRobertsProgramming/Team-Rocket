@@ -8,7 +8,6 @@
   <meta name="author" content="">
 
   <title>Requirements | Team Rocket</title>
-  <link rel="icon" href="../favicon.ico"  type="image/ico">
   
   <!-- Bootstrap core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
@@ -45,23 +44,43 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Requirements</h1>
-      <p class="lead"><a href="#Version_0.3" style="color: rgb(255, 255, 255)">#Version 0.3 - 2021-03-21</a></p>
+      <p class="lead"><a href="#Version_0.3" style="color: rgb(255, 255, 255)">#Version 0.3 - 2021-03-25</a></p>
     </div>
   </header>
   <section id="main">
     <div class="container">
       <div class="row">
+        
+        <div class="col-sm-2">
+          <nav id="toc" data-toggle="toc" class="sticky-top">
+            <h5>Table of contents</h5>
+            <ul class="nav-toc">
+              <li><a href="#use-case-diagram">Use Case Diagram</a></li>
+              <li><a href="#database-diagram">Database Diagram</a></li>
+              <li><a href="#1-introduction">1 Introduction</a></li>
+              <li><a href="#2-overall-description">2 Overall Description</a></li>
+              <li><a href="#3-requirements">3 Requirements</a></li>
+              <li><a href="#4-versions">4 Versions</a></li>
+            </ul>
+          </nav>
+        </div>
+
         <div class="col-lg-8 mx-auto">
-          <div>
+          <div id="ucd"> <a id="use-case-diagram" class="anchor"></a>
             <h2>Use Case Diagram:</h2>
             <center> <img src="../img/requirements/uml.png" class="img-responsive" alt="Use Case Diagram"> </center>
+          </div>
+          <div id="divide_1">
+            <hr>
+          </div>
+          <div id="dd"> <a id="database-diagram" class="anchor"></a>
             <h2>Database Diagram:</h2>
             <center> <img src="../img/requirements/red.png" class="img-responsive" alt="Database Diagram"> </center>
           </div>
           <div id="divide_1">
             <hr>
           </div>
-          <div id="1_introductions"> <a id="1" class="anchor"></a>
+          <div id="1"> <a id="1-introduction" class="anchor"></a>
             <h2><span id="1">1 Introduction</span></h2><br />
             <div> <a id="1.1" class="anchor"></a>
               <h4><span id="1.1">1.1 Purpose</span></h4>
@@ -125,8 +144,8 @@
           <div id="divide_1">
             <hr>
           </div>
-          <div> <a id="2" class="anchor"></a>
-            <h2><span id="2">2 Overall description</span></h2><br />
+          <div id="2"> <a id="2-overall-description" class="anchor"></a>
+            <h2><span id="2">2 Overall Description</span></h2><br />
             <div> <a id="2.1" class="anchor"></a>
               <h3><span>2.1 Product perspective</span></h3>
               <p> The Pokémon Encyclopedia is a desktop program that provides an easily accessible database for
@@ -159,7 +178,7 @@
           <div id="divide_1">
             <hr>
           </div>
-          <div> <a id="3" class="anchor"></a>
+          <div id="3"> <a id="3-requirements" class="anchor"></a>
             <h2><span id="3"></span>3 Requirements</h2><br />
             <div> <a id="3.1" class="anchor"></a>
               <h4><span>3.1 External interface requirements</span></h4>
@@ -431,12 +450,13 @@
           <div id="divide_1">
             <hr>
           </div>
-          <div> <a id="4" class="anchor"></a>
+          <div id="4"> <a id="4-versions" class="anchor"></a>
             <h2><span>4 Versions</span></h2><br />
             <div id="4_version_0.3"> <a id="Version_0.3" class="anchor"></a>
-              <h5><span> Version 0.3 - 2021-03-21</span></h5>
+              <h5><span> Version 0.3 - 2021-03-25</span></h5>
               <ul>
-                <li>HTML and CSS upgrade for modernization and greater visibility</li>
+                <li>Upgrade to Bootstrap Framework for site</li>
+                <li>Added Table of Contents</li>
                 <ul>
                   <li><em>Kevin He</em></li>
                 </ul>

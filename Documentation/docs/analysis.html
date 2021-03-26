@@ -8,7 +8,6 @@
   <meta name="author" content="">
 
   <title>Analysis | Team Rocket</title> 
-  <link rel="icon" href="../favicon.ico"  type="image/ico">
   
   <!-- Bootstrap core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
@@ -45,14 +44,30 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Analysis</h1>
-      <p class="lead"><a href="#Version_0.3" style="color: rgb(255, 255, 255)">#Version 0.3 - 2021-03-21</a></p>
+      <p class="lead"><a href="#Version_0.3" style="color: rgb(255, 255, 255)">#Version 0.3 - 2021-03-25</a></p>
     </div>
   </header>
   <section id="main">
     <div class="container">
       <div class="row">
+        
+        <div class="col-sm-2">
+          <nav id="toc" data-toggle="toc" class="sticky-top">
+            <h5>Table of contents</h5>
+            <ul class="nav-toc">
+              <li><a href="#entity-objects">Entity Objects</a></li>
+              <li><a href="#boundary-objects">Boundary Objects</a></li>
+              <li><a href="#control-objects">Control Objects</a></li>
+              <li><a href="#user-associated-diagram">User Associated Diagram</a></li>
+              <li><a href="#pokémon-associated-diagram">Pokémon Associated Diagram</a></li>
+              <li><a href="#database-diagram">Database Diagram</a></li>
+              <li><a href="#version">Versions</a></li>
+            </ul>
+          </nav>
+        </div>
+
         <div class="col-lg-8 mx-auto">
-          <div> <a id="Entity_Objects" class="anchor"></a>
+          <div> <a id="entity-objects" class="anchor"></a>
             <h2>Entity Objects</h2>
             <p> There are two primary entity objects identified using noun-extraction. The project will store
               information about ‘first generation’ Pokémon and any teams created by the user </p>
@@ -217,99 +232,160 @@
           <div id="divide_1">
             <hr>
           </div>
-          <div> <a id="Boundary_Objects" class="anchor"></a>
+          <div> <a id="boundary-objects" class="anchor"></a>
             <h2>Boundary Objects</h2>
             <p> Each boundary option has two sections to it. What details the information that the object must be input
               by the user and/or the information that will be presented to the user. How is a broad explanation on how
               the information will be presented and/or the action required from the user to obtain the information
               necessary. </p>
             <ol type="1">
-              <li>Log-in:</li>
-              <p class="Tab-over"> <i>What:</i> The log-in menu will be used to record the user credentials and to
-                identify the particular user. It will require two pieces of information from the user: the user ID and
-                the password. If the credentials provided are not associated with a recorded user, an error message
-                should pop up and ask for different credentials. Additionally, if the user forgets log-in password, the
-                web page will direct the user to the help centre, where the user can reset the password through texts or
-                emails. <br><br> <i>How:</i> The user will type in the information. The error message and help centre
-                will be a separate window. </p>
-              <li>Registration:</li>
-              <p class="Tab-over"> <i>What:</i> Presents the user with an option to register a new account. When a user
-                attempts to create an account that already exists (based on the email being used), an error message will
-                be displayed to indicate the registration failure. Another error message will be displayed if the
-                information provided does not satisfy the requirements (e.g. username minimum/maximum lengths, etc.).
-                <br><br> <i>How:</i> The user will type in information. The error message(s) will pop up in a separate
-                window. </p>
-              <li>Home:</li>
-              <p class="Tab-over"> <i>What:</i> It will present the user with four options that they can be directed to:
-                the search option, saved Pokémon, saved teams, and comparisons. <br><br> <i>How:</i> The object should
-                have four buttons, corresponding to each of the above options, that the user can click. </p>
-              <li>Search:</li>
-              <p class="Tab-over"> <i>What:</i> The user must input the name of a Pokémon that they want to search. The
+              <li><b>Log-in:</b></li>
+              <ul>
+                <p><u><i>What:</i></u> The log-in menu will be used to record the user credentials and to
+                  identify the particular user. It will require two pieces of information from the user: the user ID and
+                  the password. If the credentials provided are not associated with a recorded user, an error message
+                  should pop up and ask for different credentials. Additionally, if the user forgets log-in password, the
+                  web page will direct the user to the help centre, where the user can reset the password through texts or
+                  emails. </p>
+                <p><u><i>How:</i></u> The user will type in the information. The error message and help centre
+                  will be a separate window.</p>
+              </ul>
+              <li><b>Registration:</b></li>
+              <ul>
+                <p><u><i>What:</i></u> Presents the user with an option to register a new account. When a user
+                  attempts to create an account that already exists (based on the email being used), an error message will
+                  be displayed to indicate the registration failure. Another error message will be displayed if the
+                  information provided does not satisfy the requirements (e.g. username minimum/maximum lengths, etc.).
+                </p>
+                <p><u><i>How:</i></u> The user will type in information. The error message(s) will pop up in a separate
+                  window.</p>
+              </ul>
+              <li><b>Home:</b></li>
+              <ul>
+                <p><u><i>What:</i></u> It will present the user with four options that they can be directed to:
+                  the search option, saved Pokémon, saved teams, and comparisons.
+                </p>
+                <p><u><i>How:</i></u> The object should
+                  have four buttons, corresponding to each of the above options, that the user can click. </p>
+              </ul>
+              <li><b>Search:</b></li>
+              <ul>
+              <p><u><i>What:</i></u> The user must input the name of a Pokémon that they want to search. The
                 Pokémon that matches the search will be presented to the user and the user will be prompted to view this
                 Pokémon or search again. However, if the Pokémon is not found, the search will return none and prompt an
-                error message - “There is no matching result”. <br><br> <i>How:</i> The user will type in the
-                information. </p>
-              <li>Profile:</li>
-              <p class="Tab-over"> <i>What:</i> The profile boundary object presents the user with all of the statistics
-                in the Pokémon entity object (Name, HP, Attack, Defense, Special Attack, Special Defense, Speed, Evolve
-                Level, Location(s), Type) and a photo of the Pokémon. <br><br> <i>How:</i> A table of the statistics and
-                a photo above it. </p>
-              <li>Saved Pokémon:</li>
-              <p class="Tab-over"> <i>What:</i> A list of the Pokémon that the user has chosen to save or favorite for
-                future quick lookup. <br><br> <i>How:</i> A list of the names of the Pokémon, sorted alphabetically.
+                error message - “There is no matching result”.
               </p>
-              <li>Comparison:</li>
-              <p class="Tab-over"> <i>What:</i> The user must input which two Pokémon will be compared and then the user
+              <p><i>How:</i> The user will type in the information. </p>
+              </ul>
+              <li><b>Profile:</b></li>
+              <ul>
+              <p><u><i>What:</i></u> The profile boundary object presents the user with all of the statistics
+                in the Pokémon entity object (Name, HP, Attack, Defense, Special Attack, Special Defense, Speed, Evolve
+                Level, Location(s), Type) and a photo of the Pokémon.
+              </p><u><i>How:</i></u> A table of the statistics and a photo above it. </p>
+              </ul>
+              <li><b>Saved Pokémon:</b></li>
+              <ul>
+              <p><u><i>What:</i></u> A list of the Pokémon that the user has chosen to save or favorite for
+                future quick lookup.</p>
+              <p><i>How:</i> A list of the names of the Pokémon, sorted alphabetically.
+              </p>
+              </ul>
+              <li><b>Comparison:</b></li>
+              <ul>
+              <p><u><i>What:</i></u> The user must input which two Pokémon will be compared and then the user
                 is presented with statistics (Name, HP, Attack, Defense, Special Attack, Special Defense, Speed, Evolve
                 Level, Location(s), Type) from two Pokémon and their photos respectively. Should the user input two of
                 the same Pokémon, they will receive a warning/error message stating that “The two Pokémon are the same,”
-                and the program will only display one copy of the data. <br><br> <i>How:</i> In a table, similar to the
-                Profile object. </p>
-              <li>Teams:</li>
-              <p class="Tab-over"> <i>What:</i> Allows users to create teams and presents the user with a list of teams,
-                up to three, that they have created. Users are not able to create more than three teams and if they try
-                to, an error message will pop up to inform them that three teams at maximum is the rule. <br><br>
-                <i>How:</i> A list of the names of the teams, sorted alphabetically. </p>
-              <li>Team:</li>
-              <p class="Tab-over"> <i>What:</i> Presents the user with the information on a team, including a team name
+                and the program will only display one copy of the data.
+              </p>
+              <p><u><i>How:</i></u> In a table, similar to the Profile object. </p>
+              </ul>
+              <li><b>Teams:</b></li>
+              <ul>
+                <p><u><i>What:</i></u> Allows users to create teams and presents the user with a list of teams,
+                  up to three, that they have created. Users are not able to create more than three teams and if they try
+                  to, an error message will pop up to inform them that three teams at maximum is the rule.
+                </p>
+                <p>
+                  <u><i>How:</i></u> A list of the names of the teams, sorted alphabetically.
+                </p>
+              </ul>
+              <li><b>Team:</b></li>
+              <ul>
+              <p><u><i>What:</i></u> Presents the user with the information on a team, including a team name
                 and Pokémon in the team. The user can input Pokémon that they would like to place on the team in an
                 empty slot or to replace a team member. However, each team is only allowed to input up to six Pokémon,
                 any member who attempts to input more than 6 Pokémon will be prompted with an error message- “You’ve
-                reached the maximum limit of Pokémon in a team, this Pokémon cannot be added.” <br><br> <i>How:</i> The
-                user will be able to click on slots and choose from a list. The slots will be presented to the user with
-                six slots organized into two rows. </p>
-              <li>Header:</li>
-              <p class="Tab-over"> <i>What:</i> Presents the user with the title of the project (“Pokedex”) and the name
-                of the current webpage. It enables the user to return to the Homepage. <br><br> <i>How:</i> The user can
-                press a button to return to the homepage. </p>
+                reached the maximum limit of Pokémon in a team, this Pokémon cannot be added.”
+              </p>
+              <p><u><i>How:</i></u> The user will be able to click on slots and choose from a list. The slots will be presented to the
+                    user with six slots organized into two rows. </p>
+              </ul>
+              <li><b>Header:</b></li>
+              <ul>
+              <p><u><i>What:</i></u> Presents the user with the title of the project (“Pokedex”) and the name
+                of the current webpage. It enables the user to return to the Homepage.
+              </p>
+              <p><i>How:</i> The user can press a button to return to the homepage. </p>
+              </ul>
             </ol>
           </div>
           <div id="divide_1">
             <hr>
           </div>
-          <div> <a id="Control_Objects" class="anchor"></a>
+          <div> <a id="control-objects" class="anchor"></a>
             <h2>Control Objects</h2>
             <p> The following control objects were determined based on verb extraction. The following descriptions
               detail what actions the control objects will take. </p>
-            <ol type="1">
-              <li>Login Account: determine if the credentials entered by the user are correct (i.e. that they match to a
-                saved user). If it is correct, it will allow the user entry to the website.</li><br>
-              <li>Search: use the name entered by the user to find the Pokémon that matches it.</li><br>
-              <li>Create Team: creates a team for the user by saving the name and Pokémon selected (as determined by the
-                user).</li><br>
-              <li>Retrieve Team: retrieves the saved team(s) from the database for viewing and modification by the user.
-              </li><br>
-              <li>Display Team: displays a team</li><br>
-              <li>Save Pokémon: saves the selected Pokémon into the ‘Saved Pokémon’ list</li><br>
-              <li>Retrieve Pokémon: retrieves a Pokémon from the database</li><br>
-              <li>Display Pokémon: displays a Pokémon</li><br>
-              <li>Compare: display two Pokémon for comparison</li><br>
-            </ol>
+
+              <table class="table table-hover">
+                <tbody>
+                  <tr>
+                    <th>Login Account</th>
+                    <td>Determine if the credentials entered by the user are correct (i.e. that they match to a
+                      saved user). If it is correct, it will allow the user entry to the website.</td>
+                  </tr>
+                  <tr>
+                    <th>Search</th>
+                    <td>Use the name entered by the user to find the Pokémon that matches it.</td>
+                  </tr>
+                  <tr>
+                    <th>Create Team</th>
+                    <td>Creates a team for the user by saving the name and Pokémon selected (as determined by the
+                      user).</td>
+                  </tr>
+                  <tr>
+                    <th>Retrieve Team</th>
+                    <td>Retrieves the saved team(s) from the database for viewing and modification by the user.</td>
+                  </tr>
+                  <tr>
+                    <th>Display Team</th>
+                    <td>Displays a team</td>
+                  </tr>
+                  <tr>
+                    <th>Save Pokémon</th>
+                    <td>Saves the selected Pokémon into the ‘Saved Pokémon’ list</td>
+                  </tr>
+                  <tr>
+                    <th>Retrieve Pokémon</th>
+                    <td>Retrieves a Pokémon from the database</td>
+                  </tr>
+                  <tr>
+                    <th>Display Pokémon</th>
+                    <td>Displays a Pokémon</td>
+                  </tr>
+                  <tr>
+                    <th>Compare</th>
+                    <td>Display two Pokémon for comparison</td>
+                  </tr>
+                </tbody>
+              </table>
           </div>
           <div id="divide_1">
             <hr>
           </div>
-          <div> <a id="User_Associated_Diagram" class="anchor"></a>
+          <div> <a id="user-associated-diagram" class="anchor"></a>
             <h2>User Associated Diagram</h2>
             <p>
               <!-- INSERT DESCRIPTION IF NEEDED UNDERNEATH THIS LINE-->
@@ -319,7 +395,7 @@
           <div id="divide_1">
             <hr>
           </div>
-          <div> <a id="Pokémon_Associated_Diagram" class="anchor"></a>
+          <div> <a id="pokémon-associated-diagram" class="anchor"></a>
             <h2>Pokémon Associated Diagram</h2>
             <p>
               <!-- INSERT DESCRIPTION IF NEEDED UNDERNEATH THIS LINE-->
@@ -330,7 +406,7 @@
           <div id="divide_1">
             <hr>
           </div>
-          <div> <a id="Database_Diagram" class="anchor"></a>
+          <div> <a id="database-diagram" class="anchor"></a>
             <h2>Database Diagram</h2>
             <p>
               <!-- INSERT DESCRIPTION IF NEEDED UNDERNEATH THIS LINE-->
@@ -340,12 +416,14 @@
           <div id="divide_1">
             <hr>
           </div>
-          <div> <a id="Version" class="anchor"></a>
+          <div> <a id="version" class="anchor"></a>
             <h2><span>Versions</span></h2><br />
             <div> <a id="Version_0.3" class="anchor"></a>
-              <h5><span> Version 0.3 - 2021-03-21</span></h5>
+              <h5><span> Version 0.3 - 2021-03-25</span></h5>
               <ul>
-                <li>HTML and CSS upgrade for modernization and greater visibility</li>
+                <li>Upgrade to Bootstrap Framework for site</li>
+                <li>Added Table of Contents</li>
+                <li>Fixed Database Diagram</li>
                 <ul>
                   <li><em>Kevin He</em></li>
                 </ul>
