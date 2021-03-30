@@ -13,6 +13,7 @@
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
   
   <!-- Custom styles for this template -->
+  <link href="../css/fo" rel="stylesheet">
   <link href="../css/scrolling-nav.css" rel="stylesheet">
 </head>
 
@@ -56,10 +57,31 @@
           <nav id="toc" data-toggle="toc" class="sticky-top">
             <h5>Table of contents</h5>
             <ul class="nav-toc">
-              <li><a href="#1-introduction">1 Introduction</a></li>
-              <li><a href="#2-overall-description">2 Overall Description</a></li>
-              <li><a href="#3-specific-requirements">3 Specific Requirements</a></li>
-              <li><a href="#4-versions">4 Versions</a></li>
+              <li><a href="#1-introduction"><b>1</b> Introduction</a></li>
+              <ul class="nav-toc">
+                <li><a href="#1-1-purpose"><b>1.1</b> Purpose</a></li>
+                <li><a href="#1-2-scope"><b>1.2</b> Scope</a></li>
+                <li><a href="#1-3-definitions-acronyms-abbreviations"><b>1.3</b> Definitions, Acronyms, and Abbreviations</a>
+                </li>
+                <li><a href="#1-4-references"><b>1.4</b> References</a></li>
+              </ul>
+              <li><a href="#2-overall-description"><b>2</b> Overall Description</a></li>
+              <ul class="nav-toc">
+                <li><a href="#2-1-product-perspective"><b>2.1</b> Product Perspective</a></li>
+                <li><a href="#2-2-product-functions"><b>2.2</b> Product Functions</a></li>
+                <li><a href="#2-3-user-characteristics"><b>2.3</b> User Characteristics</a>
+                </li>
+                <li><a href="#2-4-constraints"><b>2.4</b> Constraints</a></li>
+              </ul>
+              <li><a href="#3-specific-requirements"><b>3</b> Specific Requirements</a></li>
+              <ul class="nav-toc">
+                <li><a href="#3-1-functions"><b>3.1</b> Functions</a></li>
+                <li><a href="#3-2-security"><b>3.2</b> Security</a></li>
+                <li><a href="#3-3-objects"><b>3.3</b> Objects</a>
+                </li>
+                <li><a href="#3-4-features"><b>3.4</b> Features</a></li>
+              </ul>
+              <li><a href="#4-versions"><b>4</b> Versions</a></li>
             </ul>
           </nav>
         </div>
@@ -68,15 +90,15 @@
         <div class="col-lg-8 mx-auto">
           <div id="1"> <a id="1-introduction" class="anchor"></a>
             <h2><span id="1">1 Introduction</span></h2> <br />
-            <div id="1.1_purpose">
-              <h4><span id="1.1">1.1 Purpose</span></h4>
+            <div id="1-1"> <a id="1-1-purpose" class="anchor"></a>
+              <h4><span>1.1 Purpose</span></h4>
               <p>The purpose of this project is to provide Pokémon players with a comprehensive database of relevant
                 information which will allow them to make educated decisions on how they would like to play the game.
                 Specifically, how they can optimize their Pokémon teams based on information our application provides.
               </p>
             </div>
-            <div id="1.2_scope">
-              <h4><span id="1.2">1.2 Scope</span></h4>
+            <div id="1-2"> <a id="1-2-scope" class="anchor"></a>
+              <h4><span>1.2 Scope</span></h4>
               <p> We aim to have all 151 generation I Pokémon in our database, along with the following information
                 which has already been provided by the ingame Pokédex: name, description, type(s), height, weight, brief
                 biography description, and location. As well as additional information that is relevant but not provided
@@ -84,8 +106,8 @@
                 a user account system using a password hashing algorithm to store passwords. Users will be able to save
                 information to their account. </p>
             </div>
-            <div id="1.3_definitions">
-              <h4><span id="1.3">1.3 Definitions, acronyms, and abbreviations</span></h4>
+            <div id="1-3"> <a id="1-3-definitions-acronyms-abbreviations" class="anchor"></a>
+              <h4><span>1.3 Definitions, Acronyms, and Abbreviations</span></h4>
               <p><u><b>Move</b></u>: A move, also known as an attack is the skill Pokémon primarily use in battle.</p>
               <p><u><b>Type</b></u>: Pokémon and the different moves they can use are all classified by properties
                 called Types. A Pokémon can be associated with one or two types whereas a move can only be associated
@@ -107,8 +129,8 @@
               <p><u><b>EV yield</b></u>: When a Pokémon is defeated in battle, it will give effort values to the Pokémon
                 that participated in the battle against it.</p>
             </div>
-            <div id="1.4_references">
-              <h4><span id="1.4">1.4 References</span></h4>
+            <div id="1-4"> <a id="1-4-references" class="anchor"></a>
+              <h4><span>1.4 References</span></h4>
               <ul>
                 <li>IEEE. IEEE Std 830-1998 IEEE Recommended Practice for Software Requirements Specifications. IEEE
                   Computer Society, 1998<br><a
@@ -116,8 +138,8 @@
                 </li> <br>
               </ul>
             </div>
-            <div id="1.5_overview">
-              <h4><span id="1.5">1.5 Overview</span></h4>
+            <div id="1-5-overview"> <a id="1-5-overview" class="anchor"></a>
+              <h4><span>1.5 Overview</span></h4>
               <p> The Pokémon Encyclopedia (“the project”, “the software”) is a third party database created for the
                 access of information on generation I Pokémon. The purpose of this application is to give Pokémon
                 players access to a greater depth of information on Pokémon that is not provided by the in-game Pokédex.
@@ -131,15 +153,15 @@
             <hr> <br />
           </div>
           <div id="2"> <a id="2-overall-description" class="anchor"></a>
-            <h2><span id="2">2 Overall Description</span></h2> <br />
-            <div id="2.1_product_perspective">
-              <h4><span id="2.1">2.1 Product perspective</span></h4>
+            <h2><span>2 Overall Description</span></h2> <br />
+            <div id="2-1"> <a id="2-1-product-perspective" class="anchor"></a>
+              <h4><span>2.1 Product Perspective</span></h4>
               <p> The Pokémon Encyclopedia is a desktop program that provides an easily accessible database for
                 information on all Pokémon in generation I. This will allow users to make educated and informed
                 decisions on how they would like to play the game. </p>
             </div>
-            <div id="2.2_product_functions">
-              <h4><span id="2.2">2.2 Product Functions</span></h4>
+            <div id="2-2"> <a id="2-2-product-functions" class="anchor"></a>
+              <h4><span>2.2 Product Functions</span></h4>
               <ul>
                 <li>Look up specific Pokémon and return their stats, moves, type, etc.</li>
                 <li>Side by side compare Pokémon stats with other Pokémon</li>
@@ -148,29 +170,31 @@
                 <li>Have a user system where users can save information</li>
               </ul>
             </div>
-            <div id="2.3">
-              <h4><span id="2.3">2.3 User Characteristics</span></h4>
+            <div id="2-3"> <a id="2-3-user-characteristics" class="anchor"></a>
+              <h4><span>2.3 User Characteristics</span></h4>
               <p> The intended users of our product will be all users of all ages and of all technical experience that
                 are interested in Pokémon </p>
             </div>
-            <div id="2.4_constraints">
-              <h4><span id="2.4">2.4 Constraints</span></h4>
+            <div id="2-4"> <a id="2-4-constraints" class="anchor"></a>
+              <h4><span>2.4 Constraints</span></h4>
               <p> There will be no cost constraints. The only constraints that we predict to encounter will be
                 development constraints.These include time and possible reliability constraints depending on which apis
                 or frameworks we utilize. Furthermore, team members will be expected to learn how to use the software or
                 any additional knowledge that they may need to complete the tasks they are responsible for. </p>
             </div>
-            <div id="2.5_assumptions">
-              <h4><span id="2.5">2.5 Assumptions and Dependencies</span></h4>
+            <!--
+            <div id="2-5"> <a id="2-5-assumptions-and-dependencies" class="anchor"></a>
+              <h4><span>2.5 Assumptions and Dependencies</span></h4>
             </div>
+            -->
           </div>
           <div id="divide_1">
             <hr> <br />
           </div>
           <div id="3"> <a id="3-specific-requirements" class="anchor"></a>
-            <h2><span id="3">3 Specific Requirements</span></h2><br />
-            <div id="3.1_functions">
-              <h4><span id="3.1">3.1 Functions</span></h4>
+            <h2><span>3 Specific Requirements</span></h2><br />
+            <div id="3-1"> <a id="3-1-functions" class="anchor"></a>
+              <h4><span>3.1 Functions</span></h4>
               <ul>
                 <li>Validity checks. Did the user enter the name of the Pokémon correctly? If not, handle this error.
                 </li>
@@ -178,34 +202,37 @@
                   object mentioned below.</li>
               </ul>
             </div>
-            <div id="3.2_security">
-              <h4><span id="3.2">3.2 Security</span></h4>
+            <div id="3-2"> <a id="3-2-security" class="anchor"></a>
+              <h4><span>3.2 Security</span></h4>
               <p> Users will be able to create accounts. They will be able to store information like their favourite
                 Pokémon, and add Pokémon to the database. Their login password will be stored encrypted using a hashing
-                algorithm to ensure that their information is secure. </p>
+                algorithm to ensure that their information is secure.</p>
             </div>
-            <div id="3.3_objects">
-              <h4><span id="3.3">3.3 Objects</span></h4>
+            <div id="3-3"> <a id="3-3-objects" class="anchor"></a>
+              <h4><span>3.3 Objects</span></h4>
               <p> Pokémon objects will be primarily what is stored in the database. This will contain the information
                 previously mentioned. Name, description, type(s), height, weight, brief biography description, location,
                 abilities, catch rate, type match ups, leveling-rate, and EV yield are all the attributes that we would
                 currently like the Pokémon objects to have </p>
             </div>
-            <div id="3.4_features">
-              <h4><span id="3.4">3.4 Features</span></h4>
-              <ul>
-                <h5>3.4.1 Searching for a specific Pokémon</h5>
+            <div id="3-4"> <a id="3-4-features" class="anchor"></a>
+              <h4><span>3.4 Features</span></h4>
+              <ul> 
+                <a id="3-4-1-searching-for-a-specific-pokemon" class="anchor"></a>
+                <h5>3.4.1 Searching for a Specific Pokémon</h5>
                 <ul>
                   <p>There are many Pokémon in generation I. Users may not want to spend time searching for their
                     desired Pokémon through the list, rather it would be much convenient for them to be able to search
                     up the Pokémon name and have the information show up.</p>
                 </ul> <br>
+                <a id="3-4-2-comparing-two-pokemon" class="anchor"></a>
                 <h5>3.4.2 Comparing two Pokémon</h5>
                 <ul>
                   <p>The Pokémon Encyclopedia allows users to look up Pokémon and see the information related to that
                     Pokémon. There may be times when the users want to compare the Pokémon so they can make an informed
                     decision on which Pokémon they want to use.</p>
                 </ul><br>
+                <a id="3-4-3-letting-users-save-information-on-their-account" class="anchor"></a>
                 <h5>3.4.3 Letting users save information on their account</h5>
                 <ul>
                   <p> We understand that the users may want to use the information they look up again later on and it
@@ -219,9 +246,18 @@
             <hr> <br />
           </div>
           <div id="4"> <a id="4-versions" class="anchor"></a>
-            <h2><span id="4">4 Versions</span></h2><br />
-            <div id="4_version_0.3">
-              <h5><span id="Version_0.3"> Version 0.3 - 2021-03-25</span></h5>
+            <h2><span>4 Versions</span></h2><br />
+            <div id="4-v0.4"> <a id="Version_0.4" class="anchor"></a>
+              <h5><span>Version 0.4 - 2021-03-30</span></h5>
+              <ul>
+                <li>Fixes to hyperlinks and anchors</li>
+                <ul>
+                  <li><em>Kevin He</em></li>
+                </ul>
+              </ul>
+            </div>
+            <div id="4-v0.3"> <a id="Version_0.3" class="anchor"></a>
+              <h5><span>Version 0.3 - 2021-03-25</span></h5>
               <ul>
                 <li>Upgrade to Bootstrap Framework for site</li>
                 <li>Added Table of Contents</li>
@@ -230,8 +266,8 @@
                 </ul>
               </ul>
             </div>
-            <div id="4_version_0.2">
-              <h5><span id="Version_0.2"> Version 0.2 - 2021-03-20</span></h5>
+            <div id="4-v0.2"> <a id="Version_0.2" class="anchor"></a>
+              <h5><span>Version 0.2 - 2021-03-20</span></h5>
               <ul>
                 <li>Changed how dates are displayed for easy understanding from MM/DD/YYYY to the ISO 8601 date standard
                   YYYY-MM-DD</li>
@@ -243,8 +279,8 @@
                 </ul>
               </ul>
             </div>
-            <div id="4_version_0.1">
-              <h5><span id="Version_0.1"> Version 0.1 - 2021-01-21</span></h5>
+            <div id="4-v0.1"> <a id="Version_0.1" class="anchor"></a>
+              <h5><span>Version 0.1 - 2021-01-21</span></h5>
               <ul>
                 <li>Document created and presented information</li>
                 <ul>
@@ -256,15 +292,25 @@
         </div>
       </div>
     </div>
-  </section> <!-- Footer -->
+  </section> 
+  
+  <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Team Rocket</p>
-    </div> <!-- /.container -->
-  </footer> <!-- Bootstrap core JavaScript -->
+    </div> 
+    
+  <!-- /.container -->
+  </footer> 
+  
+  <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Plugin JavaScript -->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script> <!-- Custom JavaScript for this theme -->
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+  
+  <!-- Plugin JavaScript -->
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script> 
+  
+  <!-- Custom JavaScript for this theme -->
   <script src="../js/scrolling-nav.js"></script>
 </body>
 

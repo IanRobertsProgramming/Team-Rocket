@@ -44,7 +44,7 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Software Project Management Plan</h1>
-      <p class="lead"><a href="#Version_0.5" style="color: rgb(255, 255, 255)">#Version 0.5 - 2021-03-25</a></p>
+      <p class="lead"><a href="#Version_0.6" style="color: rgb(255, 255, 255)">#Version 0.6 - 2021-03-30</a></p>
     </div>
   </header>
   <section id="main">
@@ -55,15 +55,15 @@
           <nav id="toc" data-toggle="toc" class="sticky-top">
             <h5>Table of contents</h5>
             <ul class="nav-toc">
-              <li><a href="#1-introduction">1 Introduction</a></li>
-              <li><a href="#2-references">2 References</a></li>
-              <li><a href="#3-definitions">3 Definitions</a></li>
-              <li><a href="#4-project-organization">4 Project Organization</a></li>
-              <li><a href="#5-managerial-process-plans">5 Managerial Process Plans</a></li> 
-              <li><a href="#6-technical-process-plans">6 Technical Process Plans</a></li> 
-              <li><a href="#7-supporting-process-plans">7 Supporting Process Plans</a></li> 
-              <li><a href="#8-additional-plans">8 Additional Plans</a></li> 
-              <li><a href="#9-versions">9 Versions</a></li> 
+              <li><a href="#1-introduction"><b>1</b> Introduction</a></li>
+              <li><a href="#2-references"><b>2</b> References</a></li>
+              <li><a href="#3-definitions"><b>3</b> Definitions</a></li>
+              <li><a href="#4-project-organization"><b>4</b> Project Organization</a></li>
+              <li><a href="#5-managerial-process-plans"><b>5</b> Managerial Process Plans</a></li> 
+              <li><a href="#6-technical-process-plans"><b>6</b> Technical Process Plans</a></li> 
+              <li><a href="#7-supporting-process-plans"><b>7</b> Supporting Process Plans</a></li> 
+              <li><a href="#8-additional-plans"><b>8</b> Additional Plans</a></li> 
+              <li><a href="#9-versions"><b>9</b> Versions</a></li> 
             </ul>
           </nav>
         </div>
@@ -78,26 +78,26 @@
               information like base stats, in-game locations, type effectiveness, natures, and learnset is not provided
               by other online encyclopedias. The Pokémon Encyclopedia strives to provide this information to allow the
               players to make educated decisions on how they would like to play the game. </p>
-            <div id="1.1_project_summary"> <a id="1.1" class="anchor"></a>
+            <div id="1-1"> <a id="1.1-project-summary" class="anchor"></a>
               <h4><span>1.1 Project Summary</span></h4><br />
               <ul>
-                <div id="1.1.1_purpose"> <a id="1.1.1" class="anchor"></a>
+                <div id="1-1-1"> <a id="1-1-1-purpose" class="anchor"></a>
                   <h5><span>1.1.1 Purpose</span></h5>
                   <p> The purpose of this project is to provide Pokémon players with a comprehensive database of
                     relevant information to allow them to make educated decisions on how they would like to play the
                     game. Specifically, how they can optimize their Pokémon teams based on information our application
                     provides. </p>
                 </div>
-                <div id="1.1.2_scope"> <a id="1.1.2" class="anchor"></a>
+                <div id="1-1-2"> <a id="1-1-2-scope" class="anchor"></a>
                   <h5><span>1.1.2 Scope</span></h5>
                   <p> We aim to have all 151 generation I Pokémon in our database, along with the following information
-                    which has already been provided by the ingame Pokédex: name, description, type(s), height, weight,
+                    which has already been provided by the in-game Pokédex: name, description, type(s), height, weight,
                     brief biography description. As well as additional information that is relevant but not provided
                     in-game: abilities, catch rate, type match ups, leveling-rate, EV yield. As well, we would like to
                     have a user account system using a password hashing algorithm to store passwords. Users will be able
                     to save information to their account. </p>
                 </div>
-                <div id="1.1.3_assumptions"> <a id="1.1.3" class="anchor"></a>
+                <div id="1-1-3"> <a id="1-1-3-assumptions-and-constraints" class="anchor"></a>
                   <h5><span>1.1.3 Assumptions and Constraints</span></h5>
                   <p> The biggest constraint on this project will be time. We have a set timeline to accomplish the
                     objectives we have declared. Furthermore, our understanding of the software we have available to us
@@ -106,7 +106,7 @@
                     need to find a source with all this information, otherwise entering this information in manually
                     will be repetitive. </p>
                 </div>
-                <div id="1.1.4_evolution"> <a id="1.1.4" class="anchor"></a>
+                <div id="1-1-4"> <a id="1-1-4-evolution-of-the-plan" class="anchor"></a>
                   <h5><span>1.1.4 Evolution of the Plan</span></h5>
                   <p> This section will be updated as we progress through the project. </p>
                 </div>
@@ -132,49 +132,47 @@
             <hr> <br />
           </div>
           <div id="3"> <a id="3-definitions" class="anchor"></a>
-            <h2><span>3 Definitions</span></h2><br />
-            <div id="3_definitionss">
-              <p><u><b>Move</b></u>: A move, also known as an attack is the skill Pokémon primarily use in battle.</p>
-              <p><u><b>Type</b></u>: Pokémon and the different moves they can use are all classified by properties
-                called Types. A Pokémon can be associated with one or two types whereas a move can only be associated
-                with one type. Moves that deal damage to other Pokémon can have more of an effect, a neutral level of
-                effectiveness, less of an effect, or no effect at all, based on their type and the type of the Pokémon
-                they are being used against. An example of an effective move would be a Pokémon using a Fire type move
-                against a Grass type Pokémon. An example of a less effective move would be a Pokémon using a Fire type
-                move against a Water type Pokémon. Finally, an example of a move which would have no effect at all would
-                be a Ghost type move being used against a Normal type Pokémon. </p>
-              <p><u><b>Abilities</b></u>: An Ability is a game mechanic that provides a passive effect in battle or in
-                the overworld. Individual Pokémon may have only one Ability at a time. Not every Ability is entirely
-                beneficial; some of them are hindering.</p>
-              <p><u><b>Catch rate</b></u>: Each species of Pokémon has a catch rate that applies to all its members.
-                When a Poké Ball is thrown at a wild Pokémon, the game uses that Pokémon's catch rate in a formula to
-                determine the chances of catching that Pokémon. Higher catch rates mean that the Pokémon is easier to
-                catch, up to a maximum of 255.</p>
-              <p><u><b>Type matchup chart</b></u>: A type chart, also known as type matchup chart, shows which modifiers
-                are applied to move types when attacking Pokémon of each type.</p>
-              <p><u><b>EV yield</b></u>: When a Pokémon is defeated in battle, it will give effort values to the Pokémon
-                that participated in the battle against it.</p>
-            </div>
+            <h2><span>3 Definitions</span></h2>
+            <p><u><b>Move</b></u>: A move, also known as an attack is the skill Pokémon primarily use in battle.<br/><br/>
+              <u><b>Type</b></u>: Pokémon and the different moves they can use are all classified by properties
+              called Types. A Pokémon can be associated with one or two types whereas a move can only be associated
+              with one type. Moves that deal damage to other Pokémon can have more of an effect, a neutral level of
+              effectiveness, less of an effect, or no effect at all, based on their type and the type of the Pokémon
+              they are being used against. An example of an effective move would be a Pokémon using a Fire type move
+              against a Grass type Pokémon. An example of a less effective move would be a Pokémon using a Fire type
+              move against a Water type Pokémon. Finally, an example of a move which would have no effect at all would
+              be a Ghost type move being used against a Normal type Pokémon.<br/><br/>
+            <u><b>Abilities</b></u>: An Ability is a game mechanic that provides a passive effect in battle or in
+              the overworld. Individual Pokémon may have only one Ability at a time. Not every Ability is entirely
+              beneficial; some of them are hindering.<br/><br/>
+            <u><b>Catch rate</b></u>: Each species of Pokémon has a catch rate that applies to all its members.
+              When a Poké Ball is thrown at a wild Pokémon, the game uses that Pokémon's catch rate in a formula to
+              determine the chances of catching that Pokémon. Higher catch rates mean that the Pokémon is easier to
+              catch, up to a maximum of 255.<br/><br/>
+            <u><b>Type matchup chart</b></u>: A type chart, also known as type matchup chart, shows which modifiers
+              are applied to move types when attacking Pokémon of each type.<br/><br/>
+            <u><b>EV yield</b></u>: When a Pokémon is defeated in battle, it will give effort values to the Pokémon
+              that participated in the battle against it.</p>
           </div>
           <div id="divide_1">
             <hr> <br />
           </div>
           <div id="4"> <a id="4-project-organization" class="anchor"></a>
             <h2><span>4 Project Organization</span></h2><br />
-            <div id="4.1_product_perspective"> <a id="4.1" class="anchor"></a>
+            <div id="4-1"> <a id="4-1-product-perspective" class="anchor"></a>
               <h4><span>4.1 Product Perspective</span></h4>
-              <p>There will be two major components to this application, front-end and back-end.</p>
-              <p>Front-end will deal with the user experience/interface. The goal is to create a GUI that is pleasant
+              <p>There will be two major components to this application, <b>Front-end</b> and <b>Back-end</b>.</p>
+              <p><b>Front-end</b> will deal with the user experience/interface. The goal is to create a GUI that is pleasant
                 and easy to use. The GUI will be appealing; images of the Pokémon will be included as well as having the
                 text information placed appropriately. Ideally we would like to have a search function that will be able
-                to communicate with the backend.</p>
-              <p>Back-end will deal with the information stored in the database. The goal will be to create a
+                to communicate with the backend.<br/><br/>
+              <b>Back-end</b> will deal with the information stored in the database. The goal will be to create a
                 comprehensive database with all the information that we would like to have for each Pokémon object. The
                 objects in this database will remain static; unless we make plans to add further generations of Pokémon
                 to this project, we will not have features to add new Pokémon. Clean information retrieval is key to
                 this project.</p>
             </div>
-            <div id="4.2_organization_structure"> <a id="4.2" class="anchor"></a>
+            <div id="4-2"> <a id="4-2-organization-structure" class="anchor"></a>
               <h4><span>4.2 Organization Structure</span></h4>
               <p>To accomplish all the project requirements, we will divide ourselves into groups and each group will be
                 responsible for completing certain tasks. One person from the group will be responsible for
@@ -183,9 +181,9 @@
                 be able to work properly for any possible case. The members who were a part of implementation will not
                 be a part of the testing team. </p>
             </div>
-            <div id="4.3_project_responsibilities"> <a id="4.3" class="anchor"></a>
+            <div id="4-3"> <a id="4-3-project-responsibilities" class="anchor"></a>
               <h4><span>4.3 Project Responsibilities</span></h4>
-              <table class="table table-hover" id="Responsibilities">
+              <table class="table table-hover">
                 <thead>
                   <tr>
                     <th>Deliverables</th>
@@ -216,7 +214,7 @@
                   </tr>
                   <tr>
                     <th>Prototype</th>
-                    <td>Sunil Brijlall | Jessica Chen | Michelle Muliana | Dhavani Patel | Prit Patel | Priya Shukla |
+                    <td>Sunil Brijlall | Jessica Chen | Kevin He | Michelle Muliana | Dhavani Patel | Prit Patel | Priya Shukla |
                       Jimmy Wang</td>
                   </tr>
                   <tr>
@@ -230,7 +228,7 @@
                       Scott Vodon</td>
                   </tr>
                   <tr>
-                    <th>Testing</th>
+                    <th>Testing/SQA</th>
                     <td>Every Member</td>
                   </tr>
                 </tbody>
@@ -242,41 +240,41 @@
           </div>
           <div id="5"> <a id="5-managerial-process-plans" class="anchor"></a>
             <h2><span>5 Managerial Process Plans</span></h2><br />
-            <div id="5.1_project_start-up"> <a id="5.1" class="anchor"></a>
-              <h4><span>5.1 Project start-up plan</span></h4><br />
-              <ul> <a id="5.1.2" class="anchor"></a>
-                <h5><span>5.1.2 Staffing plan</span></h5>
+            <div id="5-1"> <a id="5-1-project-start-up" class="anchor"></a>
+              <h4><span>5.1 Project Start-up Plan</span></h4><br />
+              <ul> <a id="5-1-2-staffing-plan" class="anchor"></a>
+                <h5><span>5.1.2 Staffing Plan</span></h5>
                 <p> For this project, we are working with a team of 16 members. We plan on dividing ourselves into
                   smaller groups based on skill level and interest to work on different aspects of the project such as
-                  design, prototyping and implementation. There are two documentation, Requirement Document and SPMP
-                  that need to be worked on and updated as we go.</p>
-                <p> A small group of the team members who are interested in preparing the documentation will be
+                  design, prototyping and implementation. There are two documentation, Requirements document and SPMP
+                  that need to be worked on and updated as we go.<br/><br/>
+                A small group of the team members who are interested in preparing the documentation will be
                   responsible for the documentation. At least one of the members should be experienced with HTML and
                   take the responsibility of creating the document through HTML. As per the analysis and design, both
                   must be object-oriented and so the team members working on these should have a fair amount of
-                  knowledge on object-orientated programming or are willing to learn it in the given time frame.</p>
-                <p> For prototyping, a small group of the team members will be responsible for designing the looks for
+                  knowledge on object-orientated programming or are willing to learn it in the given time frame.<br/><br/>
+                For prototyping, a small group of the team members will be responsible for designing the looks for
                   this application and creating options for how the users can interact with the application. At least
                   one person should be familiar with UX design and Figma, overall, everyone should be willing to learn
                   about the UI development process and work with a creative mind set. For front and back end, the
                   members responsible should be experienced with the languages being used (mentioned below in section <a
-                    href="#6.2">6.2</a>). They should also be willing to put in sometime to learn new material that may
+                    href="#6-2-methods-tools-techniques">6.2</a>). They should also be willing to put in sometime to learn new material that may
                   be required for the implementation. The testing crew will be members of the team that have not worked
                   on the implementation. They should be able to consider all possible cases that might occur when other
                   users start using the application and make sure the application is capable of handling the cases. </p>
-                <a id="5.1.3" class="anchor"></a>
-                <h5><span>5.1.3 Project staff training plan</span></h5>
+                <a id="5-1-3-project-staff-training-plan" class="anchor"></a>
+                <h5><span>5.1.3 Project Staff Training Plan</span></h5>
                 <p> A basic understanding of some software will be required for the completion of this project. Each
                   group member will be responsible for learning any new material/software that is required to complete
                   the deliverables they have chosen. </p>
               </ul>
             </div>
-            <div id="5.2_work_plan"> <a id="5.2" class="anchor"></a>
-              <h4><span>5.2 Work plan</span></h4><br />
+            <div id="5-2"> <a id="5-2-work-plan" class="anchor"></a>
+              <h4><span>5.2 Work Plan</span></h4><br />
               <ul>
-                <div id="5.2.1_work_activities"> <a id="5.2.1" class="anchor"></a>
-                  <h5><span>5.2.1 Work activities</span></h5>
-                  <table class="table table-striped" id="Responsibilities">
+                <div id="5-2-1"> <a id="5-2-1-work-activities" class="anchor"></a>
+                  <h5><span>5.2.1 Work Activities</span></h5>
+                  <table class="table table-striped">
                     <thead>
                       <tr>
                         <th>Deliverables</th>
@@ -288,10 +286,10 @@
                         <th>Deliverable 1: Requirements Document</th>
                         <td>
                           <ol type="1">
-                            <li>Discuss the specifications of the application</li>
-                            <li>Finalize the requirements for the project</li>
-                            <li>Write out a document for requirements</li>
-                            <li>Transfer the document into HTML </li>
+                            <li>Discuss the specifications of the application.</li>
+                            <li>Finalize the requirements for the project.</li>
+                            <li>Write out a document for requirements.</li>
+                            <li>Transfer the document into HTML.</li>
                           </ol>
                         </td>
                       </tr>
@@ -299,16 +297,16 @@
                         <th>Deliverable 2: Software Project Management Plan (SPMP)</th>
                         <td>
                           <ol type="1">
-                            <li>Read through the IEEE documentation and figure out what to include for our SPMP</li>
-                            <li>Organize the clauses on a document and discuss each one as a team</li>
-                            <li>Write out the details for each clause</li>
-                            <li>Transfer the document to HTML</li>
-                            <li>Update the document as we go along</li>
+                            <li>Read through the IEEE documentation and figure out what to include for our SPMP.</li>
+                            <li>Organize the clauses on a document and discuss each one as a team.</li>
+                            <li>Write out the details for each clause.</li>
+                            <li>Transfer the document to HTML.</li>
+                            <li>Update the document as we go along.</li>
                           </ol>
                         </td>
                       </tr>
                       <tr>
-                        <th>Deliverable 3: Object-Oriented Analysis </th>
+                        <th>Deliverable 3: Object-Oriented Analysis</th>
                         <td>
                           <ol type="1">
                             <li>Display, list, and define the entity/boundary/control objects required.</li>
@@ -337,11 +335,11 @@
                         <th>Deliverable 5: Prototype</th>
                         <td>
                           <ol type="1">
-                            <li>Discuss and brainstorm creative ideas for an GUI</li>
-                            <li>Short list some of the team's favourite Idea’s</li>
-                            <li>Using Figma, design each idea in different files </li>
+                            <li>Discuss and brainstorm creative ideas for a GUI.</li>
+                            <li>Short list some of the team's favourite ideas.</li>
+                            <li>Using Figma, design each idea in different files.</li>
                             <li>Have someone who was not a part of prototyping use it and get their opinions on it. Ask
-                              them questions like: which design is your favorite? What is something you might want to
+                              them questions like: Which design is your favorite? What is something you might want to
                               change? What is the best part of this design? What can we add or remove to make it
                               interesting and easier for the user to use?</li>
                             <li>Based on the answers to the above questions, change up the design(minor changes) to make
@@ -350,25 +348,25 @@
                         </td>
                       </tr>
                       <tr>
-                        <th>Deliverable 6: Front-end </th>
+                        <th>Deliverable 6: Front-end</th>
                         <td>
                           <ol type="1">
-                            <li>Take a look at the prototype and use it to understand the design of the GUI</li>
+                            <li>Take a look at the prototype and use it to understand the design of the GUI.</li>
                             <li>Based on the prototype, figure out what is necessary for implementing it.</li>
-                            <li>Set subtasks for the program</li>
-                            <li>Code the implementation step-by-step</li>
+                            <li>Set subtasks for the program.</li>
+                            <li>Code the implementation step-by-step.</li>
                           </ol>
                         </td>
                       </tr>
                       <tr>
-                        <th>Deliverable 7: Back-end </th>
+                        <th>Deliverable 7: Back-end</th>
                         <td>
                           <ol type="1">
-                            <li>Go over the requirements or the application. Understand what the application has to
-                              accomplish. </li>
-                            <li>Based on the requirements, create a plan for implementation and break it down into steps
+                            <li>Go over the requirements of the application. Understand what the application has to
+                              accomplish.</li>
+                            <li>Based on the requirements, create a plan for implementation and break it down into steps.
                             </li>
-                            <li>Start coding the implementation</li>
+                            <li>Start coding the implementation.</li>
                           </ol>
                         </td>
                       </tr>
@@ -377,31 +375,31 @@
                         <td>
                           <ol type="1">
                             <li>Start by running the application and using it in various ways to get a feel for how the
-                              application works</li>
+                              application works.</li>
                             <li>Make a list of all possible scenarios that could happen when a user is using the
-                              application </li>
+                              application.</li>
                             <li>Start by testing the scenarios that may lead to errors or the application crashing to
-                              see if the program is able to handle such cases</li>
+                              see if the program is able to handle such cases.</li>
                             <li>Let the implementation team know of any cases the program isn’t able to handle and give
-                              them some time to make the changes</li>
-                            <li>Test for the error cases again to ensure everything works</li>
+                              them some time to make the changes.</li>
+                            <li>Test for the error cases again to ensure everything works.</li>
                             <li>Test the program for each of its requirements, for example, does the program do what it
                               is supposed to when you click on a certain button?</li>
                             <li>Let the implementation team know if any of the requirements are not fulfilled or if
-                              something doesn’t work as described. Give them some time to work these things through</li>
-                            <li>Test again for errors and requirements to assure everything is working as expected</li>
+                              something doesn’t work as described. Give them some time to work these things through.</li>
+                            <li>Test again for errors and requirements to assure everything is working as expected.</li>
                           </ol>
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-                <div id="5.2.2_schedule_allocation"> <a id="5.2.2" class="anchor"></a>
-                  <h5><span>5.2.2 Schedule allocation</span></h5>
+                <div id="5-2-2"> <a id="5-2-2-schedule-allocation" class="anchor"></a>
+                  <h5><span>5.2.2 Schedule Allocation</span></h5>
                   <p> The schedule path that this project will follow will be in accordance with the course syllabus
                     schedule. Phases will be completed in a timely manner to allow for the development of this project.
                     The phases include: </p>
-                  <table class="table table-hover" id="Responsibilities">
+                  <table class="table table-hover">
                     <thead>
                       <tr>
                         <th>Scheduled Tasks</th>
@@ -416,29 +414,29 @@
                         <td>2021-01-14</td>
                       </tr>
                       <tr>
-                        <td>Specifications</td>
+                        <td><a href="./specifications.html">Specifications</a></td>
                         <td>Completed</td>
                         <td>2021-01-21</td>
                       </tr>
                       <tr>
-                        <td>Software Project Management Plan (SPMP)</td>
+                        <td><a href="./spmp.html">Software Project Management Plan (SPMP)</a></td>
                         <td>Completed</td>
                         <td>2021-02-05</td>
                       </tr>
                       <tr>
-                        <td>Requirements</td>
+                        <td><a href="./requirements.html">Requirements</a></td>
                         <td>Completed</td>
                         <td>2021-02-12</td>
                       </tr>
                       <tr>
-                        <td>Object-Oriented Analysis</td>
+                        <td><a href="./analysis.html">Object-Oriented Analysis</a></td>
                         <td>Completed</td>
                         <td>2021-03-05</td>
                       </tr>
                       <tr>
-                        <td>Design</td>
-                        <td>In Progress</td>
-                        <td></td>
+                        <td><a href="./design.html">Design</a></td>
+                        <td>Completed</td>
+                        <td>2021-03-26</td>
                       </tr>
                       <tr>
                         <td>Implementation and User Documentation</td>
@@ -448,8 +446,8 @@
                     </tbody>
                   </table>
                 </div>
-                <div id="5.2.3_Resource_allocation"> <a id="5.2.3" class="anchor"></a>
-                  <h5><span>5.2.3 Resource allocation</span></h5>
+                <div id="5-2-3"> <a id="5-2-3-resource-allocation" class="anchor"></a>
+                  <h5><span>5.2.3 Resource Allocation</span></h5>
                   <p> The specifications in resource allocation have to deal with more physical aspects of the project,
                     which are universally available to all group members. The only topic that is relevant to this group
                     is the required skill level of personnel. Group members will assign themselves to the topics that
@@ -460,11 +458,11 @@
                 </div>
               </ul>
             </div>
-            <div id="5.3_control_plan">
-              <ul> <a id="5.3" class="anchor"></a>
-                <h4><span>5.3 Control plan</span></h4><br>
-                <div id="5.3.1_requirements_control_plan"> <a id="5.3.1" class="anchor"></a>
-                  <h5><span>5.3.1 Requirements control plan</span></h5>
+            <div id="5-3"><a id="5-3-control-plan" class="anchor"></a>
+              <ul> 
+                <h4><span>5.3 Control Plan</span></h4><br>
+                <div id="5-3-1"> <a id="5-3-1-requirements-control_plan" class="anchor"></a>
+                  <h5><span>5.3.1 Requirements Control Plan</span></h5>
                   <p> As we go along with the process of developing the application, requirements may change. There will
                     be a few steps to take before any changes are made. First we have to consider how the change will
                     impact the product and will it be impacted positively or negatively? The next step is to think about
@@ -473,8 +471,8 @@
                     based on our skill level. Once these questions are answered, as a team we will decide if we should
                     go forward with the change or not. </p>
                 </div>
-                <div id="5.3.2_schedule_control_plan"> <a id="5.3.2" class="anchor"></a>
-                  <h5><span>5.3.2 Schedule control plan</span></h5>
+                <div id="5-3-2"> <a id="5-3-2-schedule-control-plan" class="anchor"></a>
+                  <h5><span>5.3.2 Schedule Control Plan</span></h5>
                   <p> In order to deliver the project on time, we will be maintaining our progress and will have a
                     potential time frame for each task. For each task, we will decide on an approximate deadline which
                     will be ahead of the actual due date. Within the main tasks we will create subtasks and will have a
@@ -482,9 +480,9 @@
                     well which will be the final deadline for that subtask. The first due date will not be a hard due
                     date. </p>
                 </div>
-                <div id="5.3.3_quality_control_plan"> <a id="5.3.3" class="anchor"></a>
-                  <h5><span>5.3.3 Quality control plan</span></h5>
-                  <p> To ensure that we deliver a quality project we will be spending a fair amount of time testing each
+                <div id="5-3-3"> <a id="5-3-3-quality-control-plan" class="anchor"></a>
+                  <h5><span>5.3.3 Quality Control Plan</span></h5>
+                  <p>To ensure that we deliver a quality project we will be spending a fair amount of time testing each
                     individual feature as it is developed. The whole team will have the responsibility of looking for
                     bugs in the code, reporting the bugs, and working together to eliminate these bugs. To keep track of
                     the bugs there will be a bug tracking spreadsheet where each bug will be reported, where to find the
@@ -497,24 +495,25 @@
             <hr> <br />
           </div>
           <div id="6"> <a id="6-technical-process-plans" class="anchor"></a>
-            <h2><span id="6">6 Technical Process Plans</span></h2><br />
-            <div id="6.1_process_model"> <a id="6.1" class="anchor"></a>
-              <h4><span>6.1 Process model</span></h4>
+            <h2><span>6 Technical Process Plans</span></h2><br />
+            <div id="6-1"> <a id="6-1-process-model" class="anchor"></a>
+              <h4><span>6.1 Process Model</span></h4>
               <p> The flow of information will be controlled via Discord. Each work group, assigned to a specific
                 activity, will have a dedicated text conversation in which the news, updates, changes, and other
                 information related to that activity will be disseminated.
-              <p>The project is initially linear with respect to the flow of work products and relationships between
+                <br/>
+                <br/>The project is initially linear with respect to the flow of work products and relationships between
                 activities. Each deliverable forms its own work activity and group. The first five deliverables will be
                 completed sequentially, and each subsequent activity will begin immediately after the previous one ends.
                 However, after the prototype is created, the front-end and back-end work activities can be done
                 simultaneously. Furthermore, testing on code for both activities can be completed as required while
-                other sections are in-progress.</p>
-              <p> Upon completion of the first five work activities, each section of that activity should be reviewed
+                other sections are in-progress.<br/>
+                <br/>Upon completion of the first five work activities, each section of that activity should be reviewed
                 and approved by at least two other group members. For the front-end and back-end activities, the testing
                 work activity will act as review and approval for the actual implementation.</p>
-              <p> For a list of deliverables and work activities, see section <a href="#5.2.1">5.2.1</a>.</p>
+              <p> For a list of deliverables and work activities, see section <a href="#5-2-1-work-activities">5.2.1</a>.</p>
               <p> The major milestones to be achieved (from this point forward) are as follows: </p>
-              <table class="table table-hover" id="6.1_table_deliverables">
+              <table class="table table-hover">
                 <thead>
                   <tr>
                     <th>Deliverables</th>
@@ -523,23 +522,23 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Specifications</td>
+                    <td><a href="./specifications.html">Specifications</a></td>
                     <td>2021-01-29</td>
                   </tr>
                   <tr>
-                    <td>Software Project Management Plan (SPMP)</td>
+                    <td><a href="./spmp.html">Software Project Management Plan (SPMP)</a></td>
                     <td>2021-02-05</td>
                   </tr>
                   <tr>
-                    <td>Requirements</td>
+                    <td><a href="./requirements.html">Requirements</a></td>
                     <td>2021-02-12</td>
                   </tr>
                   <tr>
-                    <td>Object-oriented analysis</td>
+                    <td><a href="./analysis.html">Object-Oriented Analysis</a></td>
                     <td>2021-03-05</td>
                   </tr>
                   <tr>
-                    <td>Design</td>
+                    <td><a href="./design.html">Design</a></td>
                     <td>2021-03-26</td>
                   </tr>
                   <tr>
@@ -549,9 +548,9 @@
                 </tbody>
               </table>
             </div>
-            <div id="6.2_methods"> <a id="6.2" class="anchor"></a>
-              <h4><span>6.2 Methods, tools, and techniques</span></h4>
-              <table class="table table-hover" id="6.2_table_tools">
+            <div id="6-2"> <a id="6-2-methods-tools-techniques" class="anchor"></a>
+              <h4><span>6.2 Methods, Tools, and Techniques</span></h4>
+              <table class="table table-hover">
                 <thead>
                   <tr>
                     <th>Tool Types</th>
@@ -560,23 +559,27 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Languages</td>
+                    <th>Languages</th>
                     <td>HTML, CSS, Python, SQL</td>
                   </tr>
                   <tr>
-                    <td>Version Control</td>
+                    <th>Framework</th>
+                    <td>Bootstrap</td>
+                  </tr>
+                  <tr>
+                    <th>Version Control</th>
                     <td>Git</td>
                   </tr>
                   <tr>
-                    <td>Prototyping Software</td>
+                    <th>Prototyping Software</th>
                     <td>Figma</td>
                   </tr>
                   <tr>
-                    <td>Project Management</td>
+                    <th>Project Management</th>
                     <td>GitHub, Sheets, Discord</td>
                   </tr>
                   <tr>
-                    <td>Diagram Software</td>
+                    <th>Diagram Software</th>
                     <td>Diagram.net</td>
                   </tr>
                 </tbody>
@@ -588,7 +591,7 @@
           </div>
           <div id="7"> <a id="7-supporting-process-plans" class="anchor"></a>
             <h2><span>7 Supporting Process Plans</span></h2><br />
-            <div id="7.1_verification"> <a id="7.1" class="anchor"></a>
+            <div id="7-1"> <a id="7-1-verification-and-validation-plan" class="anchor"></a>
               <h4><span>7.1 Verification and Validation Plan</span></h4>
               <p> Verification and validation is an important step for any project to go to a stable state. A stable
                 state is when a program has been tested and validated as bug free. This state is where it has
@@ -612,8 +615,8 @@
                 <li>Once finalized and validated, developers will set the current version as a stable version.</li>
               </ol>
             </div>
-            <div id="7.2_documentation"> <a id="7.2" class="anchor"></a>
-              <h4><span>7.2 Documentation plan</span></h4>
+            <div id="7-2"> <a id="7-2-documentation-plan" class="anchor"></a>
+              <h4><span>7.2 Documentation Plan</span></h4>
               <p> Documentation is an important process when handling code. It is important when it comes to coding as
                 it gives a short and concise description of what the code does. This is beneficial for other developers
                 when they use another developer’s code. Documentation not only benefits you as a developer, but your
@@ -629,8 +632,8 @@
                 <li>Date of edit by the editor who last modified code</li>
               </ul>
             </div>
-            <div id="7.3_quality_assurance_plan"> <a id="7.3" class="anchor"></a>
-              <h4><span>7.3 Quality assurance plan</span></h4>
+            <div id="7-3"> <a id="7-3-quality-assurance-plan" class="anchor"></a>
+              <h4><span>7.3 Quality Assurance Plan</span></h4>
               <p> Quality assurance is key to creating a quality final product. In order to succeed in that we have a
                 plan to ensure that we create the best Pokémon Encyclopedia we can. The most important step in this
                 process is making sure each member of the group looks at and approves of each stage in this project.
@@ -650,16 +653,16 @@
           </div>
           <div id="8"> <a id="8-additional-plans" class="anchor"></a>
             <h2><span>8 Additional Plans</span></h2><br />
-            <div id="8.1_plan_index"> <a id="8.1" class="anchor"></a>
-              <h4><span>8.1 Plan index</span></h4>
+            <div id="8-1"> <a id="8-1-plan-index" class="anchor"></a>
+              <h4><span>8.1 Plan Index</span></h4>
+              <p> <b>Catch Rate</b> - the initial calculation which in Pokémon, determines the probability of catching
+                a Pokémon. </p>
               <p> <b>Generation I Pokémon</b> - the first generation of Pokémon featuring the original 151 species of
                 Pokémon. </p>
               <p> <b>Pokédex</b> - a device which is designed to catalogue and provide information about various
                 different species of generation I Pokémon. </p>
               <p> <b>The Pokémon Encyclopedia</b> - a third party database created for the access of information on
                 generation I Pokémon. </p>
-              <p> <b>Catch Rate</b> - the initial calculation which in Pokémon , determines the probability of catching
-                a Pokémon. </p>
             </div>
           </div>
           <div id="divide_1">
@@ -667,7 +670,16 @@
           </div>
           <div id="9"> <a id="9-versions" class="anchor"></a>
             <h2><span>9 Versions</span></h2><br />
-            <div id="9_version_0.5"> <a id="Version_0.5" class="anchor"></a>
+            <div id="9-v0.6"> <a id="Version_0.6" class="anchor"></a>
+              <h5><span> Version 0.6 - 2021-03-30</span></h5>
+              <ul>
+                <li>Fixes to hyperlinks and anchors</li>
+                <ul>
+                  <li><em>Kevin He</em></li>
+                </ul>
+              </ul>
+            </div>
+            <div id="9-v0.5"> <a id="Version_0.5" class="anchor"></a>
               <h5><span> Version 0.5 - 2021-03-25</span></h5>
               <ul>
                 <li>Upgrade to Bootstrap Framework for site</li>
@@ -677,7 +689,7 @@
                 </ul>
               </ul>
             </div>
-            <div id="9_version_0.4"> <a id="Version_0.4" class="anchor"></a>
+            <div id="9-v0.4"> <a id="Version_0.4" class="anchor"></a>
               <h5><span> Version 0.4 - 2021-03-20</span></h5>
               <ul>
                 <li>Changed how dates are displayed for easy understanding from MM/DD/YYYY to the ISO 8601 date standard
@@ -691,7 +703,7 @@
                 </ul>
               </ul>
             </div>
-            <div id="9_version_0.3"> <a id="Version_0.3" class="anchor"></a>
+            <div id="9-v0.3"> <a id="Version_0.3" class="anchor"></a>
               <h5><span>Version 0.3 - 2021-02-07</span></h5>
               <ul>
                 <li>Updated section 6.1</li>
@@ -700,7 +712,7 @@
                 </ul>
               </ul>
             </div>
-            <div id="9_version_0.2"> <a id="Version_0.2" class="anchor"></a>
+            <div id="9-v0.2"> <a id="Version_0.2" class="anchor"></a>
               <h5><span>Version 0.2 - 2021-02-05</span></h5>
               <ul>
                 <li>Updated deliverables & Team roles</li>
@@ -709,7 +721,7 @@
                 </ul>
               </ul>
             </div>
-            <div id="9_version_0.1"> <a id="Version_0.1" class="anchor"></a>
+            <div id="9-v0.1"> <a id="Version_0.1" class="anchor"></a>
               <h5><span>Version 0.1 - 2021-01-21</span></h5>
               <ul>
                 <li>Document created and presented information</li>
@@ -723,15 +735,24 @@
         </div>
       </div>
     </div>
-  </section> <!-- Footer -->
+  </section> 
+  
+  <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Team Rocket</p>
-    </div> <!-- /.container -->
-  </footer> <!-- Bootstrap core JavaScript -->
+    </div> 
+    <!-- /.container -->
+  </footer> 
+  
+  <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Plugin JavaScript -->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script> <!-- Custom JavaScript for this theme -->
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+  
+  <!-- Plugin JavaScript -->
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script> 
+  
+  <!-- Custom JavaScript for this theme -->
   <script src="../js/scrolling-nav.js"></script>
 </body>
 
