@@ -34,6 +34,7 @@
           </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./analysis.html">Analysis</a> </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./design.html">Design</a> </li>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./version.html">Version</a> </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./sqa.html">SQA</a> </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger"
               href="https://github.com/IanR9532/Team-Rocket">GitHub</a> </li>
@@ -44,7 +45,7 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Analysis</h1>
-      <p class="lead"><a href="#Version_0.3" style="color: rgb(255, 255, 255)">#Version 0.3 - 2021-03-25</a></p>
+      <p class="lead"><a href="#Version-0.3" style="color: rgb(255, 255, 255)">#Version 0.3 - 2021-03-25</a></p>
     </div>
   </header>
   <section id="main">
@@ -53,26 +54,43 @@
         
         <div class="col-sm-2">
           <nav id="toc" data-toggle="toc" class="sticky-top">
-            <h5>Table of contents</h5>
+            <h5>Table of Contents</h5>
             <ul class="nav-toc">
               <li><a href="#entity-objects">Entity Objects</a></li>
+              <ul class="nav-toc">
+                <li><a href="#eo-1-pokemon"><b>1.</b> Pokémon</a></li>
+                <li><a href="#eo-2-Team"><b>2.</b> Team</a></li>
+                <li><a href="#eo-3-user"><b>3.</b> User</a></li>
+                <li><a href="#eo-diagram">Entity Objects Diagram</a></li>
+              </ul>
               <li><a href="#boundary-objects">Boundary Objects</a></li>
+              <ul class="nav-toc">
+                <li><a href="#bo-1-log-in"><b>1.</b> Log-in</a></li>
+                <li><a href="#bo-2-registration"><b>2.</b> Registration</a></li>
+                <li><a href="#bo-3-home"><b>3.</b> Home</a></li>
+                <li><a href="#bo-4-search"><b>4.</b> Search</a></li>
+                <li><a href="#bo-5-profile"><b>5.</b> Profile</a></li>
+                <li><a href="#bo-6-saved-pokemon"><b>6.</b> Saved Pokémon</a></li>
+                <li><a href="#bo-7-comparison"><b>7.</b> Comparison</a></li>
+                <li><a href="#bo-8-team-selection-interface"><b>8.</b> Team Selection Interface</a></li>
+                <li><a href="#bo-9-team"><b>9.</b> Team</a></li>
+                <li><a href="#bo-10-header"><b>10.</b> Header</a></li>
+              </ul>
               <li><a href="#control-objects">Control Objects</a></li>
               <li><a href="#user-associated-diagram">User Associated Diagram</a></li>
               <li><a href="#pokémon-associated-diagram">Pokémon Associated Diagram</a></li>
-              <li><a href="#database-diagram">Database Diagram</a></li>
               <li><a href="#version">Versions</a></li>
             </ul>
           </nav>
         </div>
-
+        
         <div class="col-lg-8 mx-auto">
           <div> <a id="entity-objects" class="anchor"></a>
             <h2>Entity Objects</h2>
             <p> There are two primary entity objects identified using noun-extraction. The project will store
               information about ‘first generation’ Pokémon and any teams created by the user </p>
-            <ol type="1">
-              <li> <b>Pokémon: </b>the entity object that stores information about each Pokémon. It will allow Pokémon
+            <ol type="1"><a id="eo-1-pokemon" class="anchor"></a>
+              <li> <b>Pokemon: </b>the entity object that stores information about each Pokémon. It will allow Pokémon
                 to be added to teams, to enable the user to easily see information about the Pokémon in one place, and
                 to allow comparison between two Pokémon species. All attributes are set when entered into the database
                 and immutable (unless changed at an administrative level inside the database). </li><br />
@@ -146,6 +164,7 @@
               </table>
               <p> <em>*Each Pokémon species has a base level of HP, Attack, Defense, Sp. Attack, Sp. Defense, and Speed
                   regardless of the moves they have and level that they are.</em> </p> <br>
+              <a id="eo-2-Team" class="anchor"></a>
               <li> <b>Team: </b>the entity object that stores information about a Pokémon team (of max 6 Pokémon to
                 match the in-game team size) that has been created. It enables the user to retrieve teams that they have
                 created and saved earlier and then to make changes to them. All attributes in the team entity project
@@ -171,7 +190,7 @@
                   </tr>
                   <tr>
                     <td>Members</td>
-                    <td>list of Pokémon objects</td>
+                    <td>list of Pokemon objects</td>
                     <td>the Pokémon on the team</td>
                   </tr>
                   <tr>
@@ -181,6 +200,7 @@
                   </tr>
                 </tbody>
               </table> <br>
+              <a id="eo-3-user" class="anchor"></a>
               <li> <b>User: </b>the profile for the user that tracks their information. Is created by the user when they
                 sign up to use the web application. Information is updated by them at their convenience (except their
                 user ID which will not change). </li><br />
@@ -190,7 +210,7 @@
                     <th>Attributes</th>
                     <th>Type</th>
                     <th>Description</th>
-                    <th></th>
+                    <th>Creation Period</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -215,12 +235,12 @@
                   <tr>
                     <td>SavedTeams</td>
                     <td>list of Team entity objects</td>
-                    <td>he teams that the user has created and saved (up to three)</td>
+                    <td>the teams that the user has created and saved (up to three)</td>
                     <td>Set by the user during team creation or deletion, subject to change</td>
                   </tr>
                   <tr>
-                    <td>SavedPokémon</td>
-                    <td>list of Pokémon entity objects</td>
+                    <td>SavedPokemon</td>
+                    <td>list of Pokemon entity objects</td>
                     <td>Pokémon that the user has chosen to save</td>
                     <td>Set by the user after choosing to save or remove a Pokémon from their SavedPokémon list, subject
                       to change</td>
@@ -228,6 +248,13 @@
                 </tbody>
               </table>
             </ol>
+            <div> <a id="eo-diagram" class="anchor"></a>
+              <h4>Entity Objects Diagram</h4>
+              <p>
+                <!-- INSERT DESCRIPTION IF NEEDED UNDERNEATH THIS LINE-->
+              </p>
+              <center> <img src="../img/analysis/database.png" class="img-responsive" alt="Entity Objects Diagram"> </center>
+            </div>
           </div>
           <div id="divide_1">
             <hr>
@@ -239,6 +266,7 @@
               the information will be presented and/or the action required from the user to obtain the information
               necessary. </p>
             <ol type="1">
+              <a id="bo-1-log-in" class="anchor"></a>
               <li><b>Log-in:</b></li>
               <ul>
                 <p><u><i>What:</i></u> The log-in menu will be used to record the user credentials and to
@@ -250,6 +278,7 @@
                 <p><u><i>How:</i></u> The user will type in the information. The error message and help centre
                   will be a separate window.</p>
               </ul>
+              <a id="bo-2-registration" class="anchor"></a>
               <li><b>Registration:</b></li>
               <ul>
                 <p><u><i>What:</i></u> Presents the user with an option to register a new account. When a user
@@ -260,6 +289,7 @@
                 <p><u><i>How:</i></u> The user will type in information. The error message(s) will pop up in a separate
                   window.</p>
               </ul>
+              <a id="bo-3-home" class="anchor"></a>
               <li><b>Home:</b></li>
               <ul>
                 <p><u><i>What:</i></u> It will present the user with four options that they can be directed to:
@@ -268,6 +298,7 @@
                 <p><u><i>How:</i></u> The object should
                   have four buttons, corresponding to each of the above options, that the user can click. </p>
               </ul>
+              <a id="bo-4-search" class="anchor"></a>
               <li><b>Search:</b></li>
               <ul>
               <p><u><i>What:</i></u> The user must input the name of a Pokémon that they want to search. The
@@ -277,6 +308,7 @@
               </p>
               <p><i>How:</i> The user will type in the information. </p>
               </ul>
+              <a id="bo-5-profile" class="anchor"></a>
               <li><b>Profile:</b></li>
               <ul>
               <p><u><i>What:</i></u> The profile boundary object presents the user with all of the statistics
@@ -284,6 +316,7 @@
                 Level, Location(s), Type) and a photo of the Pokémon.
               </p><u><i>How:</i></u> A table of the statistics and a photo above it. </p>
               </ul>
+              <a id="bo-6-saved-pokemon" class="anchor"></a>
               <li><b>Saved Pokémon:</b></li>
               <ul>
               <p><u><i>What:</i></u> A list of the Pokémon that the user has chosen to save or favorite for
@@ -291,6 +324,7 @@
               <p><i>How:</i> A list of the names of the Pokémon, sorted alphabetically.
               </p>
               </ul>
+              <a id="bo-7-comparison" class="anchor"></a>
               <li><b>Comparison:</b></li>
               <ul>
               <p><u><i>What:</i></u> The user must input which two Pokémon will be compared and then the user
@@ -301,6 +335,7 @@
               </p>
               <p><u><i>How:</i></u> In a table, similar to the Profile object. </p>
               </ul>
+              <a id="bo-8-team-selection-interface" class="anchor"></a>
               <li><b>Team Selection Interface:</b></li>
               <ul>
                 <p><u><i>What:</i></u> Allows users to create teams and presents the user with a list of teams,
@@ -311,6 +346,7 @@
                   <u><i>How:</i></u> A list of the names of the teams, sorted alphabetically.
                 </p>
               </ul>
+              <a id="bo-9-team" class="anchor"></a>
               <li><b>Team:</b></li>
               <ul>
               <p><u><i>What:</i></u> Presents the user with the information on a team, including a team name
@@ -322,9 +358,10 @@
               <p><u><i>How:</i></u> The user will be able to click on slots and choose from a list. The slots will be presented to the
                     user with six slots organized into two rows. </p>
               </ul>
+              <a id="bo-10-header" class="anchor"></a>
               <li><b>Header:</b></li>
               <ul>
-              <p><u><i>What:</i></u> Presents the user with the title of the project (“Pokedex”) and the name
+              <p><u><i>What:</i></u> Presents the user with the title of the project (“Pokémon Encylopedia”) and the name
                 of the current webpage. It enables the user to return to the Homepage.
               </p>
               <p><i>How:</i> The user can press a button to return to the homepage. </p>
@@ -406,30 +443,26 @@
           <div id="divide_1">
             <hr>
           </div>
-          <div> <a id="database-diagram" class="anchor"></a>
-            <h2>Database Diagram</h2>
-            <p>
-              <!-- INSERT DESCRIPTION IF NEEDED UNDERNEATH THIS LINE-->
-            </p>
-            <center> <img src="../img/analysis/database.png" class="img-responsive" alt="Database Diagram"> </center>
-          </div>
+
           <div id="divide_1">
             <hr>
           </div>
           <div> <a id="version" class="anchor"></a>
             <h2><span>Versions</span></h2><br />
-            <div> <a id="Version_0.3" class="anchor"></a>
+            <div> <a id="Version-0.3" class="anchor"></a>
               <h5><span> Version 0.3 - 2021-03-25</span></h5>
               <ul>
                 <li>Upgrade to Bootstrap Framework for site</li>
                 <li>Added Table of Contents</li>
-                <li>Fixed Database Diagram</li>
+                <li>Fixed <a href="#database-diagram">Database Diagram</a> where attribute 'locations' in class 'Pokemon' from 'sting' type to 'string'</li>
+                <li>'type1' and 'type2' is included in class 'Pokemon' in <a href="#database-diagram">Database Diagram</a></li>
+                <li>'effectiveness' was removed in class 'Pokemon' <a href="#database-diagram">Database Diagram</a></li>
                 <ul>
-                  <li><em>Kevin He</em></li>
+                  <li><em>Sunil Brijlall, Kevin He</em></li>
                 </ul>
               </ul>
             </div>
-            <div> <a id="Version_0.2" class="anchor"></a>
+            <div> <a id="Version-0.2" class="anchor"></a>
               <h5><span> Version 0.2 - 2021-03-20</span></h5>
               <ul>
                 <li>Changed how dates are displayed for easy understanding from MM/DD/YYYY to the ISO 8601 date standard
@@ -442,7 +475,7 @@
                 </ul>
               </ul>
             </div>
-            <div> <a id="Version_0.1" class="anchor"></a>
+            <div> <a id="Version-0.1" class="anchor"></a>
               <h5><span> Version 0.1 - 2021-03-04</span></h5>
               <ul>
                 <li>Document created and presented information</li>

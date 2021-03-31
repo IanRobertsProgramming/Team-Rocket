@@ -35,6 +35,7 @@
           </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./analysis.html">Analysis</a> </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./design.html">Design</a> </li>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./version.html">Version</a> </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./sqa.html">SQA</a> </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger"
               href="https://github.com/IanR9532/Team-Rocket">GitHub</a> </li>
@@ -45,17 +46,16 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Specification</h1>
-      <p class="lead"><a href="#Version_0.3" style="color: rgb(255, 255, 255)">#Version 0.3 - 2021-03-25</a></p>
+      <p class="lead"><a href="#Version-0.4" style="color: rgb(255, 255, 255)">#Version 0.4 - 2021-03-31</a></p>
     </div>
   </header>
   <section id="main">
     <div class="container">
       <div class="row">
 
-
         <div class="col-sm-2">
           <nav id="toc" data-toggle="toc" class="sticky-top">
-            <h5>Table of contents</h5>
+            <h5>Table of Contents</h5>
             <ul class="nav-toc">
               <li><a href="#1-introduction"><b>1</b> Introduction</a></li>
               <ul class="nav-toc">
@@ -64,6 +64,7 @@
                 <li><a href="#1-3-definitions-acronyms-abbreviations"><b>1.3</b> Definitions, Acronyms, and Abbreviations</a>
                 </li>
                 <li><a href="#1-4-references"><b>1.4</b> References</a></li>
+                <li><a href="#1-5-overview"><b>1.5</b> Overview</a></li>
               </ul>
               <li><a href="#2-overall-description"><b>2</b> Overall Description</a></li>
               <ul class="nav-toc">
@@ -80,12 +81,16 @@
                 <li><a href="#3-3-objects"><b>3.3</b> Objects</a>
                 </li>
                 <li><a href="#3-4-features"><b>3.4</b> Features</a></li>
+                <ul class="nav-toc">
+                  <li><a href="#3-4-1-searching-for-a-specific-pokemon"><b>3.4.1</b> Searching for a Specific Pokémon</a></li>
+                  <li><a href="#3-4-2-comparing-two-pokemon"><b>3.4.2</b> Comparing two Pokémon</a></li>
+                  <li><a href="#3-4-3-letting-users-save-information-on-their-account"><b>3.4.3</b> Letting users save information on their account</a></li>
+                </ul>
               </ul>
               <li><a href="#4-versions"><b>4</b> Versions</a></li>
             </ul>
           </nav>
         </div>
-
 
         <div class="col-lg-8 mx-auto">
           <div id="1"> <a id="1-introduction" class="anchor"></a>
@@ -99,7 +104,7 @@
             </div>
             <div id="1-2"> <a id="1-2-scope" class="anchor"></a>
               <h4><span>1.2 Scope</span></h4>
-              <p> We aim to have all 151 generation I Pokémon in our database, along with the following information
+              <p> We aim to have all 150 generation I Pokémon in our database, along with the following information
                 which has already been provided by the ingame Pokédex: name, description, type(s), height, weight, brief
                 biography description, and location. As well as additional information that is relevant but not provided
                 in-game: abilities, catch rate, type match ups, leveling-rate, and EV yield. We would also like to have
@@ -138,7 +143,7 @@
                 </li> <br>
               </ul>
             </div>
-            <div id="1-5-overview"> <a id="1-5-overview" class="anchor"></a>
+            <div id="1-5"> <a id="1-5-overview" class="anchor"></a>
               <h4><span>1.5 Overview</span></h4>
               <p> The Pokémon Encyclopedia (“the project”, “the software”) is a third party database created for the
                 access of information on generation I Pokémon. The purpose of this application is to give Pokémon
@@ -216,7 +221,7 @@
                 currently like the Pokémon objects to have </p>
             </div>
             <div id="3-4"> <a id="3-4-features" class="anchor"></a>
-              <h4><span>3.4 Features</span></h4>
+              <h4><span>3.4 Features</span></h4><br/>
               <ul> 
                 <a id="3-4-1-searching-for-a-specific-pokemon" class="anchor"></a>
                 <h5>3.4.1 Searching for a Specific Pokémon</h5>
@@ -247,16 +252,17 @@
           </div>
           <div id="4"> <a id="4-versions" class="anchor"></a>
             <h2><span>4 Versions</span></h2><br />
-            <div id="4-v0.4"> <a id="Version_0.4" class="anchor"></a>
-              <h5><span>Version 0.4 - 2021-03-30</span></h5>
+            <div id="4-v0.4"> <a id="Version-0.4" class="anchor"></a>
+              <h5><span>Version 0.4 - 2021-03-31</span></h5>
               <ul>
                 <li>Fixes to hyperlinks and anchors</li>
+                <li>Table of Contents updated</li>
                 <ul>
                   <li><em>Kevin He</em></li>
                 </ul>
               </ul>
             </div>
-            <div id="4-v0.3"> <a id="Version_0.3" class="anchor"></a>
+            <div id="4-v0.3"> <a id="Version-0.3" class="anchor"></a>
               <h5><span>Version 0.3 - 2021-03-25</span></h5>
               <ul>
                 <li>Upgrade to Bootstrap Framework for site</li>
@@ -266,7 +272,7 @@
                 </ul>
               </ul>
             </div>
-            <div id="4-v0.2"> <a id="Version_0.2" class="anchor"></a>
+            <div id="4-v0.2"> <a id="Version-0.2" class="anchor"></a>
               <h5><span>Version 0.2 - 2021-03-20</span></h5>
               <ul>
                 <li>Changed how dates are displayed for easy understanding from MM/DD/YYYY to the ISO 8601 date standard
@@ -279,7 +285,7 @@
                 </ul>
               </ul>
             </div>
-            <div id="4-v0.1"> <a id="Version_0.1" class="anchor"></a>
+            <div id="4-v0.1"> <a id="Version-0.1" class="anchor"></a>
               <h5><span>Version 0.1 - 2021-01-21</span></h5>
               <ul>
                 <li>Document created and presented information</li>

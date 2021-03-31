@@ -34,6 +34,7 @@
           </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./analysis.html">Analysis</a> </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./design.html">Design</a> </li>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./version.html">Version</a> </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./sqa.html">SQA</a> </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger"
               href="https://github.com/IanR9532/Team-Rocket">GitHub</a> </li>
@@ -44,7 +45,7 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Software Project Management Plan</h1>
-      <p class="lead"><a href="#Version_0.6" style="color: rgb(255, 255, 255)">#Version 0.6 - 2021-03-30</a></p>
+      <p class="lead"><a href="#Version-0.6" style="color: rgb(255, 255, 255)">#Version 0.6 - 2021-03-31</a></p>
     </div>
   </header>
   <section id="main">
@@ -53,17 +54,61 @@
 
         <div class="col-sm-2">
           <nav id="toc" data-toggle="toc" class="sticky-top">
-            <h5>Table of contents</h5>
+            <h5>Table of Contents</h5>
             <ul class="nav-toc">
               <li><a href="#1-introduction"><b>1</b> Introduction</a></li>
+              <ul class="nav-toc">
+                <li><a href="#1-1-project-summary"><b>1.1</b> Project Summary</a></li>
+                <ul class="nav-toc">
+                  <li><a href="#1-1-1-purpose"><b>1.1.1</b> Purpose</a></li>
+                  <li><a href="#1-1-2-scope"><b>1.1.2</b> Scope</a></li>
+                  <li><a href="#1-1-3-assumptions-and-constraints"><b>1.1.3</b> Assumptions and Constraints</a></li>
+                  <li><a href="#1-1-4-evolution-of-the-plan"><b>1.1.4</b> Evolution of the Plan</a></li>
+                </ul>
+              </ul>
               <li><a href="#2-references"><b>2</b> References</a></li>
               <li><a href="#3-definitions"><b>3</b> Definitions</a></li>
               <li><a href="#4-project-organization"><b>4</b> Project Organization</a></li>
-              <li><a href="#5-managerial-process-plans"><b>5</b> Managerial Process Plans</a></li> 
-              <li><a href="#6-technical-process-plans"><b>6</b> Technical Process Plans</a></li> 
-              <li><a href="#7-supporting-process-plans"><b>7</b> Supporting Process Plans</a></li> 
-              <li><a href="#8-additional-plans"><b>8</b> Additional Plans</a></li> 
-              <li><a href="#9-versions"><b>9</b> Versions</a></li> 
+              <ul class="nav-toc">
+                <li><a href="#4-1-product-perspective"><b>4.1</b> Product Perspective</a></li>
+                <li><a href="#4-2-organization-structure"><b>4.2</b> Organization Structure</a></li>
+                <li><a href="#4-3-project-responsibilities"><b>4.3</b> Project Responsibilities</a></li>
+              </ul>
+              <li><a href="#5-managerial-process-plans"><b>5</b> Managerial Process Plans</a></li>
+              <ul class="nav-toc">
+                <li><a href="#5-1-project-start-up"><b>5.1</b> Project Start-up Plan</a></li>
+                <ul class="nav-toc">
+                  <li><a href="#5-1-2-staffing-plan"><b>5.1.2</b> Staffing Plan</a></li>
+                  <li><a href="#5-1-3-project-staff-training-plan"><b>5.1.3</b> Project Staff Training Plan</a></li>
+                </ul>
+                <li><a href="#5-2-work-plan"><b>5.2</b> Work Plan</a></li>
+                <ul class="nav-toc">
+                  <li><a href="#5-2-1-work-activities"><b>5.2.1</b> Work Activities</a></li>
+                  <li><a href="#5-2-2-schedule-allocation"><b>5.2.2</b> Schedule Allocation</a></li>
+                </ul>
+                <li><a href="#5-3-control-plan"><b>5.3</b> Control Plan</a></li>
+                <ul class="nav-toc">
+                  <li><a href="#5-3-1-requirements-control_plan"><b>5.3.1</b> Requirements Control Plan</a></li>
+                  <li><a href="#5-3-2-schedule-control-plan"><b>5.3.2</b> Schedule Control Plan</a></li>
+                  <li><a href="#5-3-3-quality-control-plan"><b>5.3.3</b> Quality Control Plan</a></li>
+                </ul>
+              </ul>
+              <li><a href="#6-technical-process-plans"><b>6</b> Technical Process Plans</a></li>
+              <ul class="nav-toc">
+                <li><a href="#6-1-process-model"><b>6.1</b> Process Model</a></li>
+                <li><a href="#6-2-methods-tools-techniques"><b>6.2</b> Methods, Tools, and Techniques</a></li>
+              </ul>
+              <li><a href="#7-supporting-process-plans"><b>7</b> Supporting Process Plans</a></li>
+              <ul class="nav-toc">
+                <li><a href="#7-1-verification-and-validation-plan"><b>7.1</b> Verification and Validation Plan</a></li>
+                <li><a href="#7-2-documentation-plan"><b>7.2</b> Documentation Plan</a></li>
+                <li><a href="#7-3-quality-assurance-plan"><b>7.3</b> Quality Assurance Plan</a></li>
+              </ul>
+              <li><a href="#8-additional-plans"><b>8</b> Additional Plans</a></li>
+              <ul class="nav-toc">
+                <li><a href="#8-1-plan-index"><b>8.1</b> Plan Index</a></li>
+              </ul>
+              <li><a href="#9-versions"><b>9</b> Versions</a></li>
             </ul>
           </nav>
         </div>
@@ -78,7 +123,7 @@
               information like base stats, in-game locations, type effectiveness, natures, and learnset is not provided
               by other online encyclopedias. The Pokémon Encyclopedia strives to provide this information to allow the
               players to make educated decisions on how they would like to play the game. </p>
-            <div id="1-1"> <a id="1.1-project-summary" class="anchor"></a>
+            <div id="1-1"> <a id="1-1-project-summary" class="anchor"></a>
               <h4><span>1.1 Project Summary</span></h4><br />
               <ul>
                 <div id="1-1-1"> <a id="1-1-1-purpose" class="anchor"></a>
@@ -90,7 +135,7 @@
                 </div>
                 <div id="1-1-2"> <a id="1-1-2-scope" class="anchor"></a>
                   <h5><span>1.1.2 Scope</span></h5>
-                  <p> We aim to have all 151 generation I Pokémon in our database, along with the following information
+                  <p> We aim to have all 150 generation I Pokémon in our database, along with the following information
                     which has already been provided by the in-game Pokédex: name, description, type(s), height, weight,
                     brief biography description. As well as additional information that is relevant but not provided
                     in-game: abilities, catch rate, type match ups, leveling-rate, EV yield. As well, we would like to
@@ -459,8 +504,8 @@
               </ul>
             </div>
             <div id="5-3"><a id="5-3-control-plan" class="anchor"></a>
+              <h4><span>5.3 Control Plan</span></h4><br>
               <ul> 
-                <h4><span>5.3 Control Plan</span></h4><br>
                 <div id="5-3-1"> <a id="5-3-1-requirements-control_plan" class="anchor"></a>
                   <h5><span>5.3.1 Requirements Control Plan</span></h5>
                   <p> As we go along with the process of developing the application, requirements may change. There will
@@ -657,7 +702,7 @@
               <h4><span>8.1 Plan Index</span></h4>
               <p> <b>Catch Rate</b> - the initial calculation which in Pokémon, determines the probability of catching
                 a Pokémon. </p>
-              <p> <b>Generation I Pokémon</b> - the first generation of Pokémon featuring the original 151 species of
+              <p> <b>Generation I Pokémon</b> - the first generation of Pokémon featuring the original 150 species of
                 Pokémon. </p>
               <p> <b>Pokédex</b> - a device which is designed to catalogue and provide information about various
                 different species of generation I Pokémon. </p>
@@ -670,16 +715,17 @@
           </div>
           <div id="9"> <a id="9-versions" class="anchor"></a>
             <h2><span>9 Versions</span></h2><br />
-            <div id="9-v0.6"> <a id="Version_0.6" class="anchor"></a>
-              <h5><span> Version 0.6 - 2021-03-30</span></h5>
+            <div id="9-v0.6"> <a id="Version-0.6" class="anchor"></a>
+              <h5><span> Version 0.6 - 2021-03-31</span></h5>
               <ul>
                 <li>Fixes to hyperlinks and anchors</li>
+                <li>Table of Contents updated</li>
                 <ul>
                   <li><em>Kevin He</em></li>
                 </ul>
               </ul>
             </div>
-            <div id="9-v0.5"> <a id="Version_0.5" class="anchor"></a>
+            <div id="9-v0.5"> <a id="Version-0.5" class="anchor"></a>
               <h5><span> Version 0.5 - 2021-03-25</span></h5>
               <ul>
                 <li>Upgrade to Bootstrap Framework for site</li>
@@ -689,7 +735,7 @@
                 </ul>
               </ul>
             </div>
-            <div id="9-v0.4"> <a id="Version_0.4" class="anchor"></a>
+            <div id="9-v0.4"> <a id="Version-0.4" class="anchor"></a>
               <h5><span> Version 0.4 - 2021-03-20</span></h5>
               <ul>
                 <li>Changed how dates are displayed for easy understanding from MM/DD/YYYY to the ISO 8601 date standard
@@ -703,7 +749,7 @@
                 </ul>
               </ul>
             </div>
-            <div id="9-v0.3"> <a id="Version_0.3" class="anchor"></a>
+            <div id="9-v0.3"> <a id="Version-0.3" class="anchor"></a>
               <h5><span>Version 0.3 - 2021-02-07</span></h5>
               <ul>
                 <li>Updated section 6.1</li>
@@ -712,7 +758,7 @@
                 </ul>
               </ul>
             </div>
-            <div id="9-v0.2"> <a id="Version_0.2" class="anchor"></a>
+            <div id="9-v0.2"> <a id="Version-0.2" class="anchor"></a>
               <h5><span>Version 0.2 - 2021-02-05</span></h5>
               <ul>
                 <li>Updated deliverables & Team roles</li>
@@ -721,7 +767,7 @@
                 </ul>
               </ul>
             </div>
-            <div id="9-v0.1"> <a id="Version_0.1" class="anchor"></a>
+            <div id="9-v0.1"> <a id="Version-0.1" class="anchor"></a>
               <h5><span>Version 0.1 - 2021-01-21</span></h5>
               <ul>
                 <li>Document created and presented information</li>
