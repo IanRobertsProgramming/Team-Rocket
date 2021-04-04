@@ -46,7 +46,7 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Analysis</h1>
-      <p class="lead"><a href="#Version-0.3" style="color: rgb(255, 255, 255)">#Version 0.3 - 2021-03-25</a></p>
+      <p class="lead"><a href="#Version-0-4" style="color: rgb(255, 255, 255)">#Version 0.4 - 2021-04-04</a></p>
     </div>
   </header>
   <section id="main">
@@ -59,7 +59,7 @@
             <ul class="nav-toc">
               <li><a href="#entity-objects">Entity Objects</a></li>
               <ul class="nav-toc">
-                <li><a href="#eo-1-pokemon"><b>1.</b> Pokémon</a></li>
+                <li><a href="#eo-1-pokemon"><b>1.</b> Pokemon</a></li>
                 <li><a href="#eo-2-Team"><b>2.</b> Team</a></li>
                 <li><a href="#eo-3-user"><b>3.</b> User</a></li>
                 <li><a href="#eo-diagram">Entity Objects Diagram</a></li>
@@ -98,66 +98,78 @@
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>Attributes</th>
+                    <th>Attribute Name</th>
+                    <th>Attribute Variable Name</th>
                     <th>Type</th>
                     <th>Description</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Name</td>
-                    <td>string</td>
+                    <td><u>Name</u></td>
+                    <td>name</td>
+                    <td>String</td>
                     <td>the name of the Pokémon</td>
                   </tr>
                   <tr>
-                    <td>HP</td>
+                    <td><u>HP</u></td>
+                    <td>hp</td>
                     <td>integer</td>
                     <td>the base health statistic*</td>
                   </tr>
                   <tr>
-                    <td>Attack</td>
+                    <td><u>Attack</u></td>
+                    <td>attack</td>
                     <td>integer</td>
                     <td>the base attack statistic*</td>
                   </tr>
                   <tr>
-                    <td>Defense</td>
+                    <td><u>Defense</u></td>
+                    <td>defense</td>
                     <td>integer</td>
                     <td>the base defense statistic*</td>
                   </tr>
                   <tr>
-                    <td>Special Attack</td>
+                    <td><u>Special Attack</u></td>
+                    <td>special_attack</td>
                     <td>integer</td>
                     <td>the base strength of the Pokémon’s special attack*</td>
                   </tr>
                   <tr>
-                    <td>Special Defense</td>
+                    <td><u>Special Defense</u></td>
+                    <td>special_defense</td>
                     <td>integer</td>
                     <td>the base strength of the Pokémon’s special defense move*</td>
                   </tr>
                   <tr>
-                    <td>Speed</td>
+                    <td><u>Speed</u></td>
+                    <td>speed</td>
                     <td>integer</td>
                     <td>the base speed statistic*</td>
                   </tr>
                   <tr>
-                    <td>Evolve Level</td>
+                    <td><u>Evolve Level</u></td>
+                    <td>evolve_level</td>
                     <td>integer</td>
                     <td>the level at which the Pokémon evolves into a different Pokémon (the value is NULL if it does
                       not have an evolve level)</td>
                   </tr>
                   <tr>
-                    <td>Location(s)</td>
-                    <td>string</td>
+                    <td><u>Location(s)</u></td>
+                    <td>location</td>
+                    <td>String</td>
                     <td>the location or locations where the Pokémon can be found in the game</td>
                   </tr>
                   <tr>
-                    <td>Type</td>
-                    <td>string</td>
+                    <td><u>Type</u></td>
+                    <td>type</td>
+                    <td>String</td>
                     <td>the Pokémon type statistic (water, fire, grass, rock, etc.)</td>
                   </tr>
                   <tr>
-                    <td>Effectiveness</td>
-                    <td>array</td>
+                    <td><u>Effectiveness</u></td>
+                    <td>effectiveness</td>
+                    <td>list of type String</td>
                     <td>an array of all the strengths and weaknesses of a particular Pokémon when fetched from the
                       database.</td>
                   </tr>
@@ -173,33 +185,41 @@
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>Attributes</th>
+                    <th>Attribute Name</th>
+                    <th>Attribute Variable Name</th>
                     <th>Type</th>
                     <th>Description</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Team Name</td>
-                    <td>string</td>
-                    <td>the name of the team, created by the user</td>
+                    <td><del><u>Team Name</u></del></td>
+                    <td><del>team_name</del></td>
+                    <td><del>string</del></td>
+                    <td><del>the name of the team, created by the user</del></td>
                   </tr>
                   <tr>
-                    <td>Owner</td>
-                    <td>User</td>
+                    <td><u>Owner</u></td>
+                    <td>owner</td>
+                    <td>User object</td>
                     <td>the user who created the team</td>
                   </tr>
                   <tr>
-                    <td>Members</td>
+                    <td><u>Members</u></td>
+                    <td>members</td>
                     <td>list of Pokemon objects</td>
                     <td>the Pokémon on the team</td>
                   </tr>
                   <tr>
-                    <td>Number</td>
+                    <td><u>Number</u></td>
+                    <td>number</td>
                     <td>integer</td>
                     <td>the number of members out of 6</td>
                   </tr>
                 </tbody>
+                <caption>
+                  *Team Name will be removed as our team decided to not support the adding of Team Name.
+                </caption>
               </table> <br>
               <a id="eo-3-user" class="anchor"></a>
               <li> <b>User: </b>the profile for the user that tracks their information. Is created by the user when they
@@ -208,7 +228,8 @@
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>Attributes</th>
+                    <th>Attribute Name</th>
+                    <th>Attribute Variable Name</th>
                     <th>Type</th>
                     <th>Description</th>
                     <th>Creation Period</th>
@@ -216,34 +237,39 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Username</td>
-                    <td>string</td>
+                    <td><u>Username</u></td>
+                    <td>username</td>
+                    <td>String</td>
                     <td>the name of the user</td>
                     <td>Set during account creation</td>
                   </tr>
                   <tr>
-                    <td>User ID</td>
+                    <td><u>User ID</u></td>
+                    <td>user_id</td>
                     <td>integer</td>
                     <td>a number to identify the user</td>
                     <td>Set during account creation</td>
                   </tr>
                   <tr>
-                    <td>Password</td>
-                    <td>string</td>
+                    <td><u>Password</u></td>
+                    <td>password</td>
+                    <td>String</td>
                     <td>the user’s password</td>
                     <td>Set during account creation</td>
                   </tr>
                   <tr>
-                    <td>SavedTeams</td>
-                    <td>list of Team entity objects</td>
+                    <td><u>Saved Teams</u></td>
+                    <td>saved_Teams</td>
+                    <td>list of Team objects</td>
                     <td>the teams that the user has created and saved (up to three)</td>
                     <td>Set by the user during team creation or deletion, subject to change</td>
                   </tr>
                   <tr>
-                    <td>SavedPokemon</td>
-                    <td>list of Pokemon entity objects</td>
+                    <td><u>Saved Pokemon</u></td>
+                    <td>saved_pokemon</td>
+                    <td>list of Pokemon objects</td>
                     <td>Pokémon that the user has chosen to save</td>
-                    <td>Set by the user after choosing to save or remove a Pokémon from their SavedPokémon list, subject
+                    <td>Set by the user after choosing to save or remove a Pokémon from their Saved Pokémon list, subject
                       to change</td>
                   </tr>
                 </tbody>
@@ -307,7 +333,7 @@
                 Pokémon or search again. However, if the Pokémon is not found, the search will return none and prompt an
                 error message - “There is no matching result”.
               </p>
-              <p><i>How:</i> The user will type in the information. </p>
+              <p><u><i>How:</i></u> The user will type in the information. </p>
               </ul>
               <a id="bo-5-profile" class="anchor"></a>
               <li><b>Profile:</b></li>
@@ -322,7 +348,7 @@
               <ul>
               <p><u><i>What:</i></u> A list of the Pokémon that the user has chosen to save or favorite for
                 future quick lookup.</p>
-              <p><i>How:</i> A list of the names of the Pokémon, sorted alphabetically.
+              <p><u><i>How:</i></u> A list of the names of the Pokémon, sorted alphabetically.
               </p>
               </ul>
               <a id="bo-7-comparison" class="anchor"></a>
@@ -350,12 +376,10 @@
               <a id="bo-9-team" class="anchor"></a>
               <li><b>Team:</b></li>
               <ul>
-              <p><u><i>What:</i></u> Presents the user with the information on a team, including a team name
-                and Pokémon in the team. The user can input Pokémon that they would like to place on the team in an
-                empty slot or to replace a team member. However, each team is only allowed to input up to six Pokémon,
-                any member who attempts to input more than 6 Pokémon will be prompted with an error message- “You’ve
-                reached the maximum limit of Pokémon in a team, this Pokémon cannot be added.”
-              </p>
+              <p><u><i>What:</i></u> Presents the user with the information on a team, including Pokémon in the team. The user can
+                input Pokémon that they would like to place on the team in an empty slot or to replace a team member. However, each
+                team is only allowed to input up to six Pokémon, any member who attempts to input more than 6 Pokémon will be prompted
+                with an error message- “You’ve reached the maximum limit of Pokémon in a team, this Pokémon cannot be added.” </p>
               <p><u><i>How:</i></u> The user will be able to click on slots and choose from a list. The slots will be presented to the
                     user with six slots organized into two rows. </p>
               </ul>
@@ -365,7 +389,7 @@
               <p><u><i>What:</i></u> Presents the user with the title of the project (“Pokémon Encylopedia”) and the name
                 of the current webpage. It enables the user to return to the Homepage.
               </p>
-              <p><i>How:</i> The user can press a button to return to the homepage. </p>
+              <p><u><i>How:</i></u> The user can press a button to return to the homepage. </p>
               </ul>
             </ol>
           </div>
@@ -402,15 +426,15 @@
                     <td>Displays a team</td>
                   </tr>
                   <tr>
-                    <th>Save Pokémon</th>
+                    <th>Save Pokemon</th>
                     <td>Saves the selected Pokémon into the ‘Saved Pokémon’ list</td>
                   </tr>
                   <tr>
-                    <th>Retrieve Pokémon</th>
+                    <th>Retrieve Pokemon</th>
                     <td>Retrieves a Pokémon from the database</td>
                   </tr>
                   <tr>
-                    <th>Display Pokémon</th>
+                    <th>Display Pokemon</th>
                     <td>Displays a Pokémon</td>
                   </tr>
                   <tr>
@@ -444,26 +468,34 @@
           <div id="divide_1">
             <hr>
           </div>
-
-          <div id="divide_1">
-            <hr>
-          </div>
           <div> <a id="version" class="anchor"></a>
             <h2><span>Versions</span></h2><br />
-            <div> <a id="Version-0.3" class="anchor"></a>
+            <div> <a id="Version-0-4" class="anchor"></a>
+              <h5><span> Version 0.4 - 2021-04-04</span></h5>
+              <ul>
+                <li>Expanded Table of Contents</li>
+                <li>Changed where all <a href="#entity-objects">Entity Objects</a> have new column, "Attribute Variable Name", which has corresponding name to the <a href="#eo-diagram">Entity Objects Diagram</a></li>
+                <li>Updated the <a href="#eo-diagram">Entity Objects Diagram</a> where all attributes and descriptions are matched with the diagram in Design <a href="./design.html#3-1-2-1-class-diagram">3.1.2</a></li>
+                <li>Fixed the <a href="#eo-diagram">Entity Objects Diagram</a> where attribute 'location' in class 'Pokemon' from 'sting' type to 'string'</li>
+                <li><b>Removed the attribute team_name from the Team Object, as our team decided to not support adding of Team Name.</b> (Section <a href="#eo-2-Team">Entity Object - 2. Team</a>)</li>
+                <ul>
+                  <li><em>Sunil Brijlall, Kevin He, Graeme Kempf, Alina Penskaya</em></li>
+                  <li>Thanks to SQA testers: <em>Ian Roberts</em></li>
+                  <li>Thanks for feedback from: <em>David Brown</em></li>
+                </ul>
+              </ul>
+            </div>
+            <div> <a id="Version-0-3" class="anchor"></a>
               <h5><span> Version 0.3 - 2021-03-25</span></h5>
               <ul>
                 <li>Upgrade to Bootstrap Framework for site</li>
                 <li>Added Table of Contents</li>
-                <li>Fixed <a href="#database-diagram">Database Diagram</a> where attribute 'locations' in class 'Pokemon' from 'sting' type to 'string'</li>
-                <li>'type1' and 'type2' is included in class 'Pokemon' in <a href="#database-diagram">Database Diagram</a></li>
-                <li>'effectiveness' was removed in class 'Pokemon' <a href="#database-diagram">Database Diagram</a></li>
                 <ul>
-                  <li><em>Sunil Brijlall, Kevin He</em></li>
+                  <li><em>Kevin He</em></li>
                 </ul>
               </ul>
             </div>
-            <div> <a id="Version-0.2" class="anchor"></a>
+            <div> <a id="Version-0-2" class="anchor"></a>
               <h5><span> Version 0.2 - 2021-03-20</span></h5>
               <ul>
                 <li>Changed how dates are displayed for easy understanding from MM/DD/YYYY to the ISO 8601 date standard
@@ -476,7 +508,7 @@
                 </ul>
               </ul>
             </div>
-            <div> <a id="Version-0.1" class="anchor"></a>
+            <div> <a id="Version-0-1" class="anchor"></a>
               <h5><span> Version 0.1 - 2021-03-04</span></h5>
               <ul>
                 <li>Document created and presented information</li>
