@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .grad{
+      height: 100vh;
+      background: linear-gradient(#FFFFFF,#76Aff1);
+  }
+  
+  
+  .Title-Section{
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: grey;
+  }
+  
+  .title{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .yellow_box {
+    width: 500px;
+    height: 200px;
+    background: linear-gradient(#FCEE6F, #FFFFFF);
+    padding: 50px;
+    border-radius: 25px;
+    /*below code centers the yellow box in the middle of the page*/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .Prompt{
+      position: absolute;
+      text-align: left;
+      top: 40%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      }
+  
+  .prompt-text{
+      font-weight: 10;
+      font-family: sans-serif;
+      font-size:20px;
+      font-weight: 10;
+  }
+  
+  .button{
+      background-image: linear-gradient(#FFFFFF,#FCEE6F);
+      border: none;
+      color: #245FF8;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      font-family: sans-serif;
+      position: absolute;
+      margin: 0;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  
+  .button:hover {
+      background-color:gray;
+      color: gray;
+  }
+  
+  .verif-code-ask{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 42%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-family: sans-serif;
+      background: -webkit-linear-gradient(#FFFFFF, #245FF8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 0.75px black;
+      font-size: 22px;
+  }
+  
+  .verif-box-field{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 65%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 500px;
+  }
+  
+  .field{
+      width: 200px;
+  }
