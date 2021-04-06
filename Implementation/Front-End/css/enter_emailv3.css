@@ -39,6 +39,7 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.75px black;
     font-size: 22px;
+    padding-left: 125px;
 }
 
 .email-box-field{
@@ -52,17 +53,19 @@
 }
 
 .field{
-    width: 200px;
+    width: 300px;
+    transform: translate(10%,0%);
 }
 
 .content{
   height: 10em;
+  width: 500px;
   position: relative;
 }
 
 .yellow_box {
-  width: 500px;
-  height: 200px;
+  width: 600px;
+  height: 300px;
   background: linear-gradient(#FCEE6F, #FFFFFF);
   border-radius: 25px;
   /*below code centers the yellow box in the middle of the page*/
@@ -71,7 +74,7 @@
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%,-100%);
+  transform: translate(-50%,-50%);
 }
 
 .prompt-text{
@@ -81,7 +84,7 @@
   margin-right: 50%;
   width: 100%;
   text-align: center;
-  transform: translate(-50%, -550%);
+  transform: translate(-50%, -800%);
   
   font-weight: 10;
   font-family: sans-serif;
@@ -95,7 +98,7 @@
   margin-right: 50%;
   width: 100%;
   text-align: center;
-  transform: translate(-10%, -250%);
+  transform: translate(-10%, -50%);
 
   font-weight: 10;
   font-family: sans-serif;
@@ -113,13 +116,13 @@
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   position: absolute;
   top: 60%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, 100%);
+  transform: translate(-50%, 100%);
 }
 
 .button:hover {
