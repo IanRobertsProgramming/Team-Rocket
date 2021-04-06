@@ -1,3 +1,131 @@
-h1{
-  color:  red; 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+} */
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  color: black;
+}
+.grad{
+    height: 100vh;
+    background: linear-gradient(#76Aff1,#FFFFFF);
+}
+
+
+.Title-Section{
+  position: fixed;
+  top: 0;
+  width: 110%;
+  background-color: grey;
+  padding-bottom: 5px;
+}
+
+.title{
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  position: relative;
+  margin-top: 0.8%;
+  background: linear-gradient(#FFFFFF,#76Aff1);;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color:white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: grey;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: white;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+
+.pokemon-pika{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  padding-top: 75%;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+
+#menu li{
+  margin: 0 0 3px 0;
 }
