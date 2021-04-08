@@ -43,15 +43,15 @@
       text-align: left;
       top: 40%;
       left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -150%);
+      transform: translate(-50%, -150%);
       }
   
   .prompt-text{
-      font-weight: 10;
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size:20px;
-      font-weight: 10;
+      width: 200%;
+      transform: translate(0%,-50%);
   }
   
   .button{
@@ -63,14 +63,14 @@
       text-decoration: none;
       display: inline-block;
       font-size: 14px;
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
       position: absolute;
       margin: 0;
       position: absolute;
       top: 60%;
       left: 50%;
       -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, 140%);
     }
   
   .button:hover {
@@ -85,7 +85,7 @@
       left: 42%;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
       background: -webkit-linear-gradient(#FFFFFF, #245FF8);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -93,16 +93,20 @@
       font-size: 22px;
   }
   
-  .verif-box-field{
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 65%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 500px;
+  .verification-input{
+    width: 200px;
+    transform: translate(130%,310%);
   }
-  
-  .field{
-      width: 200px;
+
+  .label-div{
+    transform: translate(0%,300%);
+  }
+
+  .input-lab{
+    font-family: 'Roboto', sans-serif;
+    background: -webkit-linear-gradient(#FFFFFF, #245FF8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.75px black;
+    font-size: 22px;
   }

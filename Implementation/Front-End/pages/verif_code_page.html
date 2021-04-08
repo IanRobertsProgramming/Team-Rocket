@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../css/verif_code_page.css">
     <link rel="shortcut icon" type="image/jpg" href="../imgs/favicon.ico"/>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+
   </head>
   <body>
     <header class="grad">
@@ -15,24 +18,18 @@
         <h1 class="title">Team Rocket Project</h1>
       </div>
 
-      <div class = "yellow_box"></div>
-
-      <div class="Prompt">
-        <h2 class = "prompt-text">Once you get the verification code, <br>enter it here.</h2>
+      <div class = "yellow_box">
+        <div class="Prompt">
+          <h2 class = "prompt-text">Once you get the verification code, <br>enter it here.</h2>
+        </div>
+        <div class="Verification-Code-Form">
+          <form action="../pages/new_password.html">
+                  <div class="label-div"><h2 class="input-lab">Verification Code:</h2></div>
+                  <input type="input" id="verif-code" name="verif-code" class="verification-input">
+                  <input type="submit" class="button" value="ENTER">
+          </form>
+        </div>
       </div>
-      
-      <div class="Verification-Code-Form">
-        <form action="../pages/new_password.html">
-            <div class="verif-code-ask">
-                <label for="verif-code">Verification Code:&nbsp;&nbsp;&nbsp;</label>
-            </div>
-            <div class="verif-box-field">
-                <input type="input" id="verif-code" name="verif-code" class="field">
-            </div>
-            <input type="submit" class="button" value="ENTER">
-        </form>
-      </div>
-      
     </header>
   </body>
 </html>

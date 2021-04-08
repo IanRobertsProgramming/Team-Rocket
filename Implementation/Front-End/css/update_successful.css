@@ -43,13 +43,13 @@
       text-align: center;
       top: 45%;
       left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -100%);
+      transform: translate(-50%, -100%);
     }
   
   .text{
       font-weight: 10;
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size:20px;
       font-weight: 10;
       width: 100%;
@@ -64,7 +64,7 @@
       text-decoration: none;
       display: inline-block;
       font-size: 14px;
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
       position: absolute;
       margin: 0;
       position: absolute;
