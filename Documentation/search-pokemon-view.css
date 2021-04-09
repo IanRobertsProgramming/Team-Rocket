@@ -4,10 +4,9 @@
   }
   
   .grad{
-      height: 10vh;
+      height: 5vh;
       background: linear-gradient(#76Aff1,#FFFFFF);
   }
-  
   
   .Title-Section{
     position: fixed;
@@ -29,6 +28,7 @@
     min-height: 470px;
     border-radius: 5px;
     padding-bottom: 10px;
+    position: relative;
   }
   
   .sub-title {
@@ -44,15 +44,15 @@
     border-radius: 5px;
   }
   
-  .remove-add {
+.list-group-item-remove{
     margin: 5px;
     background: #C4C4C4;
     list-style-type: none;
     border-radius: 5px;
-    padding: 3px;
+    padding: 4px;
     width: 240px;
-    /* justify-content: center; */
     text-align: center;
+    font-size: 15px;
   }
   
   .grey-button{
@@ -91,7 +91,7 @@
     background: #C4C4C4;
     list-style-type: none;
     border-radius: 5px;
-    width: 290px;
+    width: 250px;
     justify-content: center;
     text-align: center;
     height: 100px;
@@ -105,6 +105,7 @@
   .description {
     font-size: 14px;
     text-align: left;
+    font-weight: normal;
   }
   
   .spacing {
@@ -116,7 +117,7 @@
 
   #pokemon-img{
     margin-top:10px;
-    margin-left: 200px;
+    margin-left: 55px;
   }
 
   .pokemon-search{
@@ -126,16 +127,16 @@
     margin: 15px;
     border-radius: 5px;
     padding-bottom: 10px;
+    position: relative;
   }
 
 
-  .collection {
+  .list-group-item-collection{
     margin: 5px;
     background: linear-gradient(#FFFFFF, #86A4F0);;
     list-style-type: none;
     border-radius: 5px;
     padding: 7px;
-    width: 500px;
     /* justify-content: center; */
     text-align: center;
   }
