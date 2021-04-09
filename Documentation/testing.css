@@ -1,6 +1,20 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  a{
+    color: black;
+  }
+  
+  ul li {
+  
   }
   
   .grad{
@@ -8,8 +22,22 @@
       background: linear-gradient(#76Aff1,#FFFFFF);
   }
   
-  /* Menu */
-
+  
+  .Title-Section{
+    position: fixed;
+    top: 0;
+    width: 110%;
+    background-color: grey;
+    padding-bottom: 5px;
+  }
+  
+  .title{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
   .sidebar {
     position: fixed;
     left: -250px;
@@ -39,7 +67,7 @@
     padding-left: 40px;
     box-sizing: border-box;
     border-bottom: 1px solid black;
-    border-top: 1px solid rgba(85, 59, 59, 0.1);
+    border-top: 1px solid rgba(255,255,255,.1);
     transition: .4s;
     background: Clear;
   }
@@ -52,7 +80,6 @@
   #check{
     display: none;
   }
-  
   label #btn, label #cancel{
     position: absolute;
     background: grey;
@@ -68,11 +95,12 @@
     transition: all .5s;
   }
   label #cancel{
+    z-index: 1111;
     left: -195px;
-    top: 25px;
-    font-size: 35px;
+    top: 17px;
+    font-size: 30px;
     color: white;
-    padding: 6px 12px;
+    padding: 4px 9px;
     transition: all .5s ease;
   }
   
@@ -84,7 +112,6 @@
     position: relative;
     padding-top: 75%;
   }
-
   #check:checked ~ .sidebar{
     left: 0;
   }
@@ -103,31 +130,38 @@
   #menu li{
     margin: 0 0 3px 0;
   }
-
-  /* Menu end */
-
-  /* Content */
-  .container {
-      padding-top: 100px;
-  }
-  .navbar-custom{
-    background-color: #C4C4C4;
-    color: red;
-  }
-
-  .title{
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
   
+  /* Miohelle Part*/
   .main-content{
+    position: static;
+    margin-top: 30px;
     background: #FCEE6F;
-    min-height: 470px;
+    min-height: auto;
     border-radius: 5px;
     padding-bottom: 10px;
-    position: relative;
+  }
+  
+  .top-content{
+    position: static;
+    min-height: auto;
+    width: auto;
+    margin-top: 30px;
+    background:#FCEE6F;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+  }
+  
+  .bottom-content{
+    position: static;
+    min-height: auto;
+    margin-top: 30px;
+    background: #FCEE6F;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+  
   }
   
   .sub-title {
@@ -143,44 +177,46 @@
     border-radius: 5px;
   }
   
-.list-group-item-remove{
-    margin: 5px;
-    background: #C4C4C4;
-    list-style-type: none;
-    border-radius: 5px;
-    padding: 4px;
-    width: 240px;
-    text-align: center;
-    font-size: 15px;
-  }
   
-  .grey-button{
+  .btn-default{
     background-color: #C4C4C4;
-    width: 115px;
   }
   
-  .blue-button{
-    background-color: #76AFF1;
-    width: 115px;
-  }
-
   .btn-sm{
     font-size: 5px;
     margin: 10px;
   }
   
+  .gray-list{
+      background: #C4C4C4;
+      margin: 5px;
+      list-style-type: none;
+      border-radius: 5px;
+      padding: 3px;
+      /* justify-content: center; */
+      text-align: center;
+  }
+  
+  /* table.table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  .border-black
+      {
+       border:black solid 1px !important;
+      } */
+  
   .pokemon-name{
-    padding: 10px;
-    font-size: 19px;
+    padding: 20px;
+    font-size: 20px;
   }
   
   .box {
-    padding: 8px;
     margin: 5px;
     background: #C4C4C4;
     list-style-type: none;
     border-radius: 5px;
-    width: 250px;
+    width: 400px;
     justify-content: center;
     text-align: center;
     height: 100px;
@@ -188,13 +224,10 @@
   
   .sub-text {
     font-size: 18px;
-    font-weight: bold;
   }
   
   .description {
     font-size: 14px;
-    text-align: left;
-    font-weight: normal;
   }
   
   .spacing {
@@ -203,43 +236,4 @@
     background: white;
     border-radius: 5px;
   }
-
-  #pokemon-img{
-    margin-top:10px;
-    margin-left: 55px;
-  }
-
-  .pokemon-search{
-    background: #FCEE6F;
-    min-height: 200px;
-    width: 1500px;
-    margin: 15px;
-    border-radius: 5px;
-    padding-bottom: 10px;
-    position: relative;
-  }
-
-
-  .list-group-item-collection{
-    margin: 5px;
-    background: linear-gradient(#FFFFFF, #86A4F0);;
-    list-style-type: none;
-    border-radius: 5px;
-    padding: 7px;
-    /* justify-content: center; */
-    text-align: center;
-  }
-
-  .white-box {
-      border-radius: 5px;
-      background-color: white;
-      padding: 8px;
-      margin: 10px;
-  }
-
-  .surround {
-      margin: 8px;
-      padding: 10px;
-  }
-/* Content end */
-
+  

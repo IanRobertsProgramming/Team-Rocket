@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
-     
-
     <meta charset="utf-8">
     <title>Team Rocket Project</title>
     <link rel="stylesheet" href="search-pokemon-view.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-    <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- styling -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   </head>
 
-
   <body>
 
-    <!-- Navbar -->
-    <header class="grad">
-      <div class="Title-Section">
-        <h1 class="title">Team Rocket Project</h1>
+    <div class="grad">
+    <!--Navbar -->
+        <!-- Title -->
+        <nav class="navbar navbar-nav navbar-custom fixed-top">
+            <a class="navbar-brand" href="#">
+                <h2 style="color: #FFFFFF">Team Rocket Project</h2>
+            </a>
         
-      </div>
-     
-    </header>
-  </body>
-</html>
+        <!-- Menu -->
+            <section class = "menu">
+                <input type="checkbox" id="check">
+                <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+                </label>
+                <div id="menu" class="sidebar">
+                <ul class="sidebar-ul">
+                  <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
+                  <li><a href="#"><i class="fas fa-stream"></i>Search Pokemon</a></li>
+                  <li><a href="#"><i class="fas fa-sliders-h"></i>Settings</a></li>
+                </ul>
+                  <img class="pokemon-pika" src="https://raw.githubusercontent.com/IanR9532/Team-Rocket/main/Documentation/img/design/logo1.png" alt="pikachu">
+                </div>
+              </section>
+        </nav>
+    <!-- Navbar End -->
 
-    <!-- Containers -->
-      <div class="container my-container">
+    <!-- Content -->
+
+      <div class="container">
 
         <!-- Pokemon Search -->
         <div class="row">
@@ -475,7 +489,7 @@
 
     </div>
 
-    
+</div>
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -485,4 +499,3 @@
   
 </body>
 </html>
->>>>>>> Stashed changes:Blank Canvas/index1.html
