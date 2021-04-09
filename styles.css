@@ -3,20 +3,26 @@
   padding: 0;
 }
 
-/* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
 *{
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
-} */
+}
 
 body{
   font-family: 'Roboto', sans-serif;
 }
+
 a{
   color: black;
 }
+
+ul li {
+
+}
+
 .grad{
     height: 100vh;
     background: linear-gradient(#76Aff1,#FFFFFF);
@@ -43,7 +49,7 @@ a{
   left: -250px;
   width: 250px;
   height: 100%;
-  position: relative;
+  position: fixed;
   margin-top: 0.8%;
   background: linear-gradient(#FFFFFF,#76Aff1);;
   transition: all .5s ease;
@@ -56,7 +62,7 @@ a{
   background: #063146;
   user-select: none;
 }
-.sidebar ul a{
+.sidebar-ul li a{
   display: block;
   height: 100%;
   width: 100%;
@@ -69,6 +75,7 @@ a{
   border-bottom: 1px solid black;
   border-top: 1px solid rgba(255,255,255,.1);
   transition: .4s;
+  background: Clear;
 }
 ul li:hover a{
   padding-left: 50px;
@@ -79,7 +86,7 @@ ul li:hover a{
 #check{
   display: none;
 }
-label #btn,label #cancel{
+label #btn, label #cancel{
   position: absolute;
   background: grey;
   border-radius: 3px;
@@ -128,4 +135,111 @@ label #cancel{
 
 #menu li{
   margin: 0 0 3px 0;
+}
+
+/* Miohelle Part*/
+.main-content{
+  position: static;
+  margin-top: 30px;
+  background: #FCEE6F;
+  min-height: auto;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.top-content{
+  position: static;
+  min-height: auto;
+  width: auto;
+  margin-top: 30px;
+  background:#FCEE6F;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+}
+
+.bottom-content{
+  position: static;
+  min-height: auto;
+  margin-top: 30px;
+  background: #FCEE6F;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+
+}
+
+.sub-title {
+  color:#245FF8;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+.lst {
+  background:white;
+  border-radius: 5px;
+}
+
+
+.btn-default{
+  background-color: #C4C4C4;
+}
+
+.btn-sm{
+  font-size: 5px;
+  margin: 10px;
+}
+
+.gray-list{
+    background: #C4C4C4;
+    margin: 5px;
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 3px;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+/* table.table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.border-black
+    {
+     border:black solid 1px !important;
+    } */
+
+.pokemon-name{
+  padding: 20px;
+  font-size: 20px;
+}
+
+.box {
+  margin: 5px;
+  background: #C4C4C4;
+  list-style-type: none;
+  border-radius: 5px;
+  width: 400px;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+}
+
+.sub-text {
+  font-size: 18px;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.spacing {
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 5px;
 }
