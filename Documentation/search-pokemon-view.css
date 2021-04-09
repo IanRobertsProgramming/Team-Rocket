@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .grad{
+      height: 10vh;
+      background: linear-gradient(#76Aff1,#FFFFFF);
+  }
+  
+  
+  .Title-Section{
+    position: fixed;
+    top: 0;
+    width: 110%;
+    background-color: grey;
+  }
+  
+  .title{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  
+  .main-content{
+    background: #FCEE6F;
+    min-height: 470px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+  }
+  
+  .sub-title {
+    color:#245FF8;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  
+  .lst {
+    background:white;
+    border-radius: 5px;
+  }
+  
+  .remove-add {
+    margin: 5px;
+    background: #C4C4C4;
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 3px;
+    width: 240px;
+    /* justify-content: center; */
+    text-align: center;
+  }
+  
+  .grey-button{
+    background-color: #C4C4C4;
+    width: 115px;
+  }
+  
+  .blue-button{
+    background-color: #76AFF1;
+    width: 115px;
+  }
+
+  .btn-sm{
+    font-size: 5px;
+    margin: 10px;
+  }
+  
+  /* table.table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  .border-black
+      {
+       border:black solid 1px !important;
+      } */
+  
+  .pokemon-name{
+    padding: 10px;
+    font-size: 19px;
+  }
+  
+  .box {
+    padding: 8px;
+    margin: 5px;
+    background: #C4C4C4;
+    list-style-type: none;
+    border-radius: 5px;
+    width: 290px;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+  }
+  
+  .sub-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .spacing {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 5px;
+  }
+
+  #pokemon-img{
+    margin-top:10px;
+    margin-left: 200px;
+  }
+
+  .pokemon-search{
+    background: #FCEE6F;
+    min-height: 200px;
+    width: 1500px;
+    margin: 15px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+  }
+
+
+  .collection {
+    margin: 5px;
+    background: linear-gradient(#FFFFFF, #86A4F0);;
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 7px;
+    width: 500px;
+    /* justify-content: center; */
+    text-align: center;
+  }
+
+  .white-box {
+      border-radius: 5px;
+      background-color: white;
+      padding: 8px;
+      margin: 10px;
+  }
+
+  .surround {
+      margin: 8px;
+      padding: 10px;
+  }
+
+
