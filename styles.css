@@ -93,6 +93,7 @@ label #btn, label #cancel{
   cursor: pointer;
 }
 label #btn{
+  position: fixed;
   left: 40px;
   top: 25px;
   font-size: 35px;
@@ -101,6 +102,7 @@ label #btn{
   transition: all .5s;
 }
 label #cancel{
+  position: fixed;
   z-index: 1111;
   left: -195px;
   top: 17px;
@@ -133,11 +135,20 @@ label #cancel{
   margin-left: 250px;
 }
 
+#mennu{
+  width: 10%;
+}
 #menu li{
   margin: 0 0 3px 0;
 }
 
 /* Miohelle Part*/
+#main-contain{
+  position: relative;
+  width: 75%;
+  left: 125px;
+}
+
 .main-content{
   position: static;
   margin-top: 30px;
@@ -223,7 +234,7 @@ label #cancel{
   background: #C4C4C4;
   list-style-type: none;
   border-radius: 5px;
-  width: 400px;
+  width: auto;
   justify-content: center;
   text-align: center;
   height: 100px;
