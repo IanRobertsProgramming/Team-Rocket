@@ -103,7 +103,7 @@ nav[data-toggle="toc"] {
 @media screen and (min-width: 768px) {
 
   .nav-toc {
-    display: block;
+    display: flex !important;
     padding: 2px 10px;
     font-size: 12px;
     font-weight: 500;
@@ -113,6 +113,8 @@ nav[data-toggle="toc"] {
     flex-direction: column;
     margin-bottom: 0;
     list-style-type: none;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+
   }
 }
