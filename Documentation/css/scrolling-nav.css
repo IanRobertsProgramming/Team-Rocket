@@ -113,5 +113,6 @@ nav[data-toggle="toc"] {
     flex-direction: column;
     margin-bottom: 0;
     list-style-type: none;
+    overflow: auto;
   }
 }
