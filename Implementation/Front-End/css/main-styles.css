@@ -32,7 +32,7 @@ ul li {
 .Title-Section{
   position: fixed;
   top: 0;
-  width: 110%;
+  width: 100%;
   background-color: grey;
   padding-bottom: 5px;
 }
@@ -42,6 +42,14 @@ ul li {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.container {
+  padding-top: 100px;
+}
+.navbar-custom{
+background-color: #C4C4C4;
+color: red;
 }
 
 .sidebar {
@@ -93,7 +101,6 @@ label #btn, label #cancel{
   cursor: pointer;
 }
 label #btn{
-  position: fixed;
   left: 40px;
   top: 25px;
   font-size: 35px;
@@ -102,13 +109,11 @@ label #btn{
   transition: all .5s;
 }
 label #cancel{
-  position: fixed;
-  z-index: 1111;
   left: -195px;
-  top: 17px;
-  font-size: 30px;
+  top: 25px;
+  font-size: 35px;
   color: white;
-  padding: 4px 9px;
+  padding: 6px 12px;
   transition: all .5s ease;
 }
 
