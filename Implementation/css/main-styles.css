@@ -147,12 +147,16 @@ label #cancel{
   margin: 0 0 3px 0;
 }
 
-/* Miohelle Part*/
+/* Main Content*/
 /* #main-contain{
   position: relative;
   width: 75%;
   left: 125px;
 } */
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    background-color: #C4C4C4 !important;
+    color: black !important;
+}
 
 .main-content{
   position: static;
