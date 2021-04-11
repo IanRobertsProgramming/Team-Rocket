@@ -1,4 +1,5 @@
-$(document)
+var teamsL;
+
 function retrieveUserSavedPokemon() {
 
 }

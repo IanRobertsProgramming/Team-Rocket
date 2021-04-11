@@ -8,7 +8,6 @@
 
     $stmt->bind_param("ss", $user, $pass); 
     $stmt->execute();
-
     $result = $stmt->get_result();
     $conn->close();
 
