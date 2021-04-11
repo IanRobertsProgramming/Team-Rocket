@@ -1,11 +1,10 @@
-
 function verifyLogin() {
     var username = $('#username').val();
     var password = $('#password').val();
 
     $.ajax({
         type: 'POST',
-        url: 'validate_login.php',
+        url: '../php/validate_login.php',
         data: { user: username, pass: password},
         success: function(result) {
             if (result === 'True') {
