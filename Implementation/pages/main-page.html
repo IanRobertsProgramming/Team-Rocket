@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Team Rocket Project</title>
+    <link rel="stylesheet" href="../css/main-styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="grad">
+      <!--Navbar -->
+          <!-- Title -->
+          <nav class="navbar navbar-nav navbar-custom fixed-top">
+              <a class="navbar-brand" href="#">
+                  <h2 style="color: #FFFFFF">Team Rocket Project</h2>
+              </a>
+          
+          <!-- Menu -->
+              <section class = "menu">
+                  <input type="checkbox" id="check">
+                  <label for="check">
+                  <i class="fas fa-bars" id="btn"></i>
+                  <i class="fas fa-times" id="cancel"></i>
+                  </label>
+                  <div id="menu" class="sidebar">
+                  <ul class="sidebar-ul">
+                    <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
+                    <li><a href="#"><i class="fas fa-stream"></i>Search Pokemon</a></li>
+                    <li><a href="#"><i class="fas fa-sliders-h"></i>Settings</a></li>
+                  </ul>
+                    <img class="pokemon-pika" src="https://raw.githubusercontent.com/IanR9532/Team-Rocket/main/Documentation/img/design/logo1.png" alt="pikachu">
+                  </div>
+                </section>
+          </nav>
+      <!-- Navbar End -->
+
+
+      <!-- Containers -->
+  <div class="container my-container container-fluid" id="main-contain">
+
+    <div class="row">
+
+      <!-- Side info -->
+      <div class="col-4 table-responsive">
+
+        <!-- Saved Teams -->
+        <div class="row-6">
+
+          <div class="top-content">
+
+            <h2 class="sub-title">Saved Teams</h2>
+
+            <div class="lst">
+              <ul>
+                <li class="gray-list">Charizard</li>
+                <li class="gray-list">Dragonite</li>
+                <li class="gray-list">Mewtwo</li>
+                <li class="gray-list">Porygon</li>
+                <li class="gray-list">Machamp</li>
+                <li class="gray-list">Gyarados</li>
+              </ul>
+            </div>
+
+            <button type="button" class="btn btn-default btn-sm">Clear</button>
+
+          </div>
+
+        </div>
+
+        <!-- Saved Pokemon -->
+        <div class="row-6">
+
+          <div class="bottom-content">
+
+          <h2 class="sub-title">Saved Pokemon</h2>
+
+          <div class="lst">
+              <ul>
+                <li class="gray-list">Mewtwo</li>
+                <li class="gray-list">Gyrados</li>
+                <li class="gray-list">Machamp</li>
+                <li class="gray-list">Blastoise</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Main info -->
+         <!-- Pokemon #1 -->
+          <div class="col-8">
+                <div class="main-content">
+                    <h2 class="sub-title">Pokemon #1</h2>
+                    
+                    <div class="spacing">
+                        
+                        <div class="row">
+
+                            <div class="col-5">
+                                <div>
+                                    <h2 class="pokemon-name"><span>#6</span> Charizard</h2>
+                                    <ul>
+                                        <li class="col-md list-group-item-remove">Remove From Team 1</li>
+                                        <li class="col-md list-group-item-remove">Remove From Saved</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                            <img id="pokemon-img" class="img-fluid" src="../imgs/charizard.png" alt="Charizard" width="120" height="120">
+                            </div>
+                        </div>
+                        <!-- Remove selection -->
+                    
+
+                        <div class="row">
+                            <!-- Effectiveness table -->
+                            <div class="col-5">
+
+                                <div class="row-6 table-responsive">
+                                    <table class="table table-bordered table-striped table-sm">
+                                        <thead>
+                                            <tr class="table-warning">
+                                            <th scope="col">Type</th>
+                                            <th scope="col">Multiplier</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            <td>Normal</td>
+                                            <td>1</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td>Fire</td>
+                                            <td>0.5</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td>Water</td>
+                                            <td>2</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td>Electric</td>
+                                            <td>1</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td>Grass</td>
+                                            <td>0.5</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td>Ice</td>
+                                            <td>1</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td>Fighting</td>
+                                            <td>1</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td>Poison</td>
+                                            <td>1</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                            <td>Ground</td>
+                                            <td>2</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td>Flying</td>
+                                            <td>1</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td>Psychic</td>
+                                            <td>1</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td>Bug</td>
+                                            <td>0.5</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td>Rock</td>
+                                            <td>2</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td>Ghost</td>
+                                            <td>1</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td>Dragon</td>
+                                            <td>1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Stats table -->
+                            <div class="col-7">
+
+                            <div class="row-6 box col-12">
+                                <h2 class="sub-text">Locations</h2>
+                                <h3 class="description text-left">Evolves from Charmeleon</h3>
+                            </div>
+
+                            <div class="row-6 table-responsive">
+                                <table class="table table-bordered table-striped table-sm">
+
+                                <thead>
+                                    <tr class="table-warning">
+                                    <th scope="col">Stat Name</th>
+                                    <th scope="col">Base Stats</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                    <td>HP</td>
+                                    <td>78</td>
+                                    </tr>
+                
+                                    <tr>
+                                    <td>Attack</td>
+                                    <td>84</td>
+                                    </tr>
+                
+                                    <tr>
+                                    <td>Defense</td>
+                                    <td>78</td>
+                                    </tr>
+                
+                                    <tr>
+                                    <td>Sp.Attack</td>
+                                    <td>109</td>
+                                    </tr>
+                
+                                    <tr>
+                                    <td>Sp. Defense</td>
+                                    <td>85</td>
+                                    </tr>
+                
+                                    <tr>
+                                    <td>Speed</td>
+                                    <td>100</td>
+                                    </tr>
+
+                                </tbody>
+                                </table>
+                            </div>
+
+                            <div class="row-6 box col-12">
+                                <h2 class="sub-text">Other Information</h2>
+                                <h3 class="description">It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.</h3>
+                            </div>
+                        </div>
+
+                        <!-- End of row - effectiveness table -->
+                    </div>    
+                </div>     
+            </div> 
+        </div>
+  </div>
+</div>
+
+
+
+    </header>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
