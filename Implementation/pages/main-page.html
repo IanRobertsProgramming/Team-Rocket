@@ -9,6 +9,7 @@
     <!-- styling -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	
 
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -16,7 +17,9 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  
   </head>
   <body>
     <div class="grad">
@@ -63,13 +66,13 @@
             <h2 class="sub-title">Saved Teams</h2>
 
             <div class="lst">
-              <ul>
-                <li class="gray-list">Charizard</li>
-                <li class="gray-list">Dragonite</li>
-                <li class="gray-list">Mewtwo</li>
-                <li class="gray-list">Porygon</li>
-                <li class="gray-list">Machamp</li>
-                <li class="gray-list">Gyarados</li>
+              <ul id='teamsList'>
+				<li><input type="button" class="teamsListBtn" id="teamsList1" value="" /></li>
+				<li><input type="button" class="teamsListBtn" id="teamsList2" value="" /></li>
+				<li><input type="button" class="teamsListBtn" id="teamsList3" value="" /></li>
+				<li><input type="button" class="teamsListBtn" id="teamsList4" value="" /></li>
+				<li><input type="button" class="teamsListBtn" id="teamsList5" value="" /></li>
+				<li><input type="button" class="teamsListBtn" id="teamsList6" value="" /></li>
               </ul>
             </div>
 
