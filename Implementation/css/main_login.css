@@ -134,14 +134,3 @@ input{
     line-height: 28px;
     color: #C4C4C4;
   }
-
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-      display: block;
-      float: none;
-    }
-    .cancelbtn {
-      width: 100%;
-    }
-}
