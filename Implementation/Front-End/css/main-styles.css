@@ -148,11 +148,11 @@ label #cancel{
 }
 
 /* Miohelle Part*/
-#main-contain{
+/* #main-contain{
   position: relative;
   width: 75%;
   left: 125px;
-}
+} */
 
 .main-content{
   position: static;
@@ -280,4 +280,3 @@ label #cancel{
   text-align: center;
   font-size: 15px;
 }
-
