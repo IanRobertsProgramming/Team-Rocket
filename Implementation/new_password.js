@@ -6,7 +6,7 @@ function new_password() {
     $.ajax({
         type: 'POST',
         url: '../php/new_password.php',
-        data: { ver_code: ver_code, new_pass: new_pass, confirm_pass: comfirm_pass},
+        data: { ver_code: ver_code, new_pass: new_pass, confirm_pass: confirm_pass},
         success: function(result) {
             if (result === 'True') {
                 sessionStorage.removeItem("key");
