@@ -7,9 +7,13 @@ function verification_email() {
         data: { email: email },
         success: function(result) {
             if (result === 'True') {
-                var hrefL = "";
+                var hrefL = "pages/verif_code_page.html";
                 window.location.replace(hrefL);
+            } else {
+                $('#error').text(result);
             }
+        }, error: function (result) {
+           alert('failed');
         }
     });
 }
