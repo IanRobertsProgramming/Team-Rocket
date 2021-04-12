@@ -12,7 +12,6 @@
     $stmt->bind_param("s", $ver_code); 
     $stmt->execute();
     $result = $stmt->get_result();
-    $stmt->close();
     $conn->close();
 
     if ($result->num_rows > 0) {
