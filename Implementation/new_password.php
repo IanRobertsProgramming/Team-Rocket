@@ -22,7 +22,6 @@
                 $stmt = $conn->prepare("INSERT INTO user (password) VALUES (?)");
                 $stmt->bind_param("s", $new_pass);
                 $stmt->execute();
-                $result = $stmt->get_result();
                 $conn->close();
                 echo 'Password successfully changed';
             }
