@@ -8,6 +8,7 @@
   <meta name="author" content="">
 
   <title>Design | Team Rocket</title>
+  <link rel="icon" href="../favicon.ico"  type="image/ico">
 
   <!-- Bootstrap core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,6 +36,7 @@
           </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./analysis.html">Analysis</a> </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./design.html">Design</a> </li>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./version.html">Version</a> </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./sqa.html">SQA</a> </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger"
               href="https://github.com/IanR9532/Team-Rocket">GitHub</a> </li>
@@ -45,7 +47,7 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Design</h1>
-      <p class="lead"><a href="#Version_0.1" style="color: rgb(255, 255, 255)">#Version 0.1 - 2021-03-25</a></p>
+      <p class="lead"><a href="#Version-0-2" style="color: rgb(255, 255, 255)">#Version 0.2 - 2021-04-04</a></p>
     </div>
   </header>
   <section id="main">
@@ -54,38 +56,93 @@
 
         <div class="col-sm-2">
           <nav id="toc" data-toggle="toc" class="sticky-top">
-            <h5>Table of contents</h5>
+            <h5>Table of Contents</h5>
             <ul class="nav-toc">
-              <li><a href="#1-introduction">1 Introduction</a></li>
-              <li><a href="#2-planned-implementation">2 Planned Implementation</a></li>
-              <li><a href="#3-decomposition-description">3 Decomposition Description</a></li>
-              <li><a href="#4-interface-descriptions">4 Interface Descriptions</a></li>
-              <li><a href="#5-detailed-design">5 Detailed Design</a></li> 
-              <li><a href="#6-maintenance">6 Maintenance</a></li> 
-              <li><a href="#7-versions">7 Versions</a></li> 
+              <li><a href="#1-introduction"><b>1</b> Introduction</a></li>
+              <ul class="nav-toc">
+                <li><a href="#1-1-purpose"><b>1.1</b> Purpose</a></li>
+                <li><a href="#1-2-scope"><b>1.2</b> Scope</a></li>
+                <li><a href="#1-3-definitions"><b>1.3</b> Definitions</a></li>
+                <li><a href="#1-4-references"><b>1.4</b> References</a></li>
+                <li><a href="#1-5-overview"><b>1.5</b> Overview</a></li>
+              </ul>
+              <li><a href="#2-planned-implementation"><b>2</b> Planned Implementation</a></li>
+              <ul class="nav-toc">
+                <li><a href="#2-1-previously-planned-language"><b>2.1</b> Previously Planned Language</a></li>
+                <ul class="nav-toc">
+                  <li><a href="#2-1-1-update-choice-of-language"><b>2.1.1</b> Updated Choice of Language</a></li>
+                </ul>
+                <li><a href="#2-2-resources-referenced"><b>2.2</b> Resources Referenced</a></li>
+                <li><a href="#2-3-development-team"><b>2.3</b> Development Team</a></li>
+              </ul>
+              <li><a href="#3-decomposition-description"><b>3</b> Decomposition Description</a></li>
+              <ul class="nav-toc">
+                <li><a href="#3-1-module-decomposition"><b>3.1</b> Module Decomposition</a></li>
+                <ul class="nav-toc">
+                  <li><a href="#3-1-1-framework-package-interactions"><b>3.1.1</b> Framework Package Interactions</a></li>
+                  <li><a href="#3-1-2-model-class-diagram"><b>3.1.2</b> Model Class Diagram</a></li>
+                </ul>
+              </ul>
+              <li><a href="#4-interface-descriptions"><b>4</b> Interface Descriptions</a></li>
+              <ul class="nav-toc">
+                <li><a href="#4-1-colour-guidelines"><b>4.1</b> Colour Guidelines</a></li>
+                <li><a href="#4-2-font-guidelines"><b>4.2</b> Font Guidelines</a></li>
+                <li><a href="#4-3-app-icons"><b>4.3</b> App Icons</a></li>
+                <li><a href="#4-4-module-interface"><b>4.4</b> Module Interface</a></li>
+                <ul class="nav-toc">
+                  <li><a href="#4-4-1-main-login-in-view"><b>4.4.1</b> Main Login-in View</a></li>
+                  <li><a href="#4-4-2-registration-view"><b>4.4.2</b> Registration View</a></li>
+                  <li><a href="#4-4-3-forgot-username-password"><b>4.4.3</b> Forgot Username/Password</a></li>
+                  <ul class="nav-toc">
+                    <li><a href="#4-4-3-1-enter-email-address"><b>4.4.3.1</b> Enter Email Address</a></li>
+                    <li><a href="#4-4-3-2-verification-code"><b>4.4.3.2</b> Verification Code</a></li>
+                    <li><a href="#4-4-3-3-new-password"><b>4.4.3.3</b> New Password</a></li>
+                    <li><a href="#4-4-3-4-update-successful"><b>4.4.3.4</b> Update Successful</a></li>
+                  </ul>
+                  <li><a href="#4-4-4-user-home-view"><b>4.4.4</b> User Home View</a></li>
+                  <li><a href="#4-4-5-search-pokemon-view"><b>4.4.5</b> Search Pokémon View</a></li>
+                  <li><a href="#4-4-6-settings-page"><b>4.4.6</b> Settings Page</a></li>
+                </ul>
+              </ul>
+              <li><a href="#5-detailed-design"><b>5</b> Detailed Design</a></li>
+              <ul class="nav-toc">
+                <li><a href="#5-1-module-detailed-design"><b>5.1</b> Module Detailed Design</a></li>
+                <ul class="nav-toc">
+                  <li><a href="#5-1-1-pokemon-class"><b>5.1.1</b> Pokémon Class</a></li>
+                  <li><a href="#5-1-2-pokemon-class"><b>5.1.2</b> Pokémon Class</a></li>
+                  <li><a href="#5-1-3-user-class"><b>5.1.3</b> User Class</a></li>
+                  <li><a href="#5-1-4-buttons-on-the-back-end"><b>5.1.4</b> Buttons On The Back End</a></li>
+                  <li><a href="#5-1-5-classes-and-the-database"><b>5.1.5</b> Classes And The Database</a></li>
+                </ul>
+              </ul>
+              <li><a href="#6-maintenance"><b>6</b> Maintenance</a></li>
+              <ul class="nav-toc">
+                <li><a href="#6-1-corrective"><b>6.1</b> Corrective</a></li>
+                <li><a href="#6-2-perfective"><b>6.2</b> Perfective</a></li>
+              </ul>
+              <li><a href="#7-versions"><b>7</b> Versions</a></li>
             </ul>
           </nav>
         </div>
 
         <div class="col-lg-8 mx-auto">
-        
           <div id="1"> <a id="1-introduction" class="anchor"></a>
             <h2><span>1 Introduction</span></h2>
             <p>The Pokémon Encyclopedia will provide fans of Pokémon and Pokémon players all around the world with a
               comprehensive database of relevant information on Pokémon which will allow them to make educated decisions on how
               they would like to play the game.</p>
-            <div><a id="1.1-purpose" class="anchor"></a>
+            <div id="1-1"><a id="1-1-purpose" class="anchor"></a>
               <h4><span>1.1 Purpose</span></h4>
               <p>This design document will describe the architecture, functions, design, software interfaces and features of the
                 Pokémon Encyclopedia.</p>
             </div>
-            <div><a id="1.2-scope" class="anchor"></a>
+            <div id="1-2"><a id="1-2-scope" class="anchor"></a>
               <h4><span>1.2 Scope</span></h4>
               <p>The intended audience of this document will be the developers of the Pokémon Encyclopedia website. This
                 document will be easy to use and learn from to help reduce the amount of time that is required to edit the
                 website.</p>
             </div>
-            <div><a id="1.3-definitions" class="anchor"></a>
+            <div id="1-3"><a id="1-3-definitions" class="anchor"></a>
               <h4><span>1.3 Definitions</span></h4>
               <p><u><b>Favicon</b></u>: A favicon (/ˈfæv.ɪˌkɒn/; short for favorite icon), also known as a shortcut icon,
                 website icon, tab icon, URL icon, or bookmark icon, is a file containing one or more small icons,[1] associated
@@ -94,7 +151,7 @@
                 Generally associated with a subject to describe the type of interface. E.g. User Account View, Forgot
                 Password/Username View</p>
             </div>
-            <div><a id="1.4-references" class="anchor"></a>
+            <div id="1-4"><a id="1-4-references" class="anchor"></a>
               <h4><span>1.4 References</span></h4>
               <ul>
                 <li>Requirements, Specification and Analysis document for Pokémon Encyclopedia<br>
@@ -113,14 +170,12 @@
                 </li>
               </ul>
             </div>
-            <div><a id="1.5-overview" class="anchor"></a>
+            <div id="1-5"><a id="1-5-overview" class="anchor"></a>
               <h4><span>1.5 Overview</span></h4>
               <p>This document is written following the guidelines of the IEEE Recommended Practice for Software Design
                 Descriptions. This document includes/outlines the module, process, and data dependencies, as well as their
                 detailed design and decomposition. </p>
             </div>
-        
-        
         
         
           </div>
@@ -129,35 +184,35 @@
           </div>
           <div id="2"> <a id="2-planned-implementation" class="anchor"></a>
             <h2><span>2 Planned Implementation</span></h2><br />
-            <div>
+            <div id="2-1"> <a id="2-1-previously-planned-language" class="anchor"></a>
               <h4>2.1 Previously Planned Language</h4>
               <ul>
                 <p><b>Front-end:</b> HTML, CSS</p>
                 <p><b>Back-end:</b> Python, SQL</p>
               </ul><br />
-              <ul>
+              <ul> <a id="2-1-1-update-choice-of-language" class="anchor"></a>
                 <h5>2.1.1 Updated Choice of Language</h5>
                 <ul>
                   <p><b>Front-end:</b> HTML, CSS, Bootstrap</p>
                   <p><b>Back-end:</b> Python, SQL, JavaScript, PHP</p>
                 </ul>
-                <p><b>Bootstrap:</b> Pokémon encyclopedia is a web-based application and in addition to HTML and CSS, Bootstrap
+                <p><b>Bootstrap:</b> The Pokémon Encyclopedia is a web-based application and in addition to HTML and CSS, Bootstrap
                   is also
                   used for the
                   front-end development to offer an interactive application. The design team decided to add Bootstrap as one of
                   the
                   front-end languages, since it provides a great grid system and it cooperates well with HTML and CSS. Bootstrap
                   is used
-                  to extend functionality of the Pokémon encyclopedia website, as it is a highly customizable language. If there
+                  to extend functionality of the Pokémon Encyclopedia website, as it is a highly customizable language. If there
                   is a
                   demand for certain features, website developers can write code in Bootstrap and implement it on the web page
                   with a
                   third party add-on. </p>
-                <p><b>JavaScript:</b> In terms of the implementation of the Pokémon encyclopedia app, using JavaScript would be
+                <p><b>JavaScript:</b> In terms of the implementation of the Pokémon Encyclopedia app, using JavaScript would be
                   helpful
                   for real-time applications, as JavaScript is an event-based language with asynchronous nature. Hence, it is a
                   good
-                  choice for the Pokémon encyclopedia app, which requires constantly updated data.</p>
+                  choice for the Pokémon Encyclopedia app, which requires constantly updated data.</p>
                 <p><b>PHP:</b>
                   PHP is the top choice of language for the back-end implementation, since it is widely used to fetch data out
                   of the
@@ -174,10 +229,9 @@
               </ul>
         
             </div>
-            <div>
+            <div> <a id="2-2-resources-referenced" class="anchor"></a>
               <h4><span>2.2 Resources Referenced</span></h4>
               <ul>
-        
                 <li><a
                     href="https://www.figma.com/resources/assets/material-icons-outline/">https://www.figma.com/resources/assets/material-icons-outline/</a>
                 </li>
@@ -191,10 +245,9 @@
                     href="https://www.pinterest.ca/pin/458030224588247089/">https://www.pinterest.ca/pin/458030224588247089/</a>
                 </li>
                 <li><a href="https://www.pngaaa.com/detail/543058">https://www.pngaaa.com/detail/543058</a></li>
-        
               </ul>
             </div>
-            <div>
+            <div id="2-3"> <a id="2-3-development-team" class="anchor"></a>
               <h4><span>2.3 Development Team</span></h4>
               <table class="table table-hover">
                 <thead>
@@ -239,19 +292,26 @@
           </div>
           <div id="3"> <a id="3-decomposition-description" class="anchor"></a>
             <h2><span>3 Decomposition Description</span></h2><br />
-            <div>
+            <div id="3-1"> <a id="3-1-module-decomposition" class="anchor"></a>
               <h4><span>3.1 Module Decomposition</span></h4>
               <p>The ‘alternative’ UML is used (where attributes of another class are listed within the class instead of a line
                 between them) in the first diagram. </p>
-              <ul>
+              <ul> <a id="3-1-1-framework-package-interactions" class="anchor"></a>
                 <h5><span>3.1.1 Framework Package Interactions</span></h5>
                 <img src="../img/design/framework-package-interactions.png" class="img-responsive"
                   alt="Framework Packafe Interactions">
-                <h5><span>3.1.2 Model Class Diagram</span></h5>
-                <a href="../img/design/pokedex.jpg">Pokedex Diagram Image</a>
-                <img src="../img/design/pokedex.jpg" class="img-responsive" alt="Pokedex">
-                <a href="../img/design/pokedex-info.jpg">Pokedex Class Diagram Image</a>
-                <img src="../img/design/pokedex-info.jpg" class="img-responsive" alt="Pokedex Class Diagram">
+                  <a id="3-1-2-model-class-diagram" class="anchor"></a><br/><br/>
+                <h5><span>3.1.2 Model Class Diagram</span></h5><br/>
+                
+                <a id="3-1-2-1-diagram" class="anchor"></a>
+                <h6>The Pokémon Encyclopedia's Diagram</h6>
+                <a href="../img/design/pokedex.jpg">Expanded Image</a>
+                <img src="../img/design/pokedex.jpg" class="img-responsive" alt="The Pokémon Encyclopedia's Diagram Image"><br/><br/>
+                <hr>
+                <a id="3-1-2-1-class-diagram" class="anchor"></a>
+                <h6>The Pokémon Encyclopedia's Class Diagram</h6>
+                <a href="../img/design/pokedex-info.jpg">Expanded Image</a><br/><br/>
+                <img src="../img/design/pokedex-info.jpg" class="img-responsive" alt="Pokédex Class Diagram">
               </ul>
             </div>
           </div>
@@ -260,7 +320,7 @@
           </div>
           <div id="4"> <a id="4-interface-descriptions" class="anchor"></a>
             <h2><span>4 Interface Descriptions</span></h2><br />
-            <div>
+            <div id="4-1"> <a id="4-1-colour-guidelines" class="anchor"></a>
               <h4><span>4.1 Colour Guidelines</span></h4>
               <p>
                 To maintain the Pokémon theme, we have created a standard color palette that will be used across the entire
@@ -269,7 +329,6 @@
                 bold and intense colors, so we had to tweak them a little bit for them to be more appealing and less harsh on
                 the eye when viewing on a screen.
               </p>
-        
               <table class="table table-hover">
                 <thead>
                   <tr>
@@ -351,13 +410,12 @@
                   </tr>
                 </tbody>
               </table>
-              <ul>
-                <div>
+                <div id="4-2"> <a id="4-2-font-guidelines" class="anchor"></a>
                   <h4><span>4.2 Font Guidelines</span></h4>
                   <p>All of the panels will use the font Roboto to keep the design simple and easy to read. Using a common font
                     also ensures that it will be supported on all browsers. </p>
                 </div>
-                <div>
+                <div id="4-3"> <a id="4-3-app-icons" class="anchor"></a>
                   <h4><span>4.3 App Icons</span></h4>
                   <p>We created two main icons, one for the main page as a logo and a simplified design for the page favicon.
                   </p>
@@ -369,48 +427,57 @@
                     </center>
                   </div>
                 </div>
-                <div>
-                  <!-- Requires work this whole div section-->
-                  <!--TODO-->
-                  <h4><span>4.4 Module Interface</span></h4>
+                <div id="4-4"> <a id="4-4-module-interface" class="anchor"></a>
+                  <h4><span>4.4 Module Interface</span></h4><br/>
                   <div id="content">
+                    <h6>Pokémon Encyclopedia's Figma Prototype Design</h6>
                     <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
                       src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FyYwx8SzIexdHHCrj0468OP%2FCP317-Pokedex-prototype"
-                      allowfullscreen></iframe>
-        
-                    <a href="../img//design/ui-overview.png">Pokemon Encyclopedia Prototype Overview Image</a>
-                    <img src="../img/design/ui-overview.png" class="img-responsive" alt="Main Login View">
+                      allowfullscreen></iframe><br /><br />
+                  
+                    <h6>Pokémon Encyclopedia's Figma Prototype Design</h6>
+                    <a href="../img/design/ui-overview.png">Expanded Image</a>
+                    <img src="../img/design/ui-overview.png" class="img-responsive" alt="Main Login View"><br /><br />
                   </div>
-                  <ul>
+                  <ul> <a id="4-4-1-main-login-in-view" class="anchor"></a>
                     <h5><span>4.4.1 Main Login-in View</span></h5>
-                    <img src="../img/design/ui-main-log-in-view.png" class="img-responsive" alt="Main Login View">
+                    <img src="../img/design/ui-main-log-in-view.png" class="img-responsive" alt="Main Login View"><br/><br/>
+                    <a id="4-4-2-registration-view" class="anchor"></a>
                     <h5><span>4.4.2 Registration View</span></h5>
                     <img src="../img/design/ui-registration-view.png" class="img-responsive"
-                      alt="Enter Email Address Interface">
+                      alt="Enter Email Address Interface"><br/><br/>
                     <div>
+                      <a id="4-4-3-forgot-username-password" class="anchor"></a>
+                      <h5><span>4.4.3 Forgot Username/Password</span></h5>
                       <ul>
+                        <a id="4-4-3-1-enter-email-address" class="anchor"></a>
                         <h6><span>4.4.3.1 Enter Email Address</span></h6>
                         <img src="../img/design/ui-forgot-up-enter-email-address.png" class="img-responsive"
-                          alt="Enter Email Address Interface">
+                          alt="Enter Email Address Interface"><br/><br/>
+                        <a id="4-4-3-2-verification-code" class="anchor"></a>
                         <h6><span>4.4.3.2 Verification Code</span></h6>
                         <img src="../img/design/ui-forgot-up-verification-code.png" class="img-responsive"
-                          alt="Pokémon Encyclopedia Logo Variant 1">
+                          alt="Pokémon Encyclopedia Logo Variant 1"><br/><br/>
+                        <a id="4-4-3-3-new-password" class="anchor"></a>
                         <h6><span>4.4.3.3 New Password</span></h6>
                         <img src="../img/design/ui-forgot-up-new-password.png" class="img-responsive"
-                          alt="Pokémon Encyclopedia Logo Variant 1">
+                          alt="Pokémon Encyclopedia Logo Variant 1"><br/><br/>
+                        <a id="4-4-3-4-update-successful" class="anchor"></a>
                         <h6><span>4.4.3.4 Update Successful</span></h6>
                         <img src="../img/design/ui-forgot-up-enter-update-success.png" class="img-responsive"
                           alt="Pokémon Encyclopedia Logo Variant 1">
-                      </ul>
+                      </ul><br/><br/>
                     </div>
+                    <a id="4-4-4-user-home-view" class="anchor"></a>
                     <h5><span>4.4.4 User Home View</span></h5>
-                    <img src="../img/design/ui-user-home-view.png" class="img-responsive" alt="Enter Email Address Interface">
-                    <h5><span>4.4.5 Search Pokemon View</span></h5>
+                    <img src="../img/design/ui-user-home-view.png" class="img-responsive" alt="Enter Email Address Interface"><br/><br/>
+                    <a id="4-4-5-search-pokemon-view" class="anchor"></a>
+                    <h5><span>4.4.5 Search Pokémon View</span></h5>
                     <img src="../img/design/ui-search-pokemon-view.png" class="img-responsive"
-                      alt="Enter Email Address Interface">
+                      alt="Enter Email Address Interface"><br/><br/>
+                    <a id="4-4-6-settings-page" class="anchor"></a>
                     <h5><span>4.4.6 Settings Page</span></h5>
                     <img src="../img/design/ui-settings-view.png" class="img-responsive" alt="Enter Email Address Interface">
-                  </ul>
                 </div>
               </ul>
             </div>
@@ -426,84 +493,127 @@
               pseudocode will be helpful in order to translate it into actual code during the
               implementation stage.
             </p>
-            <div>
+            <div id="5-1"><a id="5-1-module-detailed-design" class="anchor"></a>
               <h4><span>5.1 Module Detailed Design</span></h4>
               <p>
-                In the Pokemon class, mostly all of the attributes are what describes the Pokemon. It includes: name, hp,
+                In the Pokémon class, mostly all of the attributes are what describes the Pokémon. It includes: name, hp,
                 attack,
                 defense, special attack & defence, speed, evolve level, location, type and effectiveness. The methods will
                 return the
-                attributes of the Pokemon.
+                attributes of the Pokémon.
               </p>
               <div>
-                <ul>
+                <ul><a id="5-1-1-pokemon-class" class="anchor"></a>
                   <h5><span>5.1.1 Pokémon Class</span></h5>
-                  <p>In the Pokémon class, most of the attributes describe the Pokémon . This includes: name, hp, attack,
+                  <p>In the Pokémon class, most of the attributes describe the Pokémon. This includes: name, hp, attack,
                     defense,
                     special attack & defence, speed, evolve level, location, type and effectiveness. The methods will return the
-                    attributes of the Pokémon .</p>
-        
+                    attributes of the Pokémon.</p>
+                  <a id="5-1-2-pokemon-class" class="anchor"></a>
                   <h5><span>5.1.2 Pokémon Class</span></h5>
                   <p>The Team class will be for the user's team of Pokémon . Attributes include owner, members, and number.</p>
-                  <ul>
-                    <p>getOwner()<br />
-                      - returns the Owner/User of the team<br />
-                      - different owner for every team<br />
-                      <br />
-                      getMembers()<br />
-                      - returns the list of Pokémon on the team<br />
-                      <br />
-                      setMembers()<br />
-                      - sets list of Pokémon on team<br />
-                      - different for every user
-                    </p>
-                  </ul>
-        
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Method</th>
+                        <th>Purpose</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>getOwner()</td>
+                        <td>
+                          <ul>
+                            <li>Owner/User of the team</li>
+                            <li>different owner for every team</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>getMembers()</td>
+                        <td>
+                          <ul>
+                            <li>returns the list of Pokémon on the team</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>setMembers()</td>
+                        <td>
+                          <ul>
+                            <li>sets list of Pokémon on team</li>
+                            <li>different for every user</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a id="5-1-3-user-class" class="anchor"></a>
                   <h5><span>5.1.3 User Class</span></h5>
                   <p>The user class will be for all of the user's information with attributes: username, user ID, password,
                     saved teams and saved Pokémons.
-                  <ul>
-                    setUsername(username : String)<br />
-                    - sets user's personal unique username into database<br />
-                    - each user has a different username<br />
-                    <br />
-                    setPassword(password : String)<br />
-                    - sets password for the user<br />
-                    - connected to each user's username<br />
-                    <br />
-                    getSaved_teams()<br />
-                    - returns list of user's teams<br />
-                    - user can have multiple teams
-                    </p>
-                  </ul>
-        
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Method</th>
+                          <th>Purpose</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>setUsername(username : String)</td>
+                          <td>
+                            <ul>
+                              <li>sets user's personal unique username into database</li>
+                              <li>each user has a different username</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>setPassword(password : String)</td>
+                          <td>
+                            <ul>
+                              <li>sets password for the user</li>
+                              <li>connected to each user's username</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td> getSaved_teams()</td>
+                          <td>
+                            <ul>
+                              <li>returns list of user's teams</li>
+                              <li>user can have multiple teams</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  <a id="5-1-4-buttons-on-the-back-end" class="anchor"></a>
                   <h5><span>5.1.4 Buttons On The Back End</span></h5>
                   <p>On the login page, once you enter your username and password and click the sign in button you will get
-                    redirected to the homepage with their teams and pokemon. If you don't have an account then you would hit the
+                    redirected to the homepage with their teams and Pokémon. If you don't have an account then you would hit the
                     sign up button which would redirect you to the sign up interface via Ajax. If the user forgot their username
                     or password, they can click the "Forgot Username / Password" button and it will lead them to enter their
                     email and if they forgot their username it will send them an email with their username. If they forgot their
                     password it will send them a validation code which can be entered in the next page and will allow them to
-                    reset their password.</p>
-                  <p>On the "Search Pokemon" page once they enter a Pokemon name to search and click the search button, it would
-                    launch a keyword search in the database and if its a valid Pokemon, it will display the Pokemon's
-                    information but if it's not then it will display a message saying the Pokemon name entered was not valid.
+                    reset their password.<br /><br />
+                    On the "Search Pokémon" page once they enter a Pokémon name to search and click the search button, it would
+                    launch a keyword search in the database and if its a valid Pokémon, it will display the Pokémon's
+                    information but if it's not then it will display a message saying the Pokémon name entered was not valid.
+                    <br /><br />
+                    On the "Search Pokémon" page, if they enter two Pokémon names and click the compare button, it will search
+                    for the two Pokémon's in the database and then display both of the Pokémon's attributes/information for the
+                    user to compare.
                   </p>
-                  <p>On the "Search Pokemon" page, if they enter two Pokemon names and click the compare button, it will search
-                    for the two Pokemon's in the database and then display both of the Pokemon's attributes/information for the
-                    user to compare.</p>
-
-        
+                    <a id="5-1-5-classes-and-the-database" class="anchor"></a>
                     <h5><span>5.1.5 Classes And The Database</span></h5>
-                    <p>The Pokemon class has many attributes. The HP, Attack, Defence, Special Attack & Defence and Speed will be stored in
-                      the base_stats of the Pokemon in the database. The ID, Name and Evolve Level will be in the section "pokemon" of the
-                      database. The type of the Pokemon will be in a lookup section called "poke_type" of the database and there will also
-                      be a section called "types" which will list the Pokemon type with the corresponding type name. The location of where
-                      the Pokemon can be found will be in another lookup section called "poke_location" and it will also have another
+                    <p>The Pokémon class has many attributes. The HP, Attack, Defence, Special Attack & Defence and Speed will be stored in
+                      the base_stats of the Pokémon in the database. The ID, Name and Evolve Level will be in the section "pokemon" of the
+                      database. The type of the Pokémon will be in a lookup section called "poke_type" of the database and there will also
+                      be a section called "types" which will list the Pokémon type with the corresponding type name. The location of where
+                      the Pokémon can be found will be in another lookup section called "poke_location" and it will also have another
                       section called "location" which would list all the possible locations with the corresponding names.</p>
-
-
-
                 </ul>
               </div>
             </div>
@@ -513,14 +623,14 @@
           </div>
           <div id="6"> <a id="6-maintenance" class="anchor"></a>
             <h2><span>6 Maintenance</span></h2><br />
-            <div>
+            <div id="6-1"><a id="6-1-corrective" class="anchor"></a>
               <h4><span>6.1 Corrective</span></h4>
               <p>Pokémon Encyclopedia has a “get help” feature which allows users to report any issues or bugs with respect to
-                the functionality of the app. Once the Pokémon encyclopedia’s 24/7 chat line or email receives the requests from
+                the functionality of the app. Once the Pokémon Encyclopedia’s 24/7 chat line or email receives the requests from
                 the users who see a problem and corrective maintenance is done by the implementation team. After corrective
                 actions are taken, the implementation team will update the website by including the solutions and fixes.</p>
             </div>
-            <div>
+            <div id="6-2"><a id="6-2-perfective" class="anchor"></a>
               <h4><span>6.2 Perfective</span></h4>
               <p>Due to the time constraint, the development of the app was simplified to the basic features needed in order to
                 ensure the application is executable. Throughout the perfective maintenance, the implementation team will work
@@ -544,9 +654,29 @@
           <div id="divide_1">
             <hr>
           </div>
-          <div> <a id="7-versions" class="anchor"></a>
+          <div><a id="7-versions" class="anchor"></a>
             <h2><span>Versions</span></h2><br />
-            <div> <a id="Version_0.1" class="anchor"></a>
+            <div id="7-v0-2"><a id="Version-0-2" class="anchor"></a>
+              <h5><span>Version 0.2 - 2021-04-04</span></h5>
+              <ul>
+                <li>Expanded Table of Contents</li>
+                <li>Fixed image render error for Prototype Overview Image (on the Settings View) in section <a href="#4-4-module-interface">4.4</a>
+                  from <a
+                    href="https://github.com/IanR9532/Team-Rocket/blob/cb8e7eceae3f6579ef68c89ace7ba0404e43a1b1/Documentation/img/design/ui-overview.png">before</a> to
+                    <a href="../img/design/ui-overview.png">after</a>.
+                </li>
+                <li>Fixed image render error for Settings View Image in section <a href="#4-4-module-interface">4.4</a>
+                  from <a
+                    href="https://github.com/IanR9532/Team-Rocket/blob/cb8e7eceae3f6579ef68c89ace7ba0404e43a1b1/Documentation/img/design/ui-settings-view.png">before</a> to
+                    <a href="#4-4-6-settings-page">after</a>.
+                </li>
+                <ul>
+                  <li><em>Jessica Chen, Kevin He, Graeme Kempf</em></li>
+                  <li>Thanks to SQA testers: <em>Ian Roberts</em></li>
+                </ul>
+              </ul>
+            </div>
+            <div id="7-v0-1"><a id="Version-0-1" class="anchor"></a>
               <h5><span>Version 0.1 - 2021-03-25</span></h5>
               <ul>
                 <li>Document created and presented information</li>
@@ -560,15 +690,25 @@
         </div>
       </div>
     </div>
-  </section> <!-- Footer -->
+  </section>
+  
+  <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Team Rocket</p>
-    </div> <!-- /.container -->
-  </footer> <!-- Bootstrap core JavaScript -->
+    </div> 
+    
+  <!-- /.container -->
+  </footer> 
+  
+  <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Plugin JavaScript -->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script> <!-- Custom JavaScript for this theme -->
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+  
+  <!-- Plugin JavaScript -->
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script> 
+  
+  <!-- Custom JavaScript for this theme -->
   <script src="../js/scrolling-nav.js"></script>
 </body>
 

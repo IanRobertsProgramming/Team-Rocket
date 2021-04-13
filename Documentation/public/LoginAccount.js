@@ -3,20 +3,22 @@ function verifyLogin() {
     var password = $('#password').val();
 
     $.ajax({
-        type: 'POST',
-        url: '../php/validate_login.php',
+        type: 'post',
+        url: '/rocket/php/validate_login.php',
         data: { user: username, pass: password},
         success: function(result) {
             if (result === 'True') {
-                var hrefL = "";
+                var hrefL = "main-page.html";
                 window.location.replace(hrefL);
             } else {
                 displayLoginError();
             }
+        }, error: function (result) {
+            alert('Connection Failed');
         }
     });
 }
 
 function displayLoginError() {
-    $('#error').text("Error: Invalid password or username.");
+    alert("Invalid username or password.");
 }
