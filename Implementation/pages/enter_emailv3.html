@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Team Rocket Project</title>
+    <link rel="stylesheet" href="../css/enter_emailv3.css">
+    <link rel="shortcut icon" type="image/jpg" href="../imgs/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/verification_email.js"></script>
+  </head>
+  <body>
+    <header class="grad">
+
+      <div class="Title-Section">
+        <h1 class="title">Team Rocket Project</h1>
+      </div>
+      <div class="yellow_box">
+        <form id="sendEmail">
+          <h2 class = "prompt-text">Enter your email to verify your account</h2>
+          <div class="inputs">
+            <label for="email_add" class="email-label">Email Address:&nbsp;&nbsp;</label>
+            <input type="email" id="email_add" name="email_add" class="field">
+          </div>
+          <button type="submit" class="button" onclick="verification_email()">SUBMIT</button>
+        </form>
+      </div>
+    </header>
+  </body>
+</html>

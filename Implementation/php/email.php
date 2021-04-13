@@ -27,13 +27,13 @@
     $mail->Body = 'User has forgotten username/password. Use the provided verification code to set a new password.' . "<br>" . 'Verification Code: ' . $ver_code;
 
     if ($mail->send()){
-        $username = 'rocket';
-        $password = 'Rocket_7';
-        $conn = new mysqli("hopper.wlu.ca", $username, $password, "rocket");
-        $stmt = $conn->prepare("INSERT INTO user (password) VALUES (?) WHERE email=?");
-        $stmt->bind_param("ss", $ver_code, $to);
-        $stmt->execute();
-        $conn->close();
+        //$username = 'rocket';
+        //$password = 'Rocket_7';
+        //$conn = new mysqli("hopper.wlu.ca", $username, $password, "rocket");
+        //$stmt = $conn->prepare("INSERT INTO user (password) VALUES (?) WHERE email=?");
+        //$stmt->bind_param("ss", $ver_code, $to);
+        //$stmt->execute();
+        //$conn->close();
         echo 'Email sent.';
     } else {
         echo 'Email not sent.';
