@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .grad{
+    height: 100vh;
+    background: linear-gradient(#FFFFFF, #76Aff1);
+}
+  
+.Title-Section{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: grey;
+    padding-bottom: 5px;
+  }
+  
+  .title{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .container {
+    padding-top: 100px;
+  }
+
+  .navbar-custom{
+    background-color: #C4C4C4;
+    color: red;
+    }
+
+/* Login User/Pass + Input box */
+.Label-Container{
+  position: absolute;
+  left: 13%;
+  width: 50%;
+  top: 20%;
+}
+
+.input-info{
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  left: 39%;
+  
+  background: -webkit-linear-gradient(#FFFFFF, #245FF8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.75px black;
+}
+
+.emailaddress-field{
+  width:225px;
+  position: absolute;
+  left: 49%;
+  top: 20%;
+}
+
+.username-field{
+  width:225px;
+  position: absolute;
+  left: 49%;
+  top: 25%;
+}
+
+.password-field{
+  width:225px;
+  position: absolute;
+  left: 49%;
+  top: 30%;
+}
+
+.confirmpassword-field{
+  width:225px;
+  position: absolute;
+  left: 49%;
+  top: 35%;
+}
+
+    /* SIGN IN BUTTON */
+    button {
+      position: absolute;
+      width: 200px;
+      height: 48px;
+      left: 50%;
+      top: 40%;
+  
+      /* Button Background*/
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FCEE6F 93.22%, rgba(255, 255, 255, 0) 93.23%);
+      position: absolute;
+      width: 400px;
+      height: 39px;
+      left: 36%;
+      top: 40%;
+  
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    
+    /* Add a hover effect for buttons */
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    .pokemonsignup{
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 23%;
+      opacity: 0.7;
+    }
+  
