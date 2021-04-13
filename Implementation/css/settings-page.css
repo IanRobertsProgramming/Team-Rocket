@@ -24,7 +24,7 @@
     font-size: 22px;
     color:white;
     line-height: 70px;
-    text-align: center;
+    text-align: center; 
     background: #063146;
     user-select: none;
   }
@@ -199,20 +199,186 @@
   -webkit-text-stroke: 0.75px rgb(0, 174, 255);
   }
 
+  .accinfo{
+    width: 80%;
+    position: absolute;
+    left: 10%;
+  }
+
   .profile-pic{
     display: block;
     position: absolute;
     left: 60%;
-    top: 10px;
+    top: 6%;
     width: 20%;
   }
 
+  .pokemonlogo{
+    display: block;
+    position: absolute;
+    left: 24%;
+    top: 73%;
+    width: 22%;
+  }
+  .threepokemon{
+    display: block;
+    position: absolute;
+    left: 55%;
+    top: 68%;
+    width: 42%;
+  }
   .p1{
     left: 45%;
   }
 
-  .notif-inner {
-    background: #ffffff;
+  .Username{ 
+    -webkit-text-stroke: 0.75px rgb(150, 150, 150);
+    position: absolute;
+    top:31.5%;
+    left: 30%;
+  }
+
+  .Email{ 
+    -webkit-text-stroke: 0.75px rgb(150, 150, 150);
+    position: absolute;
+    top:45.5%;
+    left: 30%;
+  }
+
+  .Password{ 
+    -webkit-text-stroke: 0.75px rgb(150, 150, 150);
+    position: absolute;
+    top:59.5%;
+    left: 30%;
+  }
+  .Language{ 
+    -webkit-text-stroke: 0.75px rgb(150, 150, 150);
+    position: absolute;
+    top:71%;
+    left: 30%;
+  }
+
+  .CurrentVersion{ 
+    -webkit-text-stroke: 0.75px rgb(150, 150, 150);
+    position: absolute;
+    top:86.5%;
+    left: 30%;
+  }
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #fff89d;}
+
+.EditButton {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  left: 90%;
+  top: 15%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.EditButton2 {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  left: 90%;
+  top: 31%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+.EditButton3 {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  left: 90%;
+  top: 45%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.EditButton4 {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  left: 90%;
+  top: 58%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.UpdateButton {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  left: 85%;
+  top: 85%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+.notif-inner {
+  background: #ffffff;
     min-height: 300px;
     border-radius: 5px;
     padding-bottom: 10px;
@@ -221,13 +387,69 @@
     left: 5%;
     width: 90%;
     height: 90%;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    -webkit-text-stroke: 0.75px rgb(0, 132, 255);
     }
+  .pushnotif{
+    background: #ff7300;
+    min-height: 10px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 15px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 12%;
+  }
+
+  .contactjoins{
+    background: #ff7300;
+    min-height: 10px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 15px;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 90%;
+    height: 12%;
+  }
+  .music{
+    background: #ff7300;
+    min-height: 10px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 15px;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 90%;
+    height: 12%;
+  }
+
+  .friendinv{
+    background: #ff7300;
+    min-height: 10px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 15px;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    width: 90%;
+    height: 12%;
+  }
 /* The switch - the box around the slider */
 .switch {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 60px;
   height: 34px;
+  left: 80%;
+  top: 20%;
 }
 
 /* Hide default HTML checkbox */
@@ -262,6 +484,23 @@
   transition: .4s;
 }
 
+.gethelp{
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  -webkit-text-stroke: 0.75px rgb(0, 119, 255);
+}
+
+.contactinfo{
+  position: absolute;
+  width: 300px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  -webkit-text-stroke: 0.75px rgb(150, 150, 150);
+}
+
 input:checked + .slider {
   background-color: #2196F3;
 }
@@ -284,3 +523,4 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
