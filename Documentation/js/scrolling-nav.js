@@ -44,5 +44,4 @@
       return false;
     });
   });
-
 })(jQuery); // End of use strict
