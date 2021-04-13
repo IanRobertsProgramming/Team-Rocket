@@ -1,6 +1,6 @@
 function new_password() {
-    var new_pass = $('#new_pass').val();
-    var confirm_pass = $('#confirm_pass').val();
+    var new_pass = $('#new-password').val();
+    var confirm_pass = $('#confirm-password').val();
     var ver_code = sessionStorage.getItem("key");
 
     if (new_pass !== confirm_pass) {
@@ -29,13 +29,13 @@ function new_password() {
 }
 
 function displayPassErr() {
-    $('#error').text("Error: Passwords don't match.");
+    alert("Error: Passwords don't match.");
 }
 
 function displayRequirementsError() {
-    $('#error').text("Error: Password must be a length of 8 or greater.");
+    alert("Error: Password must be a length of 8 or greater.");
 }
 
 function displayPassChangeError() {
-    $('#error').text("Error: Password could not be changed.");
+    alert("Error: Password could not be changed.");
 }

@@ -19,8 +19,8 @@
         $user = $result->fetch_assoc();
         if ($user) {
             if ($user['password'] == $ver_code) {
-                $stmt = $conn->prepare("INSERT INTO user (password) VALUES (?)");
-                $stmt->bind_param("s", $new_pass);
+                $stmt = $conn->prepare("UPDATE user SET password=? WHERE password=?");
+                $stmt->bind_param("ss", $new_pass, $ver_code);
                 $stmt->execute();
                 $conn->close();
                 echo 'Password successfully changed';

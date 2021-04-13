@@ -1,5 +1,5 @@
 function verify_code() {
-    var ver_code = document.getElementById('verif-code').value;
+    var ver_code = $('#verif-code').val();
     
     if (ver_code.length !== 8) {
         displayVerificationError();

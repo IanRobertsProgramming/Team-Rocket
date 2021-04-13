@@ -1,6 +1,6 @@
 function verification_email() {
-    var email = document.getElementById('email_add').value;
-    alert(email);
+    var email = $('#email_add').val();
+    
     if (email.length < 1) {
         alert('Error: Please enter an email.');
     } else {
