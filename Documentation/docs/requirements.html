@@ -11,7 +11,8 @@
   <link rel="icon" href="../favicon.ico"  type="image/ico">
   
   <!-- Bootstrap core CSS -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   
   <!-- Custom styles for this template -->
   <link href="../css/scrolling-nav.css" rel="stylesheet">
@@ -28,15 +29,26 @@
           class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./specifications.html">Specifications</a>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="../public/main_login.html">Encyclopedia</a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Documents</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./specifications.html">Specifications</a>
+              <a class="dropdown-item" href="./spmp.html">SPMP</a>
+              <a class="dropdown-item" href="./requirements.html">Requirements</a>
+              <a class="dropdown-item" href="./analysis.html">Analysis</a>
+              <a class="dropdown-item" href="./design.html">Design</a>
+            </div>
           </li>
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./spmp.html">SPMP</a> </li>
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./requirements.html">Requirements</a>
-          </li>
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./analysis.html">Analysis</a> </li>
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./design.html">Design</a> </li>
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./version.html">Version</a> </li>
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./sqa.html">SQA</a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Management</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="../management/changelog.html">Changelog</a>
+            <a class="dropdown-item" href="../management/project-timeline.html">Project Timeline</a>
+            <a class="dropdown-item" href="#">Time Tracker</a>
+            <a class="dropdown-item" href="../management/our-team.html">Our Team</a>
+          </div>
+        </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger"
               href="https://github.com/IanR9532/Team-Rocket">GitHub</a> </li>
         </ul>
@@ -222,72 +234,81 @@
                   <table class="table table-striped">
                     <tbody>
                       <tr>
-                        <th>Log-in Interface</th>
+                        <th>(1) Log-in Interface</th>
                         <td> To access the project, the user must log-in. This will be the initial web page that they
                           will interact with. It will have a menu, centred in the screen, in which they can type in
                           their username first and then their password, just below, to log into their account. If the
-                          log-in is successful, proceed to Interface #2 (Homepage interface). Otherwise, provide an
+                          log-in is successful, proceed to Interface #2 (Homepage Interface). Otherwise, provide an
                           error message and prompt the user to either provide different log-in credentials.</td>
                       </tr>
                       <tr>
-                        <th>Homepage Interface</th>
-                        <td>The homepage interface will follow a successful log-in. From here, the user will have four
+                        <th>(2) Homepage Interface</th>
+                        <td>The Homepage Interface will follow a successful log-in. From here, the user will have four
                           options (buttons) to choose: the search function, their saved Pokémon list, their Teams list,
-                          and a side-by-side comparison tool.Furthermore, at the top left of each page/interface, there
+                          and a side-by-side comparison tool. Furthermore, at the top left of each page/interface, there
                           will be a button that can return the user to the homepage.</td>
                       </tr>
                       <tr>
-                        <th>Search Interface</th>
+                        <th>(3) Search Interface</th>
                         <td>The search function will have one search bar on the page that will prompt the user to type
-                          in the name of the Pokémon that they want to search.Before any search has been completed, the
+                          in the name of the Pokémon that they want to search. Before any search has been completed, the
                           full list of Pokémon will be displayed. It can be filtered by any statistic using a filter
-                          menu contained on the screen.After being searched for, the interface will return the Pokémon
+                          menu contained on the screen. After being searched for, the interface will return the Pokémon
                           that had been typed in. The user can select and confirm that Pokémon, which will move the user
-                          to Interface #4, or search again.</td>
+                          to Interface #4 (Pokémon Profile Interface), or search again.</td>
                       </tr>
                       <tr>
-                        <th>Pokémon Profile Interface</th>
+                        <th>(4) Pokémon Profile Interface</th>
                         <td>The profile will show all information in the database related to the chosen Pokémon in a
                           table. The table will consist of: Name, HP, Attack, Defense, Special Attack, Special Defense,
                           Speed, Evolve Level, Location(s), Type and Effectiveness. There will be a button for the user to save the
-                          Pokémon to their ‘Saved Pokémon’. </td>
+                          Pokémon to their ‘Saved Pokémon’. <br/><br/>
+                          <i>* Interface is now combined with (3) Search Interface - 2021-04-13</i>
+                        </td>
                       </tr>
                       <tr>
-                        <th>Saved Pokémon Interface</th>
+                        <th>(5) Saved Pokémon Interface</th>
                         <td>The interface will show a list of Pokémon, ordered alphabetically, that the user has chosen
-                          to save. If a Pokémon is selected, it will show the user Interface #4 (Pokémon Profile) for
-                          that respective Pokémon. </td>
+                          to save. If a Pokémon is selected, it will show the user Interface #4 (Pokémon Profile Interface) for
+                          that respective Pokémon. <br/><br/>
+                          <i>* Interface is now combined with (3) Search Interface - 2021-04-13</i> </td>
                       </tr>
                       <tr>
-                        <th>Comparison interface</th>
+                        <th>(6) Comparison Interface</th>
                         <td>The user will select a Pokémon, if one is not selected already, from a list. The picture and
-                          table, a smaller version of Interface #4, will appear on the left half of the screen. From
+                          table, a smaller version of Interface #4 (Pokémon Profile Interface), will appear on the left half of the screen. From
                           there, they can search for another Pokémon and add them to the interface. Once this is
                           completed, the picture and table for the second Pokémon will appear on the right hand side.
                           There will be an option to switch out one of the Pokémon and search for another using a search
-                          bar below both statistics tables.</td>
+                          bar below both statistics tables. <br/><br/>
+                          <i>* Interface is now combined with (3) Search Interface - 2021-04-13</i>
+                        </td>
                       </tr>
                       <tr>
-                        <th>Team List Interface</th>
+                        <th>(7) Team List Interface</th>
                         <td>A list with 3 spots. Each spot will have the name of a team that has been created by the
                           user or ‘Empty’ where there are available spots. If the user selects a team, they can view the
-                          team and modify it in Interface #8.</td>
+                          team and modify it in Interface #8. <br/><br/>
+                          <i>* Interface is now combined with (2) Homepage Interface - 2021-04-13</i>
+                        </td>
                       </tr>
                       <tr>
-                        <th>Team Selection Interface</th>
+                        <th>(8) Team Selection Interface</th>
                         <td>There will be 6 slots available in which a Pokémon can be selected. There will be two rows
                           of three slots. The user can select a Pokémon from the list to place in each spot. There will
                           be a save button in the top right hand corner of the page which will allow the user to name
-                          and save the team so that it can be accessed in the future from Interface #7. Next to the save
+                          and save the team so that it can be accessed in the future from Interface #7 (Team List Interface). Next to the save
                           button will be an option to clear the data for the team (Pokémon chosen and team name) so that
-                          the user can start a new team.</td>
+                          the user can start a new team. <br/><br/>
+                          <i>* Interface is now combined with (2) Homepage Interface - 2021-04-13</i>
+                        </td>
                       </tr>
                       <tr>
                         <th>The aspects of optimizing the interface are:</th>
                         <td>The error messages should be under 75 words. All labels in buttons should be under 10 words. Individual tables
                           should have two columns, the first will identify which statistic/attribute the row is for and the second holds the
                           value(s), and 10 rows, one for each of the ten values (Name, HP, Attack, Defense, Special Attack, Special Defense,
-                          Speed, Evolve Level, Location(s), Type) and Effectiveness. Tables used in comparison should have three columns--one to
+                          Speed, Evolve Level, Location(s), Type and Effectiveness). Tables used in comparison should have three columns--one to
                           identify which attribute or statistic is in the row, one for the value for Pokémon 1, and the last for the value for
                           Pokémon 2. Each cell should have less than 10 words. The button to return to the homepage should be in the left-side
                           of the header for all other web pages. </td>
@@ -485,12 +506,22 @@
           </div>
           <div id="4"> <a id="4-versions" class="anchor"></a>
             <h2><span>4 Versions</span></h2><br />
+            <div id="4-v0-4-1"> <a id="Version-0-4-1" class="anchor"></a>
+              <h5><span>Version 0.4.1 - 2021-04-13</span></h5>
+              <ul>
+                <li>Updated User Interface Section <a href="#3-1-1-user-interfaces">3.1.1</a> where some interfaces are now combined with others due to change in design.</li>
+                <ul>
+                  <li><em>He, Kevin</em></li>
+                  <li>Thanks to SQA testers: <em>Kempf, Graeme</em></li>
+                </ul>
+              </ul>
+            </div>
             <div id="4-v0-4"> <a id="Version-0-4" class="anchor"></a>
               <h5><span>Version 0.4 - 2021-04-04</span></h5>
               <ul>
                 <li>Expanded Table of Contents</li>
                 <ul>
-                  <li><em>Kevin He</em></li>
+                  <li><em>He, Kevin</em></li>
                 </ul>
               </ul>
             </div>
@@ -500,7 +531,7 @@
                 <li>Upgrade to Bootstrap Framework for site</li>
                 <li>Added Table of Contents</li>
                 <ul>
-                  <li><em>Kevin He</em></li>
+                  <li><em>He, Kevin</em></li>
                 </ul>
               </ul>
             </div>
@@ -513,7 +544,7 @@
                   when it's suppose to be about Pokémon</li>
                 <li>Proof-read grammatical errors</li>
                 <ul>
-                  <li><em>Kevin He</em></li>
+                  <li><em>He, Kevin</em></li>
                 </ul>
               </ul>
             </div>
@@ -522,8 +553,7 @@
               <ul>
                 <li>Document created and presented information</li>
                 <ul>
-                  <li><em>Sunil Brijilall | Jessica Chen | Graeme Kempf | Andrei Pana | Alina Penskaya | Ian
-                      Roberts</em></li>
+                  <li><em>Brijlall, Sunil | Chen, Lingjie (Jessica) | Kempf, Graeme | Pana, Andrei | Penskaya, Alina | Roberts, Ian</em></li>
                 </ul>
               </ul>
             </div>
@@ -543,11 +573,15 @@
   </footer> 
   
   <!-- Bootstrap core JavaScript -->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
-  
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
   <!-- Plugin JavaScript -->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+    integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+    crossorigin="anonymous"></script>
   
   <!-- Custom JavaScript for this theme -->
   <script src="../js/scrolling-nav.js"></script>
