@@ -9,12 +9,11 @@ function verification_email() {
             url: '../php/email.php',
             data: {email: email},
             success: function(result) {
-                alert('temp');
                 if (result === 'True') {
                     var hrefL = "verif_code_page.html";
                     window.location.replace(hrefL);
                 } else {
-                    alert('Error: Please enter an email.');
+                    alert('Error: Please enter a valid email.');
                 }
             }, error: function(result) {
                alert('failed');
