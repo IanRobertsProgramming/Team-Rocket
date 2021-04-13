@@ -10,12 +10,12 @@ function verify_code() {
             data: { ver_code: ver_code },
             success: function(result) {
                 if (result === 'True') {
-                    var hrefL = "pages/new_password.html";
+                    var hrefL = "new_password.html";
                     window.location.replace(hrefL);
                 } else {
                     displayVerificationError()
                 }
-            }, error: function (result) {
+            }, error: function(result) {
                alert('failed');
             }
         });

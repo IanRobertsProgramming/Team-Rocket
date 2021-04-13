@@ -11,12 +11,12 @@ function verification_email() {
             success: function(result) {
                 alert('temp');
                 if (result === 'True') {
-                    var hrefL = "pages/verif_code_page.html";
+                    var hrefL = "verif_code_page.html";
                     window.location.replace(hrefL);
                 } else {
                     alert('Error: Please enter an email.');
                 }
-            }, error: function (result) {
+            }, error: function(result) {
                alert('failed');
             }
         });

@@ -15,13 +15,12 @@ function new_password() {
             success: function(result) {
                 if (result === 'True') {
                     sessionStorage.removeItem("key");
-                    var hrefL = "pages/update_successful.html";
+                    var hrefL = "update_successful.html";
                     window.location.replace(hrefL);
                 } else {
                     displayPassChangeError()
-                    $('#error').text(result);
                 }
-            }, error: function (result) {
+            }, error: function(result) {
                alert('failed');
             }
         });
