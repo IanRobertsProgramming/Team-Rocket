@@ -1,7 +1,7 @@
 var teamsL;
 
 function retrieveUserSavedPokemon() {
-
+    
 }
 
 function retrieveAllPokemon() {

@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -9,26 +8,22 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="verify_code.js"></script>
   </head>
   <body>
     <header class="grad">
 
-      <nav class="navbar navbar-nav navbar-custom fixed-top">
-        <a class="navbar-brand" href="#">
-            <h2 style="color: #FFFFFF">Team Rocket Project</h2>
-        </a>
-      </nav>
+      <div class="Title-Section">
+        <h1 class="title">Team Rocket Project</h1>
+      </div>
 
       <div class = "yellow_box">
         <div class="Prompt">
           <h2 class = "prompt-text">Once you get the verification code, <br>enter it here.</h2>
         </div>
         <div class="Verification-Code-Form">
-          <form action="../pages/new_password.html">
+          <form onsubmit="verify_code()">
                   <div class="label-div"><h2 class="input-lab">Verification Code:</h2></div>
                   <input type="input" id="verif-code" name="verif-code" class="verification-input">
                   <input type="submit" class="button" value="ENTER">

@@ -1,4 +1,4 @@
-function displayPokemonByName(name) {
+function displayPokemon(name) {
     var 
     $.ajax({
         type: 'POST',

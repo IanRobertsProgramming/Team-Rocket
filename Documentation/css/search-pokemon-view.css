@@ -230,9 +230,17 @@
     list-style-type: none;
     border-radius: 5px;
     padding: 7px;
-    /* justify-content: center; */
     text-align: center;
+    border: none;
+    outline: none;
   }
+
+  .list-group-item-collection:active, 
+  .list-group-item-collection:focus 
+  {
+      box-shadow: 2px 2px 7px #86A4F0;
+      outline: none;
+   }
 
   .white-box {
       border-radius: 5px;
