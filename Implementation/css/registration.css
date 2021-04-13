@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .grad{
+      height: 100vh;
+      background: linear-gradient(#FFFFFF,#76Aff1);
+  }
+  
+  
+  .Title-Section{
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: grey;
+  }
+  
+  .title{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .prompt-text{
+      position: relative;
+      text-align: center;
+      margin-top:-27%;
+      font-weight: 10;
+      font-family: 'Roboto', sans-serif;
+      font-size:20px;
+      font-weight: 10;
+      transform: translate(0%,550%);
+  }
+  
+  .button{
+      background-image: linear-gradient(#FFFFFF,#FCEE6F);
+      border: none;
+      color: #245FF8;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      font-family: 'Roboto', sans-serif;
+      position: absolute;
+      margin: 0;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      -ms-transform: translate(-50%,150%);
+      transform: translate(165%, -355%);
+      width:100px;
+      height:35px;
+    }
+  
+  .button:hover {
+      background-color:gray;
+      color: gray;
+  }
+
+  .Label-Container{
+    transform: translate(25%,55%);
+  }
+  .input-info{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    margin-bottom: 22px;
+    background: -webkit-linear-gradient(#FFFFFF, #245FF8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.75px black;
+  }
+
+  input{
+    width:250px;
+    height:25px;
+    transform: translate(230%,-430%);
+    margin-bottom: 19px;
+  }
+  .pokemonsignup{
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 23%;
+      opacity: 0.7;
+  }
