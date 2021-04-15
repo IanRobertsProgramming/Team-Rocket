@@ -29,7 +29,7 @@
 
     $stmt = $conn->prepare("SELECT * FROM user WHERE username=? AND password=?");
 
-    $stmt->bind_param("ss", $user, $pass); 
+    $stmt->bind_param("ss", $user, $pass);
     $stmt->execute();
     $result = $stmt->get_result();
     $stmt->close();
