@@ -8,6 +8,9 @@
     background: linear-gradient(#FFFFFF,#76Aff1);
 }
 
+.navbar-custom{
+  background-color: #C4C4C4;
+}
 
 .Title-Section{
   position: relative;
@@ -81,6 +84,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-top: 100px;
   margin-right: 50%;
   width: 100%;
   text-align: center;
@@ -119,7 +123,7 @@
   font-family: 'Roboto', sans-serif;
   margin: 0;
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
   -ms-transform: translate(-50%, 100%);
   transform: translate(-50%, 100%);
