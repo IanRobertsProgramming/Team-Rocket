@@ -33,12 +33,15 @@
     color: red;
     }
     
-    .pokemon-pika{
-        display: block;
-        position: absolute;
-        left: 40%;
-        top: 7%;
-      }
+  .pokemon-pika{
+      display: block;
+      position: absolute;
+      left: 40%;
+      top: 10%;
+
+      /* margin-top:10px;
+      margin-left: 55px; */
+    }
 
 
     /* SIGN IN BUTTON */
@@ -108,6 +111,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.75px black;
+  margin-top: 200px;
 }
 
 input{
@@ -133,4 +137,8 @@ input{
     font-size: 24px;
     line-height: 28px;
     color: #C4C4C4;
+  }
+
+  .input-container{
+    margin-top:200px;
   }
