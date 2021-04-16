@@ -40,7 +40,7 @@
     background: -webkit-linear-gradient(#FFFFFF, #245FF8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.75px black;
+    -webkit-text-stroke: 0.3px black;
     font-size: 22px;
     padding-left: 125px;
 }
@@ -102,8 +102,7 @@
   margin-right: 50%;
   width: 100%;
   text-align: center;
-  transform: translate(-10%, -50%);
-
+  transform: translate(10%, -50%);
   font-weight: 10;
   font-family: 'Roboto', sans-serif;
   font-size:20px;
@@ -132,4 +131,16 @@
 .button:hover {
   background-color:gray;
   color: gray;
+}
+
+.Label-Container{
+  transform: translate(10%,240%);
+}
+.input-info{
+    font-family: 'Roboto', sans-serif;
+    background: -webkit-linear-gradient(#FFFFFF, #245FF8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.75px black;
+    font-size: 22px;
 }
