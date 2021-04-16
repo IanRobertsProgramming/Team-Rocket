@@ -16,7 +16,8 @@ function verification_email() {
                     alert('Error: Please enter a valid email.');
                 }
             }, error: function(result) {
-               alert('failed');
+                console.log(result);
+                alert('failed');
             }
         });
     }

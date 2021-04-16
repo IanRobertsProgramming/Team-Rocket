@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="verify_code.js"></script>
+    <script>
+      function hrefToPage() {
+        window.location = "new_password.html";
+      }
+    </script>
   </head>
   <body>
     <header class="grad">
@@ -23,7 +28,7 @@
           <h2 class = "prompt-text">Once you get the verification code, <br>enter it here.</h2>
         </div>
         <div class="Verification-Code-Form">
-          <form onsubmit="verify_code()">
+          <form action="new_password.html">
                   <div class="label-div"><h2 class="input-lab">Verification Code:</h2></div>
                   <input type="input" id="verif-code" name="verif-code" class="verification-input">
                   <input type="submit" class="button" value="ENTER">

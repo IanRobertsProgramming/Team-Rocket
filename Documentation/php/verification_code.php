@@ -1,5 +1,4 @@
 <?php 
-
     $ver_code = $_POST['ver_code'];
 
     $username = 'rocket';
