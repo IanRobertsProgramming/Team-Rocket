@@ -188,6 +188,7 @@
     justify-content: center;
     text-align: center;
     height: 100px;
+	overflow: auto;
   }
 
   .sub-text {
