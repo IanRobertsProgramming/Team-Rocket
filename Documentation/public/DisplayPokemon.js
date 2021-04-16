@@ -28,11 +28,13 @@ function displayPokemon(type, data) {
             $('#pkmName1').text("#" + data[0].poke_id + " " + data[0].poke_name);
             swTb = $("#swtBody1 .type");
             statsTb = $('#statBody1 .stats');
+            $('#description1').empty();
             $('#description1').append(loc);
         } else {
             $('#pkmName2').text("#" + data[0].poke_id + " " + data[0].poke_name);
             swTb = $("#swtBody2 .type");
             statsTb = $('#statBody2 .stats');
+            $('#description1').empty();
             $('#description2').append(loc);
         }
 

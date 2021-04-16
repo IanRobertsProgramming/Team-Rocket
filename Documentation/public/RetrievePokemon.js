@@ -2,8 +2,9 @@ function retrievePokemonMatchingSearch(displayto, data) {
     var selection = $('#searchFilter').val();
     var type;
 
-    if (selection === "1") {
+    if (selection === "1" || displayto === 3) {
         type = "name";
+        displayto = 1;
     } else {
         type = "num";
     }
@@ -18,6 +19,8 @@ function retrievePokemonMatchingSearch(displayto, data) {
             console.log(json);
             if (json.length > 0) {
                 displayPokemon(displayto, json);
+            } else {
+                alert("No search results.");
             }
         }, error: function (result) {
             console.log(result);
@@ -54,4 +57,8 @@ function cmpClick() {
     } else {
         alert('Please fill out both fields when comparing.');
     }
+}
+
+function pkmButton(name) {
+    retrievePokemonMatchingSearch(3, name);
 }
