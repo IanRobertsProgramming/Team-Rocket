@@ -24,7 +24,7 @@
     font-size: 22px;
     color:white;
     line-height: 70px;
-    text-align: center; 
+    text-align: center;
     background: #063146;
     user-select: none;
   }
@@ -146,7 +146,7 @@
     width: 40%;
     height: 10%;
     }
-    
+
 .notif-set {
     background: #FCEE6F;
     min-height: 500px;
@@ -158,7 +158,7 @@
     width: 40%;
     height: 10%;
     }
-        
+
 .generalaccset{
         position: absolute;
         width: 270px;
@@ -172,7 +172,7 @@
         top: 18%;
         left: 72%;
       }
-      
+
 .input-info{
         position: absolute;
         font-family: 'Roboto', sans-serif;
@@ -192,7 +192,7 @@
   left: 5%;
   width: 90%;
   height: 90%;
-  
+
   position: absolute;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -231,34 +231,34 @@
     left: 45%;
   }
 
-  .Username{ 
+  .Username{
     -webkit-text-stroke: 0.75px rgb(150, 150, 150);
     position: absolute;
     top:31.5%;
     left: 30%;
   }
 
-  .Email{ 
+  .Email{
     -webkit-text-stroke: 0.75px rgb(150, 150, 150);
     position: absolute;
     top:45.5%;
     left: 30%;
   }
 
-  .Password{ 
+  .Password{
     -webkit-text-stroke: 0.75px rgb(150, 150, 150);
     position: absolute;
     top:59.5%;
     left: 30%;
   }
-  .Language{ 
+  .Language{
     -webkit-text-stroke: 0.75px rgb(150, 150, 150);
     position: absolute;
     top:71%;
     left: 30%;
   }
 
-  .CurrentVersion{ 
+  .CurrentVersion{
     -webkit-text-stroke: 0.75px rgb(150, 150, 150);
     position: absolute;
     top:86.5%;
@@ -278,7 +278,7 @@
 .dropdown {
   position: absolute;
   display: inline-block;
-  
+
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -308,12 +308,38 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #fff89d;}
 
+.SubButton {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  left: 90%;
+  top: 15%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 .EditButton {
   position: absolute;
   width: 15%;
   height: 15%;
   left: 90%;
   top: 15%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.SubButton2 {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  left: 90%;
+  top: 31%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -333,6 +359,20 @@
   font-size: 18px;
   line-height: 28px;
 }
+
+.SubButton3 {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  left: 90%;
+  top: 45%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 .EditButton3 {
   position: absolute;
   width: 15%;
@@ -376,7 +416,7 @@
   button:hover {
     opacity: 0.8;
   }
-  
+
 .notif-inner {
   background: #ffffff;
     min-height: 300px;
@@ -387,7 +427,7 @@
     left: 5%;
     width: 90%;
     height: 90%;
-  
+
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     -webkit-text-stroke: 0.75px rgb(0, 132, 255);
@@ -523,4 +563,3 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
