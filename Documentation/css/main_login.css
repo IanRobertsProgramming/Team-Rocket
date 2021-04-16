@@ -1,137 +1,137 @@
-*{
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  .grad{
-    height: 95vh;
-    background: linear-gradient(#76Aff1,#FFFFFF);
+* {
+  margin: 0;
+  padding: 0;
 }
 
-  
-.Title-Section{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: grey;
-    padding-bottom: 5px;
-  }
-  
-  .title{
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  .container {
-    padding-top: 100px;
-  }
 
-  .navbar-custom{
-    background-color: #C4C4C4;
-    color: red;
-    }
-    
-    .pokemon-pika{
-        display: block;
-        position: absolute;
-        left: 40%;
-        top: 7%;
-      }
+.grad {
+  height: 95vh;
+  background: linear-gradient(#76Aff1, #FFFFFF);
+}
 
 
-    /* SIGN IN BUTTON */
-  button {
-    position: absolute;
-    width: 200px;
-    height: 48px;
-    left: 50%;
-    top: 722px;
+.Title-Section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: grey;
+  padding-bottom: 5px;
+}
 
-    /* Button Background*/
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FCEE6F 93.22%, rgba(255, 255, 255, 0) 93.23%);
-    position: absolute;
-    width: 400px;
-    height: 39px;
-    left: 39%;
-    top: 600px;
+.title {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-  }
-  
-  /* Add a hover effect for buttons */
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  /* Forgot Username / Password? */
-  span.psw {
-    float: center;
-    text-align:center;
-    padding-top: 16px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    position: absolute;
-    width: 381px;
-    height: 34px;
-    left: 39%;
-    top: 650px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #C4C4C4;
-  }
-  
-  /* Login User/Pass + Input box */
-.Label-Container{
-  transform: translate(25px,-460px);
+.container {
+  padding-top: 100px;
+}
+
+.navbar-custom {
+  background-color: #C4C4C4;
+  color: red;
+}
+
+.pokemon-pika {
+  display: block;
+  position: relative;
+  left: 40%;
+  transform: translate(0%, 20%);
+}
+
+
+/* SIGN IN BUTTON */
+button {
   position: absolute;
+  width: 200px;
+  height: 48px;
+  left: 50%;
+  top: 722px;
+
+  /* Button Background*/
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FCEE6F 93.22%, rgba(255, 255, 255, 0) 93.23%);
+  position: absolute;
+  width: 400px;
+  height: 39px;
   left: 39%;
+  top: 600px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
 }
 
-.input-info{
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Forgot Username / Password? */
+span.psw {
+  float: center;
+  text-align: center;
+  padding-top: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
   position: absolute;
+  width: 381px;
+  height: 34px;
+  left: 39%;
+  top: 650px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #C4C4C4;
+}
+
+
+.input-info {
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
-  left: 39%;
   background: -webkit-linear-gradient(#FFFFFF, #245FF8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.75px black;
+} 
+
+/* Login User/Pass + Input box */
+.Label-Container {
+  position: relative;
+  transform: translate(-10%, 80%);
+  top:50%;
+  left:50%
 }
 
-input{
-  width:225px;
-  transform: translate(145px,-460px);
-  position: absolute;
+input {
+  width: 225px;
+  transform: translate(70%, -75%);
+  position: relative;
   left: 39%;
-  
+
 }
 
-    /* SIGN UP NOW */
-  span.signup {
-    float: center;
-    text-align:center;
-    position: absolute;
-    width: 381px;
-    height: 45px;
-    left: 39%;
-    top: 720px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #C4C4C4;
-  }
-  
+/* SIGN UP NOW */
+span.signup {
+  float: center;
+  text-align: center;
+  position: absolute;
+  width: 381px;
+  height: 45px;
+  left: 39%;
+  top: 720px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #C4C4C4;
+}
