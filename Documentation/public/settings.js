@@ -26,7 +26,6 @@ function changeUser(){
         url: '/rocket/php/change_info.php',
         data: { ver_code: ver_code, new_pass: new_user, change: change},
         success: function(result) {
-            sessionStorage.removeItem("key");
         }, error: function (result) {
             alert('Connection Failed');
         }
@@ -42,7 +41,6 @@ function changeEmail(){
         url: '/rocket/php/change_info.php',
         data: { ver_code: ver_code, new_pass: new_user, change: change},
         success: function(result) {
-            sessionStorage.removeItem("key");
         }, error: function (result) {
             alert('Connection Failed');
         }

@@ -8,7 +8,7 @@
 
     $conn = new mysqli("hopper.wlu.ca", $username, $password, "rocket");
 
-    if($change==1){
+    if($change == 1){
         $stmt = $conn->prepare("UPDATE user SET username=? WHERE ID=?"); #update the user's info
         $stmt->bind_param("ss", $new_info, $userID);
         $stmt->execute();
@@ -16,7 +16,7 @@
         $conn->close();
         echo 'True';
     }
-    else if($change==2){
+    else if($change == 2){
         $stmt = $conn->prepare("UPDATE user SET email=? WHERE ID=?"); #update the user's info
         $stmt->bind_param("ss", $new_info, $userID);
         $stmt->execute();
