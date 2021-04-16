@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+    <RECORD>
+        <TEAM>Specifications Document Creators</TEAM>
+        <NAMES>
+            <NAME>Bunker, William (Carson)</NAME>
+            <NAME>He, Kevin</NAME>
+            <NAME>Pana, Andrei</NAME>
+            <NAME>Penskaya, Alina</NAME>
+            <NAME>Shukla, Priya</NAME>
+            <NAME>Roberts, Ian</NAME>
+            <NAME>Vodon, Scott</NAME>
+        </NAMES>
+    </RECORD>
+    <RECORD>
+        <TEAM>SPMP Document Creators</TEAM>
+        <NAMES>
+            <NAME>Bunker, William (Carson)</NAME>
+            <NAME>He, Kevin</NAME>
+            <NAME>Pana, Andrei</NAME>
+            <NAME>Penskaya, Alina</NAME>
+            <NAME>Shukla, Priya</NAME>
+            <NAME>Roberts, Ian</NAME>
+        </NAMES>
+    </RECORD>
+    <RECORD>
+        <TEAM>Requirements Document Creators</TEAM>
+        <NAMES>
+            <NAME>Brijlall, Sunil</NAME>
+            <NAME>Chen, Lingjie (Jessica)</NAME>
+            <NAME>Kempf, Graeme</NAME>
+            <NAME>Pana, Andrei</NAME>
+            <NAME>Penskaya, Alina</NAME>
+            <NAME>Roberts, Ian</NAME>
+        </NAMES>
+    </RECORD>
+    <RECORD>
+        <TEAM>Analysis Document Creators</TEAM>
+        <NAMES>
+            <NAME>Brijlall, Sunil</NAME>
+            <NAME>Chen, Lingjie (Jessica)</NAME>
+            <NAME>Kempf, Graeme</NAME>
+            <NAME>Pana, Andrei</NAME>
+            <NAME>Penskaya, Alina</NAME>
+            <NAME>Roberts, Ian</NAME>
+        </NAMES>
+    </RECORD>
+    <RECORD>
+        <TEAM>Design Document Creators</TEAM>
+        <NAMES>
+            <NAME>Brijlall, Sunil</NAME>
+            <NAME>Chen, Lingjie (Jessica)</NAME>
+            <NAME>He, Kevin</NAME>
+            <NAME>Kempf, Graeme</NAME>
+            <NAME>Pana, Andrei</NAME>
+            <NAME>Patel, Prit</NAME>
+            <NAME>Penskaya, Alina</NAME>
+            <NAME>Roberts, Ian</NAME>
+            <NAME>Shukla, Priya</NAME>
+        </NAMES>
+    </RECORD>
+    <RECORD>
+        <TEAM>Prototype Creators</TEAM>
+        <NAMES>
+            <NAME>Brijlall, Sunil</NAME>
+            <NAME>Chen, Lingjie (Jessica)</NAME>
+            <NAME>He, Kevin</NAME>
+            <NAME>Patel, Prit</NAME>
+            <NAME>Shukla, Priya</NAME>
+            <NAME>Penskaya, Alina</NAME>
+        </NAMES>
+    </RECORD>
+    <RECORD>
+        <TEAM>Front-End Creators</TEAM>
+        <NAMES>
+            <NAME>Brijlall, Sunil</NAME>
+            <NAME>Muliana, Michelle</NAME>
+            <NAME>Pana, Andrei</NAME>
+            <NAME>Peralta, Louise</NAME>
+            <NAME>Wang, Jimmy</NAME>
+        </NAMES>
+    </RECORD>
+    <RECORD>
+        <TEAM>Back-End Creators</TEAM>
+        <NAMES>
+            <NAME>Brijlall, Sunil</NAME>
+            <NAME>Chen, Lingjie (Jessica)</NAME>
+            <NAME>Patel, Dhavani</NAME>
+            <NAME>Penskaya, Alina</NAME>
+        </NAMES>
+    </RECORD>
+    <RECORD>
+        <TEAM>Website Managers</TEAM>
+        <NAMES>
+            <NAME>Brijlall, Sunil</NAME>
+            <NAME>He, Kevin</NAME>
+            <NAME>Pana, Andrei</NAME>
+        </NAMES>
+    </RECORD>
+</CATALOG>

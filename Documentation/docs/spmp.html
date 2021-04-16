@@ -11,7 +11,8 @@
   <link rel="icon" href="../favicon.ico"  type="image/ico">
   
   <!-- Bootstrap core CSS -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   
   <!-- Custom styles for this template -->
   <link href="../css/scrolling-nav.css" rel="stylesheet">
@@ -22,21 +23,33 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container"> <a class="navbar-brand js-scroll-trigger" href="../index.html">Team Rocket</a> <button
+    <div class="container"> <a class="navbar-brand js-scroll-trigger" href="../">Team Rocket</a> <button
         class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span
           class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger"
-              href="./specifications.html">Specifications</a> </li>
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./spmp.html">SPMP</a> </li>
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./requirements.html">Requirements</a>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="../public/main_login.html">Encyclopedia</a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Documents</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./specifications.html">Specifications</a>
+              <a class="dropdown-item" href="./spmp.html">SPMP</a>
+              <a class="dropdown-item" href="./requirements.html">Requirements</a>
+              <a class="dropdown-item" href="./analysis.html">Analysis</a>
+              <a class="dropdown-item" href="./design.html">Design</a>
+            </div>
           </li>
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./analysis.html">Analysis</a> </li>
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./design.html">Design</a> </li>
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./version.html">Version</a> </li>
-          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="./sqa.html">SQA</a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Management</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="../management/changelog.html">Changelog</a>
+            <a class="dropdown-item" href="../management/project-timeline.html">Project Timeline</a>
+            <a class="dropdown-item" href="../management/time-tracker.html">Time Tracker</a>
+            <a class="dropdown-item" href="../management/sqa.html">SQA</a>
+            <a class="dropdown-item" href="../management/our-team.html">Our Team</a>
+          </div>
+        </li>
           <li class="nav-item"> <a class="nav-link js-scroll-trigger"
               href="https://github.com/IanR9532/Team-Rocket">GitHub</a> </li>
         </ul>
@@ -46,7 +59,7 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Software Project Management Plan</h1>
-      <p class="lead"><a href="#Version-0-6" style="color: rgb(255, 255, 255)">#Version 0.6 - 2021-04-04</a></p>
+      <p class="lead"><a href="#9-versions" style="color: rgb(255, 255, 255)">#Version 0.6.1 - 2021-04-13</a></p>
     </div>
   </header>
   <section id="main">
@@ -229,56 +242,8 @@
             </div>
             <div id="4-3"> <a id="4-3-project-responsibilities" class="anchor"></a>
               <h4><span>4.3 Project Responsibilities</span></h4>
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th>Deliverables</th>
-                    <th>Group Members</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>Project Requirements Document</th>
-                    <td>Every Member</td>
-                  </tr>
-                  <tr>
-                    <th>Software Project Management Plan (SPMP)</th>
-                    <td>Carson Bunker | Kevin He | Priya Shukla</td>
-                  </tr>
-                  <tr>
-                    <th>Object-Oriented Analysis</th>
-                    <td>Sunil Brijlall | Jessica Chen | Graeme Kempf | Alina Penskaya</td>
-                  </tr>
-                  <tr>
-                    <th>Documentation</th>
-                    <td>Andrei Pana</td>
-                  </tr>
-                  <tr>
-                    <th>Design</th>
-                    <td>Jessica Chen | Kevin He | Graeme Kempf | Dhavani Patel | Prit Patel | Alina Penskaya | Ian
-                      Roberts</td>
-                  </tr>
-                  <tr>
-                    <th>Prototype</th>
-                    <td>Sunil Brijlall | Jessica Chen | Kevin He | Michelle Muliana | Dhavani Patel | Prit Patel | Priya Shukla |
-                      Jimmy Wang</td>
-                  </tr>
-                  <tr>
-                    <th>Front-end</th>
-                    <td>Kevin He | Michelle Muliana | Andrei Pana | Prit Patel | Louise Peralta | Ian Roberts | Jimmy
-                      Wang</td>
-                  </tr>
-                  <tr>
-                    <th>Back-end</th>
-                    <td>Sunil Brijlall | Jessica Chen | Aozhou Hao | Andrei Pana | Alina Penskaya | Louise Peralta |
-                      Scott Vodon</td>
-                  </tr>
-                  <tr>
-                    <th>Testing/SQA</th>
-                    <td>Every Member</td>
-                  </tr>
-                </tbody>
-              </table>
+              <p>Project responsibilities and member contributions are located in 
+                <a href="../management/our-team.html">Our Team</a></a> page under <b>Members' Responsibilities</b> tab.</p>
             </div>
           </div>
           <div id="divide_1">
@@ -589,7 +554,7 @@
                   </tr>
                   <tr>
                     <td>Implementation and User Documentation</td>
-                    <td>2021-04-12</td>
+                    <td><strike>2021-04-12</strike> <b>Extended to 2021-04-17</b></td>
                   </tr>
                 </tbody>
               </table>
@@ -622,11 +587,11 @@
                   </tr>
                   <tr>
                     <th>Project Management</th>
-                    <td>GitHub, Sheets, Discord</td>
+                    <td>GitHub, Google Sheets, Discord</td>
                   </tr>
                   <tr>
                     <th>Diagram Software</th>
-                    <td>Diagram.net, Visual Paradigm</td>
+                    <td>Diagram.net, Visual Paradigm, Lucid.app</td>
                   </tr>
                 </tbody>
               </table>
@@ -716,6 +681,17 @@
           </div>
           <div id="9"> <a id="9-versions" class="anchor"></a>
             <h2><span>9 Versions</span></h2><br />
+            <div id="9-v0-6-1"> <a id="Version-0-6-1" class="anchor"></a>
+              <h5><span> Version 0.6.1 - 2021-04-04</span></h5>
+              <ul>
+                <li>Added Lucid.app to list of Diagram Software in Section <a href="#6-2-methods-tools-techniques">6.2</a></li>
+                <li>Project Responsibilities in Section <a href="#4-3-project-responsibilities">4.3</a> is now relocated to 
+                  <a href="../management/our-team.html">Our Team</a> page</li>
+                <ul>
+                  <li><em>Kevin He</em></li>
+                </ul>
+              </ul>
+            </div>
             <div id="9-v0-6"> <a id="Version-0-6" class="anchor"></a>
               <h5><span> Version 0.6 - 2021-04-04</span></h5>
               <ul>
@@ -758,16 +734,16 @@
               <ul>
                 <li>Updated section 6.1</li>
                 <ul>
-                  <li><em>Andrei Pana</em></li>
+                  <li><em>Pana, Andrei</em></li>
                 </ul>
               </ul>
             </div>
             <div id="9-v0-2"> <a id="Version-0-2" class="anchor"></a>
               <h5><span>Version 0.2 - 2021-02-05</span></h5>
               <ul>
-                <li>Updated deliverables & Team roles</li>
+                <li>Updated deliverables and Team roles</li>
                 <ul>
-                  <li><em>Andrei Pana</em></li>
+                  <li><em>Pana, Andrei</em></li>
                 </ul>
               </ul>
             </div>
@@ -776,8 +752,8 @@
               <ul>
                 <li>Document created and presented information</li>
                 <ul>
-                  <li><em>William Bunker, Kevin He, Andrei Pana, Prit Patel, Alina Penskaya, Ian Roberts, Priya
-                      Shukla</em> </li>
+                  <li><em>Bunker, William (Carson) | He, Kevin | Pana, Andrei | Patel, Prit | Penskaya, Alina 
+                    | Roberts, Ian | Shukla, Priya</em> </li>
                 </ul>
               </ul>
             </div>
@@ -795,13 +771,17 @@
     
   <!-- /.container -->
   </footer> 
-  
+
   <!-- Bootstrap core JavaScript -->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   
   <!-- Plugin JavaScript -->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+    integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+    crossorigin="anonymous"></script>
   
   <!-- Custom JavaScript for this theme -->
   <script src="../js/scrolling-nav.js"></script>

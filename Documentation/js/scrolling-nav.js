@@ -26,23 +26,22 @@
     offset: 56
   });
 
+  // Back to Top 
+  $(document).ready(function () {
+    $('#toTopBtn').fadeOut();
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 20) {
+        $('#toTopBtn').fadeIn();
+      } else {
+        $('#toTopBtn').fadeOut();
+      }
+    });
+  
+    $('#toTopBtn').click(function () {
+      $("html, body").animate({
+        scrollTop: 0
+      }, 1000);
+      return false;
+    });
+  });
 })(jQuery); // End of use strict
-
-// Back to Top 
-$(document).ready(function () {
-  $('#toTopBtn').fadeOut();
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 20) {
-      $('#toTopBtn').fadeIn();
-    } else {
-      $('#toTopBtn').fadeOut();
-    }
-  });
-
-  $('#toTopBtn').click(function () {
-    $("html, body").animate({
-      scrollTop: 0
-    }, 1000);
-    return false;
-  });
-});
