@@ -1,61 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Team Rocket Project</title>
-    <link rel="stylesheet" href="../css/main_login.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
 
-    <!-- styling -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<head>
+  <meta charset="utf-8">
+  <title>Team Rocket Project</title>
+  <link rel="stylesheet" href="../css/main_login.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- styling -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
   <div class="grad">
-    <!--Navbar -->
-        <!-- Title -->
-        <nav class="navbar navbar-nav navbar-custom fixed-top">
-            <a class="navbar-brand" href="#">
-                <h2 style="color: #FFFFFF">Team Rocket Project</h2>
-            </a>
-        </nav>
-    <!-- Navbar End -->
-
-  </div>
-    <button type="submit">Sign In</button>
-    
-    <span class="psw">Forgot <a href="#">Username / Password?</a></span>
-    <br>
-
-    <span class="signup">
+    <nav class="navbar navbar-nav navbar-custom fixed-top">
+      <a class="navbar-brand" href="#">
+        <h2 style="color: #FFFFFF">Team Rocket Project</h2>
+      </a>
+    </nav>
+    <div class="content">
+      <img class="pokemon-pika"
+      src="https://raw.githubusercontent.com/IanR9532/Team-Rocket/main/Documentation/img/design/logo1.png" alt="pikachu">
+      <div class="Label-Container">
+        <h2 class="input-info">Username:&nbsp;&nbsp;&nbsp;</h2><br>
+        <h2 class="input-info">Password:&nbsp;&nbsp;&nbsp;</h2>
+      </div>
+      <form action="/action_page_placeholder.html">
+        <input type="username" id="username" name="username" class="username-field"><br><br>
+        <input type="password" id="password" name="password" class="password-field">
+      </form>
+      <button type="submit">Sign In</button>
+      <span class="psw">Forgot <a href="#">Username / Password?</a></span><br>
+      <span class="signup">
         <p1> Don't Have An Account?</p1><br><br>
-        <a href="#"style="color: orange">SIGN UP NOW </a>
-    </span>
-
+        <a href="#" style="color: orange">SIGN UP NOW </a>
+      </span>
+    </div>
   </div>
-
-  <div class="Label-Container">
-    <h2 class="input-info">Username:&nbsp;&nbsp;&nbsp;</h2><br><br>
-    <h2 class="input-info">Password:&nbsp;&nbsp;&nbsp;</h2>
-  </div>
-
- <!--put a placeholder action page for now-->
- <form action="/action_page_placeholder.html">
-              
-    <input type="username" id="username" name="username" class="username-field"><br><br>
-    
-    <input type="password" id="password" name="password" class="password-field">
-</form>
-
-<img class="pokemon-pika" src="https://raw.githubusercontent.com/IanR9532/Team-Rocket/main/Documentation/img/design/logo1.png" alt="pikachu">
-
-  </html>
+</body>
