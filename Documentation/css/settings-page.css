@@ -208,7 +208,7 @@
   .profile-pic{
     display: block;
     position: absolute;
-    left: 60%;
+    left: 40%;
     top: 6%;
     width: 20%;
   }
@@ -312,7 +312,7 @@
   position: absolute;
   width: 15%;
   height: 15%;
-  left: 90%;
+  left: 80%;
   top: 15%;
   font-family: Roboto;
   font-style: normal;
@@ -338,7 +338,7 @@
   position: absolute;
   width: 15%;
   height: 15%;
-  left: 90%;
+  left: 80%;
   top: 31%;
   font-family: Roboto;
   font-style: normal;
@@ -364,7 +364,7 @@
   position: absolute;
   width: 15%;
   height: 15%;
-  left: 90%;
+  left: 80%;
   top: 45%;
   font-family: Roboto;
   font-style: normal;
