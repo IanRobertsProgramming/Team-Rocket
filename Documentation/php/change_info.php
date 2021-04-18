@@ -16,6 +16,7 @@
         $conn->close();
         echo 'True';
     }
+
     else if($change == 2){
         $stmt = $conn->prepare("UPDATE user SET email=? WHERE userID=?"); #update the user's info
         $stmt->bind_param("ss", $new_info, $userID);
