@@ -63,13 +63,9 @@ function getSettingsInfo(){
         url: '/rocket/php/settings.php',
         //document.cookie,
         data: { user: username, pass: password},
-        success: function(result) {
-            if (result === 'True') {
-                var hrefL = "main-page.html";
-                window.location.replace(hrefL);
-            } else {
-                displayLoginError();
-            }
+        success:
+        $('#new_user').val() = ;
+        $('#new_email').val() = ;
         }, error: function (result) {
             alert('Connection Failed');
         }
