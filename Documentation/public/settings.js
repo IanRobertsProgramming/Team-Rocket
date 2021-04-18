@@ -1,5 +1,4 @@
 jQuery(document).ready(function ($) {
-
     $(".EditButton button").on("click",function(){
       $(".EditButton button").hide()
       $(".SubButton button").show()
@@ -22,16 +21,6 @@ jQuery(document).ready(function ($) {
       $(".Username input").hide()
       $(".EditButton2 button").show()
       $(".SubButton2 button").hide()
-      var new_username = $('#new_username').val();
-      var change = 1;
-      $.ajax({
-          type: 'POST',
-          url: '/rocket/php/change_info.php',
-          data: { ver_code: ver_code, new_pass: new_user, change: change},
-          success: function(result) {
-          }, error: function (result) {
-              alert('Connection Failed');
-          }
       });
     })
 
@@ -47,17 +36,6 @@ jQuery(document).ready(function ($) {
       $(".Email input").hide()
       $(".EditButton3 button").show()
       $(".SubButton3 button").hide()
-      var new_email = $('#new_email').val();
-      var change = 2;
-      $.ajax({
-          type: 'POST',
-          url: '/rocket/php/change_info.php',
-          data: { ver_code: ver_code, new_pass: new_user, change: change},
-          success: function(result) {
-          }, error: function (result) {
-              alert('Connection Failed');
-          }
-      });
     })
 
     function getSettingsInfo(){
