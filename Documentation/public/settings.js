@@ -10,62 +10,53 @@ jQuery(document).ready(function ($) {
     })
 
     $(".EditButton2 button").on("click",function(){
-      $(".Username p").hide()
-      $(".Username input").show()
+      $(".Username input").prop( "disabled", false );
       $(".EditButton2 button").hide()
       $(".SubButton2 button").show()
     })
 
     $(".SubButton2 button").on("click",function(){
-
-      var new_user = $('#new_user').val();
-      $.ajax({
-          type: 'POST',
-          url: '/rocket/php/change_info.php',
-          data: {new_info: new_user, change: 1},
-          success: function(result){
-            $(".Username p").show()
-            $(".Username input").hide()
-            $(".EditButton2 button").show()
-            $(".SubButton2 button").hide()
-              }
-          }
-      });
-    });
+      $(".Username input").prop( "disabled", true );
+      $(".EditButton2 button").show()
+      $(".SubButton2 button").hide()
+    })
 
     $(".EditButton3 button").on("click",function(){
-      $(".Email p").hide()
-      $(".Email input").show()
+      $(".Email input").prop( "disabled", false );
       $(".EditButton3 button").hide()
       $(".SubButton3 button").show()
     })
 
     $(".SubButton3 button").on("click",function(){
-      $(".Email p").show()
-      $(".Email input").hide()
+      $(".Email input").prop( "disabled", true );
       $(".EditButton3 button").show()
       $(".SubButton3 button").hide()
-
-      var new_email = $('#new_email').val();
-      $.ajax({
-          type: 'POST',
-          url: '/rocket/php/change_info.php',
-          data: {new_info: new_user, change: 2},
-          success:
-          }
-      });
     })
   })
 
-function getSettingsInfo(){
+function getUser(){
     $.ajax({
         type: 'post',
-        url: '/rocket/php/settings.php',
+        url: '/rocket/php/display-username.php',
         //document.cookie,
-        data: { user: username, pass: password},
-        success:
-        $('#new_user').val() = ;
-        $('#new_email').val() = ;
+        data: {},
+        success: function(results){
+          $('#new_user').text(results);
+        }
+        }, error: function (result) {
+            alert('Connection Failed');
+        }
+    });
+}
+
+function getEmail(){
+    $.ajax({
+        type: 'post',
+        url: '/rocket/php/display-email.php',
+        //document.cookie,
+        data: {},
+        success: function(results){
+          $('#new_email').text(results);
         }, error: function (result) {
             alert('Connection Failed');
         }
