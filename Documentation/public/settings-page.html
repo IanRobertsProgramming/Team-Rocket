@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="settings.js"></script>
+    <script>
+      function updateUsername() {
+        alert("username updated")
+      }
+    </script>
+    <script>
+      function updateEmail() {
+        alert("email updated")
+      }
+    </script>
 
     <!-- styling -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -68,10 +78,11 @@
             <p1> Current Version: </p1><br>
             <hr style="height:2px;border-width:50%;color:rgb(0, 174, 255);background-color:rgb(0, 174, 255)">
         <div class="Username">
-          <input type="text" id="new_user" name="username" disabled="disabled">
+          <input type="text" id="new_user" name="username" onload="getuser()" disabled="disabled">
+
         </div>
         <div class="Email">
-          <input type="text" id="new_email" name="email" disabled="disabled">
+          <input type="text" id="new_email" name="email" onload="getemail()" disabled="disabled">
         </div>
         <div class="Password">
           <p>237**********091</p>
@@ -182,5 +193,5 @@
       </div>
 
       <div class="notificationset">
-        <h2 class="input-info">Notifiaction Settings&nbsp;&nbsp;&nbsp;</h2>
+        <h2 class="input-info">Notification Settings&nbsp;&nbsp;&nbsp;</h2>
       </div>
