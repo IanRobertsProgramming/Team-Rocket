@@ -22,7 +22,6 @@ jQuery(document).ready(function ($) {
       $(".EditButton2 button").show()
       $(".SubButton2 button").hide()
       });
-    })
 
     $(".EditButton3 button").on("click",function(){
       $(".Email p").hide()
@@ -37,8 +36,8 @@ jQuery(document).ready(function ($) {
       $(".EditButton3 button").show()
       $(".SubButton3 button").hide()
     })
-
-    function getSettingsInfo(){
+  })
+function getSettingsInfo(){
     $.ajax({
         type: 'post',
         url: '/rocket/php/settings.php',
@@ -56,4 +55,4 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    }
+}
