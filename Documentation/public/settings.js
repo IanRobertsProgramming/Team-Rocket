@@ -17,11 +17,21 @@ jQuery(document).ready(function ($) {
     })
 
     $(".SubButton2 button").on("click",function(){
-      $(".Username p").show()
-      $(".Username input").hide()
-      $(".EditButton2 button").show()
-      $(".SubButton2 button").hide()
+
+      var new_user = $('#new_user').val();
+      $.ajax({
+          type: 'POST',
+          url: '/rocket/php/change_info.php',
+          data: {new_info: new_user, change: 1},
+          success: function(result){
+            $(".Username p").show()
+            $(".Username input").hide()
+            $(".EditButton2 button").show()
+            $(".SubButton2 button").hide()
+              }
+          }
       });
+    });
 
     $(".EditButton3 button").on("click",function(){
       $(".Email p").hide()
@@ -35,8 +45,18 @@ jQuery(document).ready(function ($) {
       $(".Email input").hide()
       $(".EditButton3 button").show()
       $(".SubButton3 button").hide()
+
+      var new_email = $('#new_email').val();
+      $.ajax({
+          type: 'POST',
+          url: '/rocket/php/change_info.php',
+          data: {new_info: new_user, change: 2},
+          success:
+          }
+      });
     })
   })
+
 function getSettingsInfo(){
     $.ajax({
         type: 'post',
