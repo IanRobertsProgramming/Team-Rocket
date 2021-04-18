@@ -16,9 +16,19 @@ jQuery(document).ready(function ($) {
     })
 
     $(".SubButton2 button").on("click",function(){
-      $(".Username input").prop( "disabled", true );
-      $(".EditButton2 button").show()
-      $(".SubButton2 button").hide()
+      var new_user = $('#new_user').val();
+      $.ajax({
+          type: 'post',
+          url: '/rocket/php/change_info.php',
+          data: {new_user: new_user, change: 1},
+          success: function(results){
+            $(".Username input").prop( "disabled", true );
+            $(".EditButton2 button").show()
+            $(".SubButton2 button").hide()
+          }, error: function (result) {
+              alert('Connection Failed');
+          }
+      });
     })
 
     $(".EditButton3 button").on("click",function(){
