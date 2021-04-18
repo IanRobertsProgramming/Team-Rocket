@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CATALOG>
     <RECORD>
-        <TEAM>Specifications Document Creators</TEAM>
+        <TEAM>Specifications Document Workers</TEAM>
         <NAMES>
             <NAME>Bunker, William (Carson)</NAME>
             <NAME>He, Kevin</NAME>
@@ -13,18 +13,31 @@
         </NAMES>
     </RECORD>
     <RECORD>
-        <TEAM>SPMP Document Creators</TEAM>
+        <TEAM>SPMP Document Workers</TEAM>
         <NAMES>
             <NAME>Bunker, William (Carson)</NAME>
             <NAME>He, Kevin</NAME>
+            <NAME>Kempf, Graeme</NAME>
             <NAME>Pana, Andrei</NAME>
             <NAME>Penskaya, Alina</NAME>
+            <NAME>Roberts, Ian</NAME>
             <NAME>Shukla, Priya</NAME>
+        </NAMES>
+    </RECORD>
+    <RECORD>
+        <TEAM>Requirements Document Workers</TEAM>
+        <NAMES>
+            <NAME>Brijlall, Sunil</NAME>
+            <NAME>Chen, Lingjie (Jessica)</NAME>
+            <NAME>Hao, Aozhou</NAME>
+            <NAME>Kempf, Graeme</NAME>
+            <NAME>Pana, Andrei</NAME>
+            <NAME>Penskaya, Alina</NAME>
             <NAME>Roberts, Ian</NAME>
         </NAMES>
     </RECORD>
     <RECORD>
-        <TEAM>Requirements Document Creators</TEAM>
+        <TEAM>Analysis Document Workers</TEAM>
         <NAMES>
             <NAME>Brijlall, Sunil</NAME>
             <NAME>Chen, Lingjie (Jessica)</NAME>
@@ -35,18 +48,7 @@
         </NAMES>
     </RECORD>
     <RECORD>
-        <TEAM>Analysis Document Creators</TEAM>
-        <NAMES>
-            <NAME>Brijlall, Sunil</NAME>
-            <NAME>Chen, Lingjie (Jessica)</NAME>
-            <NAME>Kempf, Graeme</NAME>
-            <NAME>Pana, Andrei</NAME>
-            <NAME>Penskaya, Alina</NAME>
-            <NAME>Roberts, Ian</NAME>
-        </NAMES>
-    </RECORD>
-    <RECORD>
-        <TEAM>Design Document Creators</TEAM>
+        <TEAM>Design Document Workers</TEAM>
         <NAMES>
             <NAME>Brijlall, Sunil</NAME>
             <NAME>Chen, Lingjie (Jessica)</NAME>
@@ -60,41 +62,38 @@
         </NAMES>
     </RECORD>
     <RECORD>
-        <TEAM>Prototype Creators</TEAM>
+        <TEAM>Prototype Workers</TEAM>
         <NAMES>
             <NAME>Brijlall, Sunil</NAME>
             <NAME>Chen, Lingjie (Jessica)</NAME>
             <NAME>He, Kevin</NAME>
             <NAME>Patel, Prit</NAME>
-            <NAME>Shukla, Priya</NAME>
             <NAME>Penskaya, Alina</NAME>
+            <NAME>Shukla, Priya</NAME>
         </NAMES>
     </RECORD>
     <RECORD>
-        <TEAM>Front-End Creators</TEAM>
+        <TEAM>Front-End Workers</TEAM>
         <NAMES>
             <NAME>Brijlall, Sunil</NAME>
             <NAME>Muliana, Michelle</NAME>
             <NAME>Pana, Andrei</NAME>
+            <NAME>Patel, Dhavani</NAME>
             <NAME>Peralta, Louise</NAME>
             <NAME>Wang, Jimmy</NAME>
         </NAMES>
     </RECORD>
     <RECORD>
-        <TEAM>Back-End Creators</TEAM>
+        <TEAM>Back-End Workers</TEAM>
         <NAMES>
             <NAME>Brijlall, Sunil</NAME>
+            <NAME>Bunker, William (Carson)</NAME>
             <NAME>Chen, Lingjie (Jessica)</NAME>
+            <NAME>Pana, Andrei</NAME>
             <NAME>Patel, Dhavani</NAME>
             <NAME>Penskaya, Alina</NAME>
-        </NAMES>
-    </RECORD>
-    <RECORD>
-        <TEAM>Website Managers</TEAM>
-        <NAMES>
-            <NAME>Brijlall, Sunil</NAME>
-            <NAME>He, Kevin</NAME>
-            <NAME>Pana, Andrei</NAME>
+            <NAME>Roberts, Ian</NAME>
+            <NAME>Vodon, Scott</NAME>
         </NAMES>
     </RECORD>
 </CATALOG>
