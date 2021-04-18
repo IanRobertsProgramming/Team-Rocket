@@ -42,7 +42,6 @@ function getUser(){
         data: {},
         success: function(results){
           $('#new_user').text(results);
-        }
         }, error: function (result) {
             alert('Connection Failed');
         }
