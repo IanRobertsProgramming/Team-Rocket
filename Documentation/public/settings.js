@@ -38,10 +38,11 @@ jQuery(document).ready(function ($) {
     })
 
     $(".SubButton3 button").on("click",function(){
+      var new_email = $('#new_email').val();
       $.ajax({
           type: 'post',
           url: '/rocket/php/change_info.php',
-          data: {new_user: new_user, change: 1},
+          data: {new_email: new_email, change: 2},
           success: function(results){
             $(".Email input").prop( "disabled", true );
             $(".EditButton3 button").show()
